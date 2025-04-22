@@ -1,0 +1,177 @@
+﻿{
+    "questions": [
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls –l wydanego przez użytkownika test, który jest administratorem systemu<br/> - -w- -w-rw- 1 test test 0 2008-01-03 14:57 111.cpp<br/> -rw-r-xr- - 1 test test 0 2008-01-03 14:56 111.c Następnie użytkownik test wykonał polecenie sudo chmod q+r 111.cpp.",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu polecenia uprawnienia do pliku 111.cpp będą równe 266": true,
+                "Po wykonaniu polecenia użytkownik test będzie miał prawo zapisu i odczytu do pliku 111.cpp": true,
+                "Po wykonaniu polecenia uprawnienia pliku nie zmienią się": false,
+                "Wykonanie polecenia się nie powiedzie": false
+            }
+        },
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls –l wydanego przez użytkownika test, który jest administratorem systemu<br/> - r-xr-xr-x 1 test test 0 2008-01-03 14:57 444.cpp<br/> -rw-rw-rw- 1 test test 0 2008-01-03 14:56 123.c Następnie użytkownik test wykonał polecenie sudo chmod o+w 444.cpp.",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu użytkownicy inni niż właściciel i grupa właściciela pliku będzie miała prawa zapisu": true,
+                "Po wykonaniu polecenia właścicielem pliku będzie użytkownik sudo": false,
+                "Polecenie jest tożsame z poleceniem sudo chmod 667 444.cpp": false,
+                "Wykonanie polecenia się nie powiedzie": false
+            }
+        },
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls –l wydanego przez użytkownika test, który jest administratorem systemu<br/> - - - - - - - - - - 1 test test 0 2008-01-03 14:57 111.cpp<br/> -rw-r- -r- - 1 test test 0 2008-01-03 14:56 111.c Następnie użytkownik test wykonał polecenie sudo chmod a+w 111.c.",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu polecenia właścicielem pliku będzie użytkownik test": true,
+                "Po wykonaniu polecenia właściciel pliku będzie miał prawo uruchamiania pliku 111.c": false,
+                "Po wykonaniu polecenia uprawnienia pliku nie zmienią się": false,
+                "Wykonanie polecenia się nie powiedzie": false
+            }
+        },
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls –l wydanego przez użytkownika test, który jest administratorem systemu<br/> -r-xr-xr-x 1 test test 0 2008-01-03 14:57 444.cpp<br/> -r- -r- - - -x 1 test test 0 2008-01-03 14:56 123.c Następnie użytkownik test wykonał polecenie sudo chown so1:so1 123.c.",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu polecenia właścicielem pliku 123.c będzie użytkownik so1": true,
+                "Po wykonaniu polecenia grupą właściciela pliku 123.c będzie grupa test": false,
+                "Po wykonaniu polecenie uprawnienia pliku 123.c będą równe 411": false,
+                "Wykonanie polecenia się nie powiedzie": false
+            }
+        },
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls –l wydanego przez użytkownika test, który jest administratorem systemu<br/> - r- -r- -r- - 1 test test 0 2008-01-03 14:57 444.cpp<br/> -rw-rw-r- - 1 test test 0 2008-01-03 14:56 123.c Następnie użytkownik test wykonał polecenie sudo chown so1 444.cpp.",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu polecenie grupa właściciela pliku będzie ustawiona na test": true,
+                "Po wykonaniu polecenia uprawnienia pliku nie zmienią się": true,
+                "Po wykonaniu polecenie właścicielem pliku będzie użytkownik test": false,
+                "Wykonanie polecenia się nie powiedzie": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu jesteś zalogowany jako użytkownik gosc należący do grupy sysop. Poniżej przedstawiono wynik polecenia ls –1 wykonanego w katalogu /comp<br/> dr-xr-xr-x 2 sysop sysop 4096 Jan 30 2008 strona.www<br/> -rw-r- -r - -3 sysop sysop 6480 Jan 30 2008 jazda.html<br/> -rw-rwxrwx 3 sysop sysop 9414 Jan 30 2008 licznik.sh<br/> Zaznacz wszystkie prawidłowe stwierdzenia dotyczące powyższych plików:",
+            "type": "checkbox",
+            "answers": {
+                "Masz prawo odczytu pliku jazda.html": true,
+                "Możesz uruchomić skrypt licznik.sh": true,
+                "Możesz tworzyć nowe pliki w katalogu strona.www": false,
+                "strona.www nie jest katalogiem": false
+            }
+        },
+        {
+            "question": "Dany jest wynik polecenia ls –l wykonanego przez użytkownika Jan:<br/> -rwxrwxr- - 2 jan students 4096 sty 21 06:59 odp.txt",
+            "type": "checkbox",
+            "answers": {
+                "Właściciel posiada wszystkie prawa do tego pliku": true,
+                "Wszyscy użytkownicy i grupy mają prawo do odczytania tego pliku": true,
+                "Użytkownicy spoza grupy students mają prawo usunąć ten plik": false,
+                "Członkowie grupy students NIE mają prawa do wykonywania tego pliku": false
+            }
+        },
+        {
+            "question": "Jaki będzie skutek wykonania polecenia: $ chmod a+rx plik.txt <br/> Przez administratora w systemie Ubuntu/Debian?",
+            "type": "checkbox",
+            "answers": {
+                "Wszyscy użytkownicy będą mieli prawo do odczytu oraz wykonywania tego pliku": true,
+                "Wszyscy użytkownicy będą mieli prawo do zapisu tego pliku": false,
+                "Wszystkim użytkownikom zostanie odebrane prawo do otwierania tego pliku": false,
+                "Tylko administrator będzie miał możliwość odczytania tego pliku": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu/Debian nowego użytkownika tworzymy:",
+            "type": "checkbox",
+            "answers": {
+                "Edytując plik /etc/passwd": true,
+                "Korzystając z polecenia „adduser”": true,
+                "Korzystając z polecenia „useradd”": true,
+                "Edytując plik /etc/sudoers": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu plik, który zawiera listę użytkowników systemu i ich identyfikator UID to",
+            "type": "checkbox",
+            "answers": {
+                "/etc/passwd": true,
+                "/etc/shadow": false,
+                "/dev/users": false,
+                "/usr/bin/passwd": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu/Debian polecenie chown",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala zmienić grupę właściciela pliku": true,
+                "Pozwala zmienić właściciela pliku.": true,
+                "Pozwala sprawdzić zawartość pliku.": false,
+                "Pozwala ustawić hasło do pliku.": false,
+                "Pozwala zmienić hasło użytkownika": false,
+                "Pozwala zmienić maskę": false,
+                "Pozwala zmienić uprawnienia pliku": false
+            }
+        },
+        {
+            "question": "W systemie Debian/Ubuntu plik /bin/passwd:",
+            "type": "checkbox",
+            "answers": {
+                "Jest dostępny do wykonania dla wszystkich użytkowników": true,
+                "Służy do zmiany hasła użytkownika": true,
+                "Służy do tworzenia nowych kont użytkowników": false,
+                "Zawiera nazwy i UID użytkowników systemu": false
+            }
+        },
+        {
+            "question": "W systemie Debian/Ubuntu plik /etc/shadow:",
+            "type": "checkbox",
+            "answers": {
+                "Zawiera zakodowane (hashowane) hasła": true,
+                "Zawiera hasła użytkowników zapisane w plain.text": false,
+                "Jest dostępny do zapisu i odczytu dla wszystkich użytkowników": false,
+                "Edytuje się poleceniem vipw": false
+            }
+        },
+        {
+            "question": "Jakie informacje przechowuje plik /etc/passwd w najnowszych dystrybucjach systemu Linux:",
+            "type": "checkbox",
+            "answers": {
+                "Informacje o używanej przez użytkownika powłoce": true,
+                "Datę utworzenia konta": false,
+                "Informacje o rozmieszczeniu ikon na pulpicie": false,
+                "Zaszyfrowane hasło użytkownika": false
+            }
+        },
+        {
+            "question": "Które polecenia umożliwią zmianę hasła w systemie Linux Debian:",
+            "type": "checkbox",
+            "answers": {
+                "vi /etc/shadow": true,
+                "passwd": true,
+                "chpasswd": false,
+                "shadow": false
+            }
+        },
+        {
+            "question": "Które polecenia umożliwią zmianę hasła w systemie Ubuntu:",
+            "type": "checkbox",
+            "answers": {
+                "vi /etc/shadow": true,
+                "passwd": false,
+                "chpasswd": false,
+                "shadow": false
+            }
+        },
+        {
+            "question": "Po wykonaniu polecenia chmod 666 plik.txt, użytkownik nie będący właścicielem pliku plik.txt oraz nienależący do tej samej grupy co grupa pliku, będzie miał:",
+            "type": "checkbox",
+            "answers": {
+                "Prawo do odczytu i zapisu dla pliku plik.txt": true,
+                "Prawo do odczytu, zapisu i wykonania dla pliku plik.txt": false,
+                "Tylko prawo do odczytu dla pliku plik.txt": false,
+                "Tylko prawo do zapisu dla pliku plik.txt": false
+            }
+        }
+    ]
+}

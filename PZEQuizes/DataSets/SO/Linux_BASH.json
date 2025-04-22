@@ -1,0 +1,283 @@
+﻿{
+    "questions": [
+        {
+            "question": "Aby zapisać aktualną datę do pliku tekstowego o nazwie date należy wydać polecenie",
+            "type": "checkbox",
+            "answers": {
+                "time –date > date": false,
+                "time >> date": false,
+                "time > date": false,
+                "date > date": true
+            }
+        },
+        {
+            "question": "Aby zmierzyć czas wykonania komendy date należy wydać polecenie",
+            "type": "checkbox",
+            "answers": {
+                "settime | date | gettime": false,
+                "date –time": false,
+                "date time": false,
+                "time date": true
+            }
+        },
+        {
+            "question": "Aby wyświetlić posortowaną listę procesów (wg pierwszej kolumny)",
+            "type": "checkbox",
+            "answers": {
+                "ps | sort": true,
+                "ps > temp; sort < temp": true,
+                "ps > sort": false,
+                "ps > temp | sort < temp": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić zawartość katalogu var w porządku alfabetycznym można użyć",
+            "type": "checkbox",
+            "answers": {
+                "ls | sort": true,
+                "ls > sort": false,
+                "ls -> sort": false,
+                "ls >> sort": false
+            }
+        },
+        {
+            "question": "Aby na konsoli wyświetlić wynik dodawania 2+2 należy wydać polecenie",
+            "type": "checkbox",
+            "answers": {
+                "Żadna z powyższych": true,
+                "echo 2+2": false,
+                "echo {2+2}": false,
+                "echo {{2+2}}": false,
+                "echo ${2+2}": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić na ekranie ciąg znaków: 1 2 3, można użyć polecenia (echo –n nie wypisuje na końcu znaku nowej linii)",
+            "type": "checkbox",
+            "answers": {
+                "for x in 1 2 3; do echo –n $x ” ”; done": true,
+                "mv=1; while [$mv –le 3]; do echo $mv; mv=$(( $mv + 1)); done": true,
+                "for x in 1 to 3; do echo –n $x “ ”; done": false,
+                "for x=1 to 3; do echo –n $x ” ”; done": false
+            }
+        },
+        {
+            "question": "Aby wypisać drugą linię pliku tekstowego zawierającego trzy linie tekstu należy użyć polecenia",
+            "type": "checkbox",
+            "answers": {
+                "head –n 2 dane | tail –n 1": true,
+                "tail –n 2 dane | head –n 1": true,
+                "head –n 2 dane | head –n 1": false,
+                "tail –n 2 dane | tail –n 2": false
+            }
+        },
+        {
+            "question": "Polecenie basename file.txt dla pliku file.txt położonego w katalogu domowym użytkownika adam da następującą odpowiedź",
+            "type": "checkbox",
+            "answers": {
+                "file.txt": true,
+                "file": false,
+                "adam": false,
+                "/adam/file.txt": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić zawartość katalogu var znajdując się bezpośrednio w tym katalogu można użyć polecenia. Uwaga 1. Nie ma znaczenia czy pliki zostaną wyświetlone w wierszach czy kolumnach",
+            "type": "checkbox",
+            "answers": {
+                "ls": true,
+                "temp=$(ls); echo $temp": true,
+                "for f In $( ls /var/ ); do echo $f; done": true,
+                "for f in $( /var/ ); do echo $f; done": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić pliki tylko o rozszerzeniach jpeg i jpg należy użyć polecenia",
+            "type": "checkbox",
+            "answers": {
+                "ls *.{jpg,jpeg}": true,
+                "ls *.jpg; ls *.jpeg": true,
+                "ls *.j?pg": false,
+                "ls *.j*eg": false,
+                "ls *.(jpg,jpeg)": false
+            }
+        },
+        {
+            "question": "Popularne powłoki (ang. shells) w systemie Linux to",
+            "type": "checkbox",
+            "answers": {
+                "bash": true,
+                "csh": true,
+                "ksh": true,
+                "Bourne-again shell": true,
+                "gtk": false,
+                "wsh": false,
+                "Burnt awesome shell": false
+            }
+        },
+        {
+            "question": "Wartości zmiennej myvar po wykonaniu linii kontrolnych 1 I 2 będzie wynosić <br> myvar=3<br> myfunc()<br> {<br> myvar=2<br> echo $myvar #1<br> }<br> myfunc<br> echo $myvar #2<br> Wybierz jedną lub więcej:",
+            "type": "checkbox",
+            "answers": {
+                "2 i 2": true,
+                "3 i 3": false,
+                "3 I 2": false,
+                "skrypt zgłosi błąd ”myvar already defined”": false
+            }
+        },
+        {
+            "question": "> mv=\\”?\\”> <br> bash <br> > echo $mv #1<br> > exit<br> > export mv<br> > bash<br> > echo $mv #2<br>Wybierz jedną lub więcej:",
+            "type": "checkbox",
+            "answers": {
+                "pusto i ?": true,
+                "? i pusto": false,
+                "? i ?": false,
+                "pusto i pusto": false
+            }
+        },
+        {
+            "question": "Poniższy program został uruchomiony w katalogu zawierającym następujące pliki: jeden.out dwa.sh trzy.conf. Wskaż, co pojawi się na wyjściu programu po jego wykonaniu.<br>#!/bin/bash<br>filename=”przyklad”<br>for filename in *<br>do<br>echo ${filename}<br>done<br>Wybierz jedną lub więcej:",
+            "type": "checkbox",
+            "answers": {
+                "dwa.sh": true,
+                "jeden.out": true,
+                "trzy.conf": true,
+                "przykład": false,
+                "filename": false,
+                "Zostanie wyświetlony komunikat o błędzie składni": false
+            }
+        },
+        {
+            "question": "Po wykonaniu polecenia echo $(( 100/3 ))+1 wynikiem wyświetlonym na konsoli będzie",
+            "type": "checkbox",
+            "answers": {
+                "33+1": true,
+                "33": false,
+                "34": false,
+                "34,(3)+1": false
+            }
+        },
+        {
+            "question": "Po wykonaniu polecenia echo $((2+2*2/8)) wynikiem będzie",
+            "type": "checkbox",
+            "answers": {
+                "2": true,
+                "1": false,
+                "2,5": false,
+                "0,75": false
+            }
+        },
+        {
+            "question": "Aby sprawdzić, czy zmienna myvar jest równa 0 można użyć polecenia",
+            "type": "checkbox",
+            "answers": {
+                "if [ $myvar –eq 0 ]; then …; fi": true,
+                "if [ “$myvar” –eq 0 ]; …; fi": false,
+                "if [ “myvar” –eq 0 ]; …; fi": false,
+                "if [ myvar = 0 ]; then …; fi": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi. Jedną z instrukcji w skrypcie bash jest: DESTINATION=’pwd’",
+            "type": "checkbox",
+            "answers": {
+                "Zmienna będzie zawierała ciąg znaków reprezentujący aktualną ścieżkę uruchomienia skryptu": true,
+                "Zmienna będzie dostępna poza skryptem bash w programie napisanym w C++ po wywołaniu funkcji getenv z parametrem określającym nazwę zmiennej": false,
+                "Podana konstrukcja jest niepoprawna": false,
+                "Po inicjalizacji zmiennej na ekranie zostanie wypisany ciąg znaków": false
+            }
+        },
+        {
+            "question": "Wskaż poprawnie napisany początek skryptu bash",
+            "type": "checkbox",
+            "answers": {
+                "#!/bin/bash": true,
+                "#!/dev/bash": false,
+                "#!/etc/bash": false,
+                "#!/var/bash": false
+            }
+        },
+        {
+            "question": "Zawartość skryptu “skrypt.sh” jest następująca:<br>#!/bin/bash<br>x=’&USER’<br>echo ”$x”<br>Plik został uruchomiony poleceniem “./skrypt.sh” i został wykonany. W wyniku wykonania w konsoli zostanie wyświetlone:",
+            "type": "checkbox",
+            "answers": {
+                "Napis ”$x”": true,
+                "Napis ”$USER”": false,
+                "Nazwa aktualnego użytkownika w systemie": false,
+                "Pusta linijka": false
+            }
+        },
+        {
+            "question": "Parametry przekazane do skryptu powłoki /bin/bash:",
+            "type": "checkbox",
+            "answers": {
+                "Dostępne są w zmiennej $@": true,
+                "Dostępne są w zmiennych $1, $2, $3 itd..": true,
+                "Dostępne są w tablicy ”args”": false,
+                "Powłoka /bin/bash nie obsługuje parametrów przekazywanych do skryptu": false
+            }
+        },
+        {
+            "question": "Wskaż słowa zastrzeżone dla powłoki bash:",
+            "type": "checkbox",
+            "answers": {
+                "Elif": true,
+                "Esac": true,
+                "Fi": true,
+                "Select": true,
+                "Time": true,
+                "Echo": false,
+                "Repeat": false
+            }
+        },
+        {
+            "question": "Definicja zmiennej tablicowej dla powłoki bash wygląda następująco:",
+            "type": "checkbox",
+            "answers": {
+                "zmienna = (wartość1, wartość2, wartość3)": true,
+                "zmienna = [wartość1, wartość2, wartość3]": false,
+                "zmienna[2] = {”wartość1”,”wartość2”};": false,
+                "VAR<br>a:array[1..3] of integer;<br>a[1]=wartość1;<br>a[2]=wartość2;<br>a[3]=wartość3;": false
+            }
+        },
+        {
+            "question": "Aby dopisać ”text” na końcu pliku file, wykorzystując język powłoki basha, należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "echo ”text”>>file": true,
+                "echo ”text”>file": false,
+                "echo “text”<<file": false,
+                "echo “text”<file": false
+            }
+        },
+        {
+            "question": "Wypisanie “Hello World” na ekran, z wykorzystaniem języka powłoki basha, jest realizowane przez następujący ciąg instrukcji:",
+            "type": "checkbox",
+            "answers": {
+                "napis=”Hello World”<br>echo $napis": true,
+                "napis=”Hello World”<br>echo napis": false,
+                "napis=”Hello World”<br>echo<<$napis": false
+            }
+        },
+        {
+            "question": "Bash jest domyślną powłoką systemu/środowiska",
+            "type": "checkbox",
+            "answers": {
+                "Cygwin dla Win32": true,
+                "Mac OS X 10.4 Tiger": true,
+                "Każdego Linuxa": false,
+                "Każdego Unixa": false
+            }
+        },
+        {
+            "question": "Wybierz wartość zmiennej tmp, dla której poniższy warunek zostanie spełniony i wyświetlony zostanie napis ”Hej”<br>if [ ${tmp:0:3}==”abc” ] then<br>echo ”Hej”<br>fi",
+            "type": "checkbox",
+            "answers": {
+                "tmp=”abc”": true,
+                "tmp=”abcdefg”": true,
+                "tmp=”abdcef”": false,
+                "tmp=”xyzabcd”": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,181 @@
+﻿{
+    "questions": [
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące mechanizmu bibliotek w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Domyślnym folderem zapisu jest pierwszy uwzględniony w bibliotece folder ": true,
+                "Biblioteka nie jest folderem dyskowym ": true,
+                "Biblioteki służą do zarządzania i organizowania danych z rożnych lokalizacji.": true,
+                "Biblioteka jest folderem dyskowym.": false,
+                "Biblioteki nie są automatycznie indeksowane": false,
+                "Usunięcie biblioteki powoduje usunięcie wszystkich plików w niej zawartych.": false,
+                "Usunięcie pliku w bibliotece nie usuwa go z jego fizycznej lokalizacji": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące funkcji Ochrona systemu w Windows 7:  ",
+            "type": "checkbox",
+            "answers": {
+                "Jest automatycznie włączona dla dysku systemowego": true,
+                "Można ją włączyć dla dysków niesystemowych": true,
+                "Zapisuje informacje o poprzednich wersjach zmodyfikowanych plików": true,
+                "Wyłączenie Ochrony dla wybranego dysku NIE powoduje usunięcia utworzonych do tego momentu czasu punktów przywracania systemu": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące odtwarzania plików i folderów w systemie Windows 7 w zakładce „Poprzednie wersje”: ",
+            "type": "checkbox",
+            "answers": {
+                "Odtwarzanie pliku za pomocą przycisku „Kopiuj” kopiuje plik do wybranej przez użytkownika lokalizacji": true,
+                "Odtwarzanie folderu z punktu przywracania systemu jest możliwe nawet jeśli usunie się go poprzez Shift + Del": true,
+                "Odtworzenie folderu za pomocą przycisku „Kopiuj” do oryginalnej lokalizacji spowoduje natychmiastowe zastąpienie folderu o tej samej nazwie w tej lokalizacji (bez ostrzeżenia użytkownika)": false,
+                "Poprzednią wersję pliku można otworzyć, skopiować lub przywrócić zarówno z kopii zapasowej jak i punktu przywracania systemu": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące punktów przywracania systemu w Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Aby je utworzyć, Ochrona systemu musi być włączona": true,
+                "Są tworzone przy ważnych zdarzeniach systemowych (np. Windows Upadate)": true,
+                "Umożliwiają przywrócenie tylko całego systemu (bez możliwości wyboru pojedynczego pliku)": false,
+                "Poprzednia wersja pliku pojawia się w zakładce „Poprzednie wersje” od razu po utworzeniu punktu (bez modyfikacji pliku)": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące tworzenia kopii zapasowych plików w Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Kopia może być zapisana na CD/DVD": true,
+                "Domyślnie mechanizm nie jest skonfigurowany": true,
+                "Umożliwia wykonanie kopii plików danych użytkownika": true,
+                "Nie można ustalić harmonogramu automatycznego tworzenia kopii": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące koligacji procesów (proces affinity) w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Jest to przyporządkowanie procesowi wybranych rdzeni lub procesów.": true,
+                "Domyślnie proces jest uruchamiany na wszystkich dostępnych rdzeniach.": true,
+                "Jedyną wbudowaną w system operacyjny Windows 7 metodą ustawienia koligacji jest wykorzystanie Menadżera zadań.": false,
+                "Ustawienie koligacji w Menadżerze zadań jest trwałe i po zamknięciu aplikacji nie jest przywracana domyślna konfiguracja.": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące rejestru Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Klucze rejestru pełnią rolę podobną do folderów, a wartości pełnią rolę podobną do plików": true,
+                "Rejestr ma strukturę drzewiastą, której korzeniem jest Komputer": true,
+                "Rejestr przechowuje m.in. ustawienia sprzętu, systemu, kont i programów użytkownikam": true,
+                "Przechowuje informacje konfiguracyjne systemu": true,
+                "Windows posiada wbudowany edytor rejestru regedit.exe.": true,
+                "Zmiany w rejestrze ZAWSZE są uwzględniane po ponownym zalogowaniu użytkownika": false,
+                "Wszystkie klucze lub wartości zapisane w rejestrze są w postaci nieszyfrowanej.": false,
+                "Jest składowany na dysku w postaci JEDNEGO pliku.": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczących kopii zapasowej plików w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Po skonfigurowaniu wykonywania kopii zapasowej, system Windows śledzi zmiany i dodaje je do kopii zapasowej": true,
+                "Kopie zapasowe można wykonywać tylko ręcznie": false,
+                "Nie jest możliwe wykonanie kopii zapasowej do lokalizacji sieciowej": false,
+                "Domyślnie mechanizm kopii zapasowej jest włączony i obejmuje podstawowe foldery systemowe": false
+            }
+        },
+        {
+            "question": "Wskaż prawidłowe odpowiedzi dotyczące rejestru systemu Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Gałąź HKML\\Hardware zawiera informacje o sprzęcie": true,
+                "Tylko dwie główne gałęzie rejestru są podstawowe (nie są aliasami)": true,
+                "Wyeksportowane pliki rejestru mają rozszerzenie .reg": true,
+                "Rejestr zawiera mechanizmy kontroli poprawności wprowadzanych wartości": false
+            }
+        },
+        {
+            "question": "Wybierz preferowane sposoby edycji rejestru systemu Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Uruchamianie odpowiednio utworzonego pliku *.reg": true,
+                "Wykorzystanie aplikacji regedit.exe": true,
+                "Wykorzystując polecenie konsolowe „reg edit”": false,
+                "Ręczna edycja plików rejestru przy użyciu zwykłego edytora tekst": false
+            }
+        },
+        {
+            "question": "Możliwość edycji i dostępu do kluczy rejestru systemowego dla użytkowników systemu Windows regulowana jest poprzez: ",
+            "type": "checkbox",
+            "answers": {
+                "Uprawnienia w bazie rejestru": true,
+                "Obiekty GPO": false,
+                "Uprawnienia do plików rejestru DAT": false,
+                "Ustawienia w plikach INI": false
+            }
+        },
+        {
+            "question": "Metodami ochrony rejestru nie są",
+            "type": "checkbox",
+            "answers": {
+                "Szyfrowanie plików rejestru": true,
+                "Eksport wybranego klucza, gałęzi lub całego rejestru do pliku *.reg": false,
+                "Wykonywanie kopii zapasowej całego rejestru": false,
+                "Wykonywanie kopii zapasowej wartości pojedynczego parametru": false
+            }
+        },
+        {
+            "question": "Domyślnie indeksowanie w systemie Windows 7 jest włączone dla: ",
+            "type": "checkbox",
+            "answers": {
+                "menu start": true,
+                "bibliotek": true,
+                "całego komputera": false,
+                "plików i programów systemowych": false
+            }
+        },
+        {
+            "question": "Domyślnie mechanizm Ochrona systemu w Windows 7 jest włączona dla: ",
+            "type": "checkbox",
+            "answers": {
+                "dysku systemowego (dysku, na którym zainstalowany jest Windows 7)": true,
+                "dysku wymiennego": false,
+                "dysku z danymi użytkownika (nie systemowego)": false,
+                "dysku sformatowanego w systemie plików FAT": false
+            }
+        },
+        {
+            "question": "Jakich zmian wyglądu konsoli użytkownik może dokonać we „Właściwościach” okna w systemie Windows 7?",
+            "type": "checkbox",
+            "answers": {
+                "Zmiana rozmiaru znaków": true,
+                "Zmiana koloru tła i czcionki": true,
+                "Zmiana pozycji okna na ekranie": true,
+                "Zmiana wyrównania tekstu (np.: wyjustowanie tekstu)": false
+            }
+        },
+        {
+            "question": "Gałąź HKLM rejestru systemu Windows 7 zawiera",
+            "type": "checkbox",
+            "answers": {
+                "Konfigurację lokalnego komputera": true,
+                "Domyślną ścieżkę instalacji oprogramowania": true,
+                "Ustawienia aktualnie używanego profilu sprzętowego": true,
+                "Profil aktualnie zalogowanego użytkownika": false
+            }
+        },
+        {
+            "question": "Gdzie można zmienić na stałe rozmiary i kolorystykę okna dialogowego w systemie Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "W rejestrze, w kluczu HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Command Processor zmieniając parameter “DefaulttColor”": true,
+                "W zakładkach opcji “Domyślne” wybranej z menu kontekstowego belki tytułowej okna": true,
+                "W zakładkach opcji „Właściwości” wybranej z menu kontekstowego belki tytułowej okna": false,
+                "Wpisując komendę „command procesor set color” w konsoli, np.: command procesor set color 250": false
+            }
+        }
+    ]
+}

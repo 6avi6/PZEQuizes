@@ -1,0 +1,214 @@
+﻿{
+    "questions": [
+        {
+            "question": "Administrator sieci komputerowej podał Ci następujący adres podsieci 165.144.26.24/29. Których adresów IP możesz użyć do podłączenia hostów do sieci?",
+            "type": "checkbox",
+            "answers": {
+                "165.144.26.30": true,
+                "165.144.26.31": false,
+                "165.144.26.32": false,
+                "165.144.26.24": false
+            }
+        },
+        {
+            "question": "Administrator sieci komputerowej podał Ci następujący adres podsieci 165.144.26.16/29. Których adresów IP możesz użyć do podłączenia hostów do sieci?",
+            "type": "checkbox",
+            "answers": {
+                "żadnego z powyższych": true,
+                "165.144.26.24": false,
+                "165.144.26.30": false,
+                "165.144.26.31": false,
+                "165.144.26.32": false
+            }
+        },
+        {
+            "question": "Administrator sieci komputerowej podał Ci następujący adres podsieci 165.144.26.42/28. Ile maksymalnie hostów może być w takiej sieci?",
+            "type": "checkbox",
+            "answers": {
+                "administrator się pomylił i podał niepoprawne dane": true,
+                "10": false,
+                "14": false,
+                "16": false
+            }
+        },
+        {
+            "question": "Administrator sieci komputerowej podał Ci następujący adres podsieci 165.144.26.40/27. Ile maksymalnie hostów może być w takiej sieci?",
+            "type": "checkbox",
+            "answers": {
+                "administrator się pomylił i podał niepoprawne dane": true,
+                "2": false,
+                "30": false,
+                "32": false
+            }
+        },
+        {
+            "question": "Administrator sieci komputerowej podał Ci następujący adres podsieci 165.144.26.40/30. Ile maksymalnie hostów może być w takiej sieci?",
+            "type": "checkbox",
+            "answers": {
+                "2": true,
+                "niepoprawna maska": false,
+                "4": false,
+                "6": false,
+                "8": false
+            }
+        },
+        {
+            "question": "Dany jest adres podsieci: 192.168.100.64 o masce /27. Wskaż adresy należące do tej podsieci:",
+            "type": "checkbox",
+            "answers": {
+                "192.168.100.67": true,
+                "192.168.100.90": true,
+                "192.168.100.62": false,
+                "192.168.100.98": false
+            }
+        },
+        {
+            "question": "Które stacje należą do tej samej podsieci co stacja 192.168.0.24, jeśli maska wygląda następująco 255.255.255.240?",
+            "type": "checkbox",
+            "answers": {
+                "192.168.0.19": true,
+                "192.168.0.20": true,
+                "192.168.0.29": true,
+                "niepoprawna maska": false,
+                "192.168.0.32": false,
+                "192.168.0.39": false,
+                "192.168.0.42": false,
+                "192.168.0.49": false
+            }
+        },
+        {
+            "question": "Które stacje należą do tej samej podsieci co stacja 192.168.0.24, jeśli maska wygląda następująco 255.255.255.242?",
+            "type": "checkbox",
+            "answers": {
+                "niepoprawna maska": true,
+                "192.168.0.19": false,
+                "192.168.0.20": false,
+                "192.168.0.32": false,
+                "192.168.0.42": false
+            }
+        },
+        {
+            "question": "Które stacje należą do tej samej podsieci co stacja 192.168.0.157, jeśli maska wygląda następująco 255.255.255.224?",
+            "type": "checkbox",
+            "answers": {
+                "192.168.0.130": true,
+                "192.168.0.139": true,
+                "192.168.0.19": false,
+                "192.168.0.160": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawne maski sieci:",
+            "type": "checkbox",
+            "answers": {
+                "255.255.255.192": true,
+                "255.255.255.224": true,
+                "255.255.255.252": true,
+                "255.255.255.242": false,
+                "255.255.255.168": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie prawidłowe maski podsieci:",
+            "type": "checkbox",
+            "answers": {
+                "255.255.128.0": true,
+                "11111111.11000000.00000000.00000000": true,
+                "255.255.255.64": false,
+                "11111111.11111111.00000000.11111111": false
+            }
+        },
+        {
+            "question": "Z okna właściwości protokołu TCP/IPv4 dla danej karty sieciowej w systemie Windows 7 można:",
+            "type": "checkbox",
+            "answers": {
+                "Skonfigurować używanie własnych serwerów DNS, pozostawiając jednocześnie automatyczną konfigurację adresu IP": true,
+                "Skonfigurować jednocześnie wiele statycznych adresów IP": true,
+                "Skonfigurować statyczny adres IP, pozostawiając jednocześnie automatyczną konfigurację serwerów DNS": false,
+                "Skonfigurować i uruchomić lokalny serwer DHCP": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawną postać minimalnej maski sieci dla podsieci zawierającej 11 stacji roboczych:",
+            "type": "checkbox",
+            "answers": {
+                "255.255.255.240": true,
+                "wszystkie maski są niepoprawne": false,
+                "255.255.255.224": false,
+                "255.255.255.248": false,
+                "255.255.255.252": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawną postać minimalnej maski sieci dla podsieci zawierającej 9 stacji roboczych:",
+            "type": "checkbox",
+            "answers": {
+                "255.255.255.240": true,
+                "wszystkie maski są niepoprawne": false,
+                "255.255.255.224": false,
+                "255.255.255.248": false,
+                "255.255.255.252": false
+            }
+        },
+        {
+            "question": "W systemie Windows adres IP. Wskaż wszystkie poprawne odpowiedzi:",
+            "type": "checkbox",
+            "answers": {
+                "Może być więcej niż jeden adres IP przypisany do karty sieciowej": true,
+                "Może zostać przypisany statycznie w ustawieniach karty sieciowej": true,
+                "Uzyskany poprzez DHCP jest tylko na pewien wynegocjowany czas": true,
+                "Może być identyczny jak inny komputer w danej podsieci z zachowaniem komunikacji": false
+            }
+        },
+        {
+            "question": "Zaznacz warstwy, które należą do modelu OSI:",
+            "type": "checkbox",
+            "answers": {
+                "Warstwa sesji": true,
+                "Warstwa łączna danych": true,
+                "Warstwa aplikacji": true,
+                "Warstwa prezentacji": true
+            }
+        },
+        {
+            "question": "Wskaż poprawnie wyznaczone maski podsieci umożliwiające utworzenie podsieci składającej się z co najmniej 2 hostów:",
+            "type": "checkbox",
+            "answers": {
+                "255.255.255.128": true,
+                "255.255.254.0": true,
+                "255.254.255.0": false,
+                "255.255.255.254": false
+            }
+        },
+        {
+            "question": "W systemie Windows polecenie ipconfig służy do:",
+            "type": "checkbox",
+            "answers": {
+                "Pobierania informacji o aktualnie przyznanym adresie": true,
+                "Testowania serwerów DNS": false,
+                "Zmiany maski podsieci": false,
+                "Pobierania tablicy tras": false
+            }
+        },
+        {
+            "question": "Polecenie ipconfig:",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala na zmianę wielu parametrów interfejsu sieciowego w jednym wywołaniu, np. adresu IP i maski podsieci.": true,
+                "Pozwala zmienić statyczny adres IP danego interfejsu sieciowego, a zmiana ta będzie zapamiętana również przy następnym uruchomieniu systemu.": false,
+                "Pozwala m.in. zmienić kolejność rozwiązywania nazw.": false,
+                "Może być wykonywane wyłącznie przez użytkownika root.": false
+            }
+        },
+        {
+            "question": "Każda z odpowiedzi składa się z czterech zestawów: adres IP1, adres IP2, maska. Wskaż te odpowiedzi, w których komputery mogą należeć do tej samej podsieci.",
+            "type": "checkbox",
+            "answers": {
+                "10.0.2.3, 10.0.170.4, 255.255.0.0": true,
+                "10.0.0.20, 10.0.0.40, 255.255.255.0": true,
+                "10.0.1.2, 10.0.3.5, 255.255.128.0": true,
+                "10.0.0.5, 10.0.0.140, 255.255.255.128": false
+            }
+        }
+    ]
+}

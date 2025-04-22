@@ -1,0 +1,464 @@
+﻿{
+    "questions": [
+        {
+            "question": "Po zmianie w plikach konfiguracyjnych programu GRUB:",
+            "type": "checkbox",
+            "answers": {
+                "zmiany NIE SĄ automatycznie wprowadzone po zmianie zawartości plików": true,
+                "należy wydać polecenie update-grub jako root, aby konfiguracja nowa konfiguracja została wprowadzona": true,
+                "zmiany od razu nie są wprowadzone, zaraz po zmianie pliku": false,
+                "plików konfiguracyjnych GRUBa nie wolno edytować (jest to robione automatycznie przez system)": false
+            }
+        },
+        {
+            "question": "Wksaż poprawne zdanie na temat dysku /dev/sdd3",
+            "type": "checkbox",
+            "answers": {
+                "Jest to czwarta partycja czwartego dysku SATA": false,
+                "Jest to czwarta partycja trzeciego dysku SATA": false,
+                "Oznaczenie nie jest poprawne": false,
+                "Jest to trzecia partycja czwartego dysku SATA": true
+            }
+        },
+        {
+            "question": "Czym charakteryzuje się plik konfiguracyjny \"grub.cfg\" menedżera GRUB 2, znajdujący się standardowo w katalogu \"/boot/grub\"?",
+            "type": "checkbox",
+            "answers": {
+                "Jest to jedyny plik konfiguracji GRUB 2, którego własnoręczna edycja nie jest odradzana": false,
+                "Nie powinien być bezpośrednio edytowany przez użytkownika.": true,
+                "Może zostać nadpisany w wyniku polecenia \"update-grub\".": true,
+                "Zawiera wpisy dotyczące uruchamianych systemów operacyjnych.": true
+            }
+        },
+        {
+            "question": "Polecenie mount -a",
+            "type": "checkbox",
+            "answers": {
+                "montuje wszystkie systemy plików wylistowane w pliku /etc/fstab": false,
+                "montuje systemy plików wylistowane w pliku /etc/fstab, które nie korzystają z opcji noauto": true,
+                "może być wykonane przez dowolnego użytkownika": false,
+                "zarezerwowane jest tylko dla roota": true
+            }
+        },
+        {
+            "question": "Wskaż, które z poniższych twierdzeń odnoszących się do pliku konfiguracyjnego \"/etc/fstab\" są poprawne.",
+            "type": "checkbox",
+            "answers": {
+                "Definiując poszczególne systemy plików możemy posłużyć się zarówno unikalnym identyfikatorem dysku, jak i nazwą urządzenia.": true,
+                "Edytując plik użytkownik może wskazać jako miejsce montowania nieistniejący katalog, w trakcie uruchomienia systemu, katalog taki zostanie utworzony.": false,
+                "Plik ten zawiera informację na temat wszystkich systemów plików, które powinny być montowane w trakcie uruchamiania systemu.": true,
+                "Do edycji pliku wymagane są uprawnienia administratora.": true
+            }
+        },
+        {
+            "question": "Używając bootloader'a GRUB2:",
+            "type": "checkbox",
+            "answers": {
+                "hd1 oznacza drugi dysk w systemie (/dev/sdb)": true,
+                "hd1 oznacza pierwszy dysk w systemie (/dev/sda)": false,
+                "setroot(hd0, 1) odwoła się do pierwszej partycji pierwszego dysku (dev/sda1)": true,
+                "setroot(hd0, 1) odwoła się do drugiej partycji pierwszego dysku (dev/sda2)": false
+            }
+        },
+        {
+            "question": "Co spowoduje dodanie następującego wpisu do pliku /etc/grub.d/40_custom \n menuentry \"Windows\" { \n set root='(hd0,1)' \n chainloader + 1 \n }",
+            "type": "checkbox",
+            "answers": {
+                "Podczas startu bootloadera będziemy mogli wybrać system o nazwie \"Windows\" i będzie one pierwszy na liście dostępnych systemów.": false,
+                "Jest to niepoprawny wpis.": false,
+                "Podczas startu bootloadera będziemy mogli wybrać system o nazwie \"Windows\", znajdujący się na dysku \"hd0\".": true,
+                "W celu załadowania systemu Windows sterowanie zostanie przekazane do pierwszego sektora z podanej partycji (zostanie uruchomiony kod, który się tam znajduje).": true
+            }
+        },
+        {
+            "question": "Program Grub pozwala na:",
+            "type": "checkbox",
+            "answers": {
+                "Rekompilację jądra Linux": false,
+                "Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.": true,
+                "Zarządzanie dyskami i ich partycjonowanie": false,
+                "Wybór systemu operacyjnego, który będzie uruchomiony.": true
+            }
+        },
+        {
+            "question": "Parametr ro w opcjach montowania pliku /etc/fstab oznacza, że:",
+            "type": "checkbox",
+            "answers": {
+                "możliwy jest zapis i odczyt na danym systemie plików": false,
+                "system plików jest zamontowany w trybie tylko do odczytu": true,
+                "urządzenie może być montowane przez użytkownika": false,
+                "system plików może być montowany przez każdego użytkownika": false
+            }
+        },
+        {
+            "question": "W jaki sposób dodajemy informacje o innych systemach opracyjnych do GRUB2",
+            "type": "checkbox",
+            "answers": {
+                "Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2": true,
+                "Należy wykonać polecenie grub2-add-new-os z prawami użytkownika": false,
+                "Można nadać prawa wykonywania skryptowi: /etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych": true,
+                "GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji": false
+            }
+        },
+        {
+            "question": "Plik /boot/grub.cfg dla GRand United Bootloader w wersji 2:",
+            "type": "checkbox",
+            "answers": {
+                "posiada definicje wszystkich systemów uruchamianych przez niego": true,
+                "w przypadku edycji za każdym razem musi być zaktualizowany za pomocą polecenia update-grub": true,
+                "Tworzony jest automatycznie na podstawie skryptów znajdujących się w katalogu /etc/grub.d/": true,
+                "Tworzony jest automatycznie na podstawie konfiguracji zdefiniowanej w pliku /etc/grub/default": false
+            }
+        },
+        {
+            "question": "Wskaż, które z poniższych twierdzeń odnoszących się do bootmanagera GRUB2 są poprawne.",
+            "type": "checkbox",
+            "answers": {
+                "Aby zablokować możliwość wykonywania się danego skryptu podczas aktualizacji GRUB'a wystarczy odebrać mu uprawnienia do odczytu.": false,
+                "Lista zdefiniowanych, uruchamianych przez GRUB2 systemów operacyjnych zdefiniowana jest w pliku \"/boot/grub/grub.cfg\".": true,
+                "Wywołanie polecenia \"update-grub\" powoduje uruchomienie skryptów umieszczonych w katalogu \"/etc/grub.d\"": true,
+                "Po wywołaniu polecenia \"update-grub\" skrypt \"30_os-prober\" zostanie uruchomiony przed skryptem \"10_linux\".": false
+            }
+        },
+        {
+            "question": "Jakim poleceniem tworzony (bądź aktualizowany) jest plik konfiguracyjny /boot/grub.grub.cfg?",
+            "type": "checkbox",
+            "answers": {
+                "grub-config": false,
+                "grub-install": false,
+                "grub-refresh": false,
+                "update-grub": true
+            }
+        },
+        {
+            "question": "Na jednym fizycznym komputerze, na osobnych partycjach są zainstalowane systemy Ubuntu Linux i Windows 7. Przy obecnej konfiguracji użytkownik ma możliwość (przy użyciu bootmanagera GRUB 2) uruchomienia TYLKO systemu Ubuntu. W jaki sposób można zapeewić użytkownikowi możliwość wyboru systemu operacyjnego przy uruchamianu komputera?",
+            "type": "checkbox",
+            "answers": {
+                "Należy utworzyć własny plik z odpowiednim wpisem systemu oraz prawami uruchamiania w /etc/grub.d/, a następnie zaktualizować pliki konfiguracyjne GRUB'a": true,
+                "Dodać odpowiedni wpis w pliku /boot/grub/grub.cfg": true,
+                "Należy włożyć dysk instalacyjny Windowsa i z linii poleceń, za pomocą komendy bootrec /fixmbr zainstalować w MBR bootloader dla systemu Windows": false,
+                "Ustawić prawa uruchamiania dla skryptu /etc/grub.d/30_os-prober oraz uruchomić update-grub": true
+            }
+        },
+        {
+            "question": "Zaznacz, które z podanych plików w systemach z rodziny Linux zawierają informacje o systemach, które mają zostać automatycznie zamontowane przy uruchomieniu systemu operacyjnego.",
+            "type": "checkbox",
+            "answers": {
+                "/boot/grub/grub.cfg": false,
+                "/etc/default/grub": false,
+                "/etc/mtab": false,
+                "/etc/fstab": true
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące bootmanagera GRUB2",
+            "type": "checkbox",
+            "answers": {
+                "Skrypty konfiguracyjne znajdujące się w katalogu /etc/grub.d/ uruchamiane są w momencie wywołania grub-update": true,
+                "Nie wymaga aktualizowania pliku /etc/boot/grub.cfg po wprowadzeniu zmian do pliku konfiguracyjnego /etc/default/grub - zawartość tego pliku odczytywana jest na bieżąco w momencie uruchamiania systemu.": false,
+                "Jest domyślnym managerem bootowania systemu Linux Ubuntu od dystrybucji 9.10": true,
+                "Plik /boot/grub/grub.cfg jest jednym z najistotniejszych plików konfiguracyjnych managera GRUB2": true
+            }
+        },
+        {
+            "question": "Program fdisk",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala na sformatowanie wybranej partycji": true,
+                "Wywołany z parametrem -i wyświetla tablice partycji dla podanych urządzeń": true,
+                "Pozwala na obsługę tablicy partycji systemu linux": false,
+                "Zmiany wprowadzone za pomocą tego programu automatycznie modyfikują zawartość plików /etx/fstab i /etc/mtab": false
+            }
+        },
+        {
+            "question": "Jeżeli nie chcemy, aby konfiguracja zdefiniowana w pewnym skrypcie konfiguracyjnym GRUBA znajdującym się w katalogu /etc/grub.d/ była uwzględniona po wykonaniu polecenia update-grub, należy:",
+            "type": "checkbox",
+            "answers": {
+                "Zabrać temu skryptowi uprawnienia zapisu": false,
+                "Wprowadzić odpowiednie zmiany w pliku /etc/default/grub": false,
+                "Zabrać temu skryptowi uprawnienia odczytu": false,
+                "Zabrać temu skryptowi uprawnienia wykonywalności": true
+            }
+        },
+        {
+            "question": "Plik /etc/fstab zawiera informacje o:",
+            "type": "checkbox",
+            "answers": {
+                "systemach plików montowanych podczas uruchomienia systemu": true,
+                "aktualnie zamontowanych systemach plików": false,
+                "tablicach partycji na aktualnie podłączonych dyskach": false,
+                "mapowaniu identyfikatorów UUID na oznaczenia linuksowe (sda, sdb, itd.)": false
+            }
+        },
+        {
+            "question": "Wskaż prawdziwe zdania:",
+            "type": "checkbox",
+            "answers": {
+                "Plik /boot.grub/grub.cfg jest generowany automatycznie na podstawie skryptów z katalogu /etc/grub.d/": true,
+                "Pod Windowsem możliwe jest odczytywanie partycji ext2/ext3 za pomocą dodatkowego oprogramowania": true,
+                "Pod Linuksem jest możliwość obsługi partycji NTFS, ale jedynie w trybie do odczytu": false,
+                "GRUB jest w stanie uruchamiać jedynie Linuksa i Windowsa": false
+            }
+        },
+        {
+            "question": "Domyślnie skrypt /etc/grub.d/30_os-prober",
+            "type": "checkbox",
+            "answers": {
+                "ustawia tło, kolory tekstu, motyw graficzny": false,
+                "lokalizuje jądra hurd": false,
+                "lokalizuje jądro Linuksa": false,
+                "wyszukuje w każdej partycji systemów operacyjnych i integruje je w startowym menu": true
+            }
+        },
+        {
+            "question": "Plik /etc/mtab przechowuje informacje o:",
+            "type": "checkbox",
+            "answers": {
+                "Systemach plików montowanych przy starcie systemu": false,
+                "Aktualnie zamontowanych systemach plików": true,
+                "Systemach plików oczekujących na zamontowanie w systemie": false,
+                "Systemach plików, które z jakiś powodów nie mogły zostać zamontowane i pojawić się tym samym pliku /etc/fstab": false
+            }
+        },
+        {
+            "question": "Dodanie systemu operacyjnego do menu GRUB'a może nastąpić w wyniku",
+            "type": "checkbox",
+            "answers": {
+                "wykonania standardowego skryptu 30_os-prober, a następnie wykonania polecenia update-grub": true,
+                "stworzenia własnego skryptu w katalogu /etc/grub.d/, a następnie wykonania polecenia update-grub": true,
+                "dodania odpowiedniego wpisu do pliku device.map, a następnie wykonania polecenia update-grub": false,
+                "dodania odpowiedniego wpisu do pliku 40_custom, a następnie wykonania polecenia update-grub": true
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne zdania odnoścnie pliku device.map",
+            "type": "checkbox",
+            "answers": {
+                "Ręczna zmiana pliku device.map wymaga aktualizacji konfiguracji GRUBa": true,
+                "Zawiera zmapowane nazwy urządzeń GRUBa na nazwy Linuxowe": true,
+                "Po każdym restarcie systemu zapisywana jest do niego aktualna struktura dysków.": false,
+                "W wersji bootloadera GRUB2 plik ten nie istnieje": false
+            }
+        },
+        {
+            "question": "Parametr ro w opcjach montowania pliku etc/fstab oznacza, że:",
+            "type": "checkbox",
+            "answers": {
+                "możliwy jest zapis i odczyt na danym systemie plików": false,
+                "system plików jest zamontowany w trybie tylko do odczytu": true,
+                "urządzenie może być montowane przez użytkownika": false,
+                "system plików może być montowany przez każdego użytkownika": false
+            }
+        },
+        {
+            "question": "Dodajemy własny wpis do menu GRUB2. Które z poniższych wartości parametru \"setroot\" bloku menuentry są poprawne?",
+            "type": "checkbox",
+            "answers": {
+                "setroot = (hda,1)": false,
+                "setroot = (hd0, msdos1)": true,
+                "setroot = (sda,1)": false,
+                "setroot = (hd0,1)": true
+            }
+        },
+        {
+            "question": "Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:",
+            "type": "checkbox",
+            "answers": {
+                "/mnt": false,
+                "/etc/fstab": true,
+                "/etc/default/fstab": false,
+                "/etc/mtab": false
+            }
+        },
+        {
+            "question": "Plik /boot/grub/grub.cfg zawiera:",
+            "type": "checkbox",
+            "answers": {
+                "tryb, w jakim ma się ładować system.": true,
+                "liste systemów operacyjnych, które można uruchomić za pomocą GRUBa": true,
+                "informację o tym, który system jest systemem domyślnym.": true,
+                "czas oczekiwania na wybór systemu przez użytkownika, po upływie którego uruchomi się domyślny system.": true
+            }
+        },
+        {
+            "question": "Plik /boot/grub/grub.cfg:",
+            "type": "checkbox",
+            "answers": {
+                "Aktualizowany jest poleceniem update-grub": true,
+                "Zawiera definicje systemów operacyjnych możliwych do uruchomienia przez program rozruchowy": true,
+                "Nie powinien być ręcznie modyfikowany": true,
+                "Jest tworzony tylko na podstawie konfiguracji zdefiniowanej w /etc/default/grub": false
+            }
+        },
+        {
+            "question": "Jakie informacje na temat zamontowanych systemów plików znajdują się w /etc/fstab?",
+            "type": "checkbox",
+            "answers": {
+                "Data zamontowania urządzenia.": false,
+                "Miejsce zamontowania systemu plików": true,
+                "Typ systemu plików.": true,
+                "Wielkość partycji.": false
+            }
+        },
+        {
+            "question": "Zaznacz zdania poprawne dotyczące odwoływania się do systemów plików w systemie Linux.",
+            "type": "checkbox",
+            "answers": {
+                "/dev/fd0 - oznacza dyskietkę": true,
+                "/dev/hdd2 - oznacza drugą partycję znajdującą się na dysku \"slave\" podpiętego do drugiego kontrolera IDE.": true,
+                "/dev/sda1 - oznacza pierwszą partycję pierwszego dysku SCSII lub drugą partycję na kontrolerze SATA1.": false,
+                "/dev/ssd1 - oznacza pierwszą partycję dysku stworzonego w oparciu o technologię SSD": false
+            }
+        },
+        {
+            "question": "Plik /etc/fstab:",
+            "type": "checkbox",
+            "answers": {
+                "może być modyfikowany przez administratora systemu": true,
+                "zawiera informacje o aktualnie zalogowanych użytkownikach": false,
+                "Jest odczytywany w trakcie uruchamiania systemu operacyjnego": true,
+                "zawiera informacje o systemach plików, jakie mają być montowane w trakcie uruchamiania systemu.": true
+            }
+        },
+        {
+            "question": "Na jednej maszynie zainstalowane są systemy Windows 7 oraz Ubuntu Linux:",
+            "type": "checkbox",
+            "answers": {
+                "W systemie Linux możemy zamontować partycję Windowsową jako katalog korzystając z polecenia mnt.": true,
+                "W systemie Windows dostęp do partycji Linuxowych konfigurowany jest automatycznie.": false,
+                "W pliku /etc/fstab znajduje się przyporządkowanie partycji ich punktom montowania": true,
+                "Przy starcie systemu Linux partycje Windowsowe są montowane automatycznie, jeśli dodamy odpowiedni wpis do pliku /etc/fstab": true
+            }
+        },
+        {
+            "question": "Plik o domyślnej nazwie „/etc/grub.d/40_custom” służy do:",
+            "type": "checkbox",
+            "answers": {
+                "Tworzenia własnych wpisów w menu bootloadera.": true,
+                "Zmiany czasu oczekiwania na wybór systemu przez użytkownika.": false,
+                "Zaimportowania parametrów zdefiniowanych w pliku „/etc/default/grub”": false,
+                "Ustawiania elementów wizualnych bootloadera.": false
+            }
+        },
+        {
+            "question": "Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:",
+            "type": "checkbox",
+            "answers": {
+                "/etc/mtab": false,
+                "/etc/default/fstab": false,
+                "/mnt": false,
+                "/etc/fstab": true
+            }
+        },
+        {
+            "question": "Aby zmienić ustawienia menu GRUB2 (np. zwiększyć czas oczekiwania na wybór systemu operacyjnego) POWINNO SIĘ:",
+            "type": "checkbox",
+            "answers": {
+                "w konsoli wpisać komendę: sudo update-grub z odpowiednim parametrem": false,
+                "wpisać odpowiednie polecenie w linii komend po uruchomieniu menu GRUB2": false,
+                "edytować plik konfiguracyjny /boot/grub/grub.cfg": false,
+                "edytować odpowiedni skrypt z /etc/grub.d/": true
+            }
+        },
+        {
+            "question": "Zaznacz prawdziwe zdania dotyczące partycji wymiany (SWAP) w systemie Linux:",
+            "type": "checkbox",
+            "answers": {
+                "Domyślnie jest na niej zapisywany zrzut pamięci RAM przy hibernacji": true,
+                "Można go aktywować i dezaktywować podczas działania systemu": true,
+                "Jest zamontowana w katalogu /swap": false,
+                "Jest konieczna do działania systemu Linux": false
+            }
+        },
+        {
+            "question": "Aby dodać system do listy rozruchowej w programie GRUB2 należy:",
+            "type": "checkbox",
+            "answers": {
+                "Ręcznie zaktualizować plik /boot/grub/grub.cfg": false,
+                "Dodać odpowiedni skrypt do katalogu /etc/grub.d/": true,
+                "Program GRUB2 posiada interfejs graficzny i każdą zmianę należy wykonywać tylko i wyłącznie w środowisku graficznym.": false,
+                "Zaktualizować plik /boot/grub/grub.cfg poleceniem update-grub": true
+            }
+        },
+        {
+            "question": "Jeżeli do plików lub skryptów konfiguracyjnych managera bootwania GRUB wprowadzimy jakieś zmiany, musimy zaktualizować plik grub.cfg za pomocą polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "new-grub": false,
+                "update-grub": true,
+                "grub-update": false,
+                "grub-mkdevicemap": false
+            }
+        },
+        {
+            "question": "Program Grub pozwala na:",
+            "type": "checkbox",
+            "answers": {
+                "Wybór systemu operacyjnego, który będzie uruchomiony.": true,
+                "Rekompilację jądra Linux": false,
+                "Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.": true,
+                "Zarządzanie dyskami i ich partycjonowanie": false
+            }
+        },
+        {
+            "question": "W jaki sposób dodajemy informacje o innych systemach operacyjnych do GRUB2?",
+            "type": "checkbox",
+            "answers": {
+                "GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji": false,
+                "Można nadać prawa wykonywania skryptowi:/etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych": true,
+                "Należy wykonać polecenie grub2-add-new-os z prawami użytkownika": false,
+                "Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2": true
+            }
+        },
+        {
+            "question": "Wskaż poprawne nazewnictwa partycji i dysków w GRUB z odpowiednim dla niego wyjaśnieniem:",
+            "type": "checkbox",
+            "answers": {
+                "(hd0,0) – pierwsza partycja na pierwszym dysku": false,
+                "(hd0,msdos5) oznacza pierwszą partycję rozszerzoną (extended)": true,
+                "(sda2,2) – trzecia partycja na drugim dysku": false,
+                "(hd3,2) – trzecia partycja na drugim dysku": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawne odpowiedzi dotyczące pliku /etc/fstab",
+            "type": "checkbox",
+            "answers": {
+                "jest automatycznie modyfikowany podczas użycia polecenia mount": false,
+                "jest on odczytywany w trakcie uruchamiania systemu": true,
+                "zawiera informacje na temat znajdujących się w systemie dysków twardych, ich partycji oraz punktów i parametrów montowania": true,
+                "nie jest odczytywany w trakcie uruchamiania systemu": false
+            }
+        },
+        {
+            "question": "Mówiąc o wymianie danych między systemem Linux a system Windows prawdą jest, że:",
+            "type": "checkbox",
+            "answers": {
+                "System Linux nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji NTFS": true,
+                "W systemie Linux tylko root może zapisywać na partycji NTFS": false,
+                "Dostępne oprogramowanie dla systemu Windows nie pozwala na modyfikowanie plików zapisanych na partycji Ext3": false,
+                "System Windows nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji Ext3": false
+            }
+        },
+        {
+            "question": "Co znajduje się w katalogu /dev/disk/by-uuid ?",
+            "type": "checkbox",
+            "answers": {
+                "Linki symboliczne do wszystkich partycji zamontowanych obecnie w systemie": true,
+                "Nie ma takiego folderu": false,
+                "Linki symboliczne do wszystkich urządzeń fizycznych podłączonych do komputera": false,
+                "Informacja na temat tego, jakie UUIDy zostały przypisane poszczególnym urządzeniom (partycjom) w systemie.": true
+            }
+        },
+        {
+            "question": "Wskaż poprawne zdania na temat oznaczenia dysku /dev/ssd3\"",
+            "type": "checkbox",
+            "answers": {
+                "Jest to czwarta partycja czwartego dysku SATA": false,
+                "Jest to czwarta partycja trzeciego dysku SATA": false,
+                "Jest to trzecia partycja czwartego dysku SATA": true,
+                "Oznaczenie nie jest poprawne": false
+            }
+        }
+    ]
+}

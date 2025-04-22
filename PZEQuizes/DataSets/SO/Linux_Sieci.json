@@ -1,0 +1,11 @@
+﻿{
+    "questions": [
+        {
+            "question": "asdasd",
+            "type": "checkbox",
+            "answers": {
+                "asdasd": true
+            }
+        }
+    ]
+}

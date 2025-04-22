@@ -1,0 +1,194 @@
+﻿{
+    "questions": [
+        {
+            "question": "Windows Deployment Services (WDS):",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala na przygotowanie obrazów dysków do zautomatyzowania lokalnej instalacji systemu Windows.": false,
+                "Pozwala na instalacje systemu Window.": true,
+                "Mozliwe jest instalowanie przez siec wyłacznie systemów serwerowych np. Windows Server 2008.": false,
+                "Mozliwa jest zdalna instalacja (przez siec) systemu Linux wykorzystujac system Windows Server.": false
+            }
+        },
+        {
+            "question": "Windows Deployment Services wykorzystuje obrazy z rozszerzeniem:",
+            "type": "checkbox",
+            "answers": {
+                "BIN": false,
+                "MDF": false,
+                "WIM": true,
+                "ISO": false
+            }
+        },
+        {
+            "question": "Format obrazów instalacyjnych wykorzystywany przez Windows Deployment Services to:",
+            "type": "checkbox",
+            "answers": {
+                "VHD": false,
+                "ISO": false,
+                "IMG": false,
+                "WIM": true
+            }
+        },
+        {
+            "question": "Windows Deployment Services to:",
+            "type": "checkbox",
+            "answers": {
+                "Tworzenie instalatorów dla programów na platforme .NET": false,
+                "Instalacje systemu Windows poprzez nosnik USB.": false,
+                "Usługa pozwalajaca na instalacje systemu Windows przez siec.": true,
+                "Instalacje i konfiguracje aplikacji internetowej na serwerze IS.": false
+            }
+        },
+        {
+            "question": "Windows Deployment Services (WDS) to technologia serwerowa, która pozwala na:",
+            "type": "checkbox",
+            "answers": {
+                "Zdalne logowanie do systemu.": false,
+                "Sieciowa instalacje systemu operacyjnego.": true,
+                "Instalacje systemu operacyjnego bez płyty instalacyjnej typu CD lub DVD.": true,
+                "Lokalne monitorowanie systemu operacyjnego chroniac przed złosliwym oprogramowaniem.": false
+            }
+        },
+        {
+            "question": "Windows Deployment Services to:",
+            "type": "checkbox",
+            "answers": {
+                "Tworzenie instalatorów dla programów na platforme .NET": false,
+                "Instalacje systemu Windows poprzez nosnik USB.": false,
+                "Usługa pozwalajaca na instalacje systemu Windows przez siec.": true,
+                "Instalacje i konfiguracje aplikacji internetowej na serwerze IS.": false
+            }
+        },
+        {
+            "question": "Aby mozliwa była zdalna istalacja, to maszyna kliencka moze uruchamiac sie z:",
+            "type": "checkbox",
+            "answers": {
+                "dysku twardego": false,
+                "karty sieciowej": true,
+                "napedu CD / DVD": false,
+                "nie ma to znaczenia": false
+            }
+        },
+        {
+            "question": "Jakie elementy sa wymagane do poprawnej pracy WDS?",
+            "type": "checkbox",
+            "answers": {
+                "Windows Server w wersji 2008 lub wyzszej.": false,
+                "Usługa Windows Deployment Services zainstalowana na serwerze udostepniajacym obrazy do instalacji.": true,
+                "Sprzet sieciowy obsługujacy protokół WDS (router, switch, karta sieciowa)": false,
+                "Kontroler domeny, serwer DNS, serwer DHCP": true
+            }
+        },
+        {
+            "question": "Które z ponizszych zdan na temat wymagan instalacji zdalnej jest prawdziwe?",
+            "type": "checkbox",
+            "answers": {
+                "Serwer WDS musi byc członkiem domeny Active Directory.": true,
+                "W sieci musi znajdowac sie serwer DNS.": true,
+                "W sieci musi znajdowac sie serwer DHCP.": true,
+                "Serwery DHCP i DNS musza byc niezalezne od serwera WDS.": false
+            }
+        },
+        {
+            "question": "Wykorzystujac zdalna instalacje systemu Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Jeden serwer umozliwia instalacje wielu wersji systemu (uzytkownik moze sam wybrac).": true,
+                "Jeden serwer pozwala na instalacje tylko jednej wersji systemu (np. Ultimate)": false,
+                "Pliki z obrazem systemu musza byc dostepne na serwerze.": true,
+                "Do komputera na którym instalowany jest system trzeba włozyc płyte z obrazem systemu (ale konfiguracja instalowanego systemu jest pobierana przez siec)": false
+            }
+        },
+        {
+            "question": "Jakie warunki musza byc spełnione by mozna było pomyslnie zainstalowac usługe WDS?",
+            "type": "checkbox",
+            "answers": {
+                "Siec musi byc połaczona z Internetem.": false,
+                "Komputer musi byc członkiem domeny Active Directory.": true,
+                "W sieci musi znajdowac sie serwer DNS.": true,
+                "W sieci musi znajdowac sie serwer DHCP.": true
+            }
+        },
+        {
+            "question": "Aby mozliwe było wykorzystanie Windows Deployment Services konieczny jest:",
+            "type": "checkbox",
+            "answers": {
+                "Serwer DHCP wskazujacy lokalizacje pliku uruchomieniowego.": true,
+                "Serwer FTP z którego beda pobierane pliki instalacyjne.": false,
+                "Obraz instalacyjny z systemem Windows 7 w edycji co najmniej Professional.": false,
+                "Obraz srodowiska Windows PE.": true
+            }
+        },
+        {
+            "question": "Mechanizm WDS umozliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Zdalna instalacje systemów z obrazów płyt .iso": false,
+                "Zdalna instalacje systemów Windows.": true,
+                "Zdalne zarzadzanie zainstalowanymi systemami Windows.": false,
+                "Zdalna instalacje systemów z obrazów płyt .wim": true
+            }
+        },
+        {
+            "question": "Wskaz poprawne zdania dotyczace WDS:",
+            "type": "checkbox",
+            "answers": {
+                "Proces instalacji systemu na komputerze klienckim rozpoczyna sie od przesłania po sieci obrazu bardzo uproszczonego systemu operacyjnego słuzacego do uruchomienia głównego instalatora.": true,
+                "Serwer w momencie instalowania usługi WDS automatycznie instaluje obrazy płyt uzywane do instalacji systemu po sieci.": false,
+                "Aby zainstalowac na komputerze klienckim system Windows, uzywajac mechanizmu WDS, nalezy ustawic w BIOSie bootowanie rozpoczynajace sie od karty sieciowej.": true,
+                "Uzywajac WDS mozemy instalowac po sieci kazdy system z rodziny Microsoft Windows i Linux.": false
+            }
+        },
+        {
+            "question": "Wskaz poprawne zdania dotyczace WDS:",
+            "type": "checkbox",
+            "answers": {
+                "Serwer w momencie instalowania usługi WDS automatycznie instaluje obrazy płyt uzywane to instalacji systemu po sieci.": false,
+                "Proces instalacji systemu na komputerze klienckim rozpoczyna sie od przesłania po sieci obrazu bardzo uproszczonego systemu operacyjnego słuzacego do uruchomienia głównego instalatora.": true,
+                "Uzywajac WDS mozemy instalowac po sieci kazdy system z rodziny Microsoft Windows i Linux.": false,
+                "Aby zainstalowac na komputerze klienckim system windows uzywajac mechanizmu WDS nalezy ustawic w biosie boot’owanie rozpoczynajace sie od karty sieciowej.": true
+            }
+        },
+        {
+            "question": "Serwer DHCP w systemie windows 2008 server:",
+            "type": "checkbox",
+            "answers": {
+                "jest zainstalowany w systemie po instalacji": false,
+                "jest dostępny w systemie jako rola": true,
+                "umożliwia tworzenie zakresu adresów, z których mają być przydzielane adresy klientom": true,
+                "jest w całości zarządzany tylko przy pomocy konsolowego narzędzia": false
+            }
+        },
+        {
+            "question": "Serwer DNS umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "dynamiczne przydzielanie adresów IP komputerom w sieci lokalnej": false,
+                "tłumaczenie adresów domenowych na adresy MAC": false,
+                "tłumaczenie adresów IP na adresy MAC": false,
+                "tłumaczenie adresów domenowych na adresy IP": true
+            }
+        },
+        {
+            "question": "Serwer DHCP umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Automatyczną aktualizację adresu serwera DNS": true,
+                "Zamianę tekstowego adresu URL na adres IP": false,
+                "Dynamiczne przyznawanie adresu IP hostom": true,
+                "Dynamiczne nadawanie adresu MAC hostom": false
+            }
+        },
+        {
+            "question": "Za pomocą polecenia nslookup w systemie Windows możemy uzyskad informacje o:",
+            "type": "checkbox",
+            "answers": {
+                "Adresie IP serwera": true,
+                "Aliasach serwera": true,
+                "Lokalizacji geograficznej serwera": false,
+                "Czasu odpowiedzi serwera": false
+            }
+        }
+    ]
+}

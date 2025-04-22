@@ -1,0 +1,245 @@
+﻿{
+    "questions": [
+        {
+            "question": "Możliwość edycji i dostępu do kluczy rejestru systemowego dla użytkowników Windowsa regulowana jest poprzez:",
+            "type": "checkbox",
+            "answers": {
+                "Uprawnienia w bazie rejestru.": true,
+                "Uprawnienia do plików rejestru DAT.": false,
+                "Ustawienia w plikach INI.": false,
+                "Obiekty GPO.": false
+            }
+        },
+        {
+            "question": "Nadawanie praw w systemie Windows może odbywać się poprzez:",
+            "type": "checkbox",
+            "answers": {
+                "Modyfikacja i przypisanie obiektów GPO.": true,
+                "Przypisanie do odpowiednich grup wbudowanych.": true,
+                "Zmianę uprawnień do pliku.": false
+            }
+        },
+        {
+            "question": "Lokalna polityka bezpieczeństwa (lokalne obiekty GPO) to:",
+            "type": "checkbox",
+            "answers": {
+                "Prawa do wykonywania operacji udostępnianych przez system.": true,
+                "Pewien szablonu nakładany na rejestr i pliki ini podczas logowania.": true,
+                "Ochrona (uprawnienia dostępu) drukarek.": false,
+                "Ochrona (uprawnienia dostępu) poszczególnych gałęzi i podgałęzi rejestru.": false
+            }
+        },
+        {
+            "question": "Możliwość do drukowania przez użytkowników regulowana jest:",
+            "type": "checkbox",
+            "answers": {
+                "Poprzez uprawnienia do zasobów.": true,
+                "Poprzez GPO.": false,
+                "Poprzez przypisanie do grupy wbudowanej Operatorzy drukowania.": false
+            }
+        },
+        {
+            "question": "Mechanizm UAC w systemie Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Wprowadza interaktywne potwierdzanie operacji krytycznych w systemie.": true,
+                "Definiuje cztery poziomy kontroli.": true,
+                "Zapewnia funkcjonalność firewalla.": false,
+                "Wprowadza potwierdzenie hasłem operacji krytycznych w systemie.": false
+            }
+        },
+        {
+            "question": "Mechanizm User Access Control:",
+            "type": "checkbox",
+            "answers": {
+                "Chroni system przed złośliwym oprogramowaniem.": true,
+                "Chroni przed niekompetencją użytkowników.": true,
+                "Pozwala modyfikować uprawnienia użytkowników dla drukarek.": false,
+                "Został wprowadzony w systemie Windows XP.": false
+            }
+        },
+        {
+            "question": "Oceń prawdziwość zdań dotyczących mechanizmu UAC:",
+            "type": "checkbox",
+            "answers": {
+                "Sprawia, że nawet administrator pracuje z prawami zwykłego użytkownika.": true,
+                "Wirtualizuje niektóre foldery systemowe i gałęzie rejestru.": true,
+                "Dostępny jest od systemu Windows 7.": false,
+                "Jego głównym celem jest zachowanie kompatybilności ze starszymi aplikacjami.": false
+            }
+        },
+        {
+            "question": "Wskaż prawidłowe zdania:",
+            "type": "checkbox",
+            "answers": {
+                "Każda próba modyfikacji ustawień mających wpływ na działanie systemu jest zgłaszana do UAC.": true,
+                "Podstawowym zadaniem UAC, jest zmniejszenie pola ataku oraz pomoc w zapobieganiu i informowaniu nas o próbach nieautoryzowanych zmian w systemie, które bez naszej wiedzy mogłyby zostać wprowadzone przez wszelkiego rodzaju malware.": true,
+                "Oprócz uprawnienia Zapisu potrzebne jest także uprawnienie Modyfikowania, aby zmieniać istniejące pliki i foldery.": false,
+                "Korzystając z LUA możemy np. przejrzeć systemowego kalendarza, zmienić strefy czasowe.": false
+            }
+        },
+        {
+            "question": "Elewacja uprawnień w systemie Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Jest udostępniana przez mechanizm UAC.": true,
+                "Polega na chwilowym uzyskaniu pełni praw administratora przez ‘administratora’.": true,
+                "Administrator chwilowo deleguje swoje uprawnienia na zwykłego użytkownika": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące mechanizmu elewacji uprawnień w systemie Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Został wprowadzony celem zwiększenia bezpieczeństwa przed złośliwym oprogramowaniem lub niekompetencją użytkowników.": true,
+                "Polega na czasowym przydzieleniu uprawnień administratora do newralgicznych zasobów, podczas gdy wszyscy użytkownicy (nawet administratorzy) pracują w systemie jako zwykli użytkownicy.": true,
+                "Blokuje i żąda potwierdzenia operacji przed wprowadzeniem zmian w newralgicznych zasobach systemu operacyjnego.": true,
+                "Bazuje na zwirtualizowanych plikach i rejestrach systemu": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące uprawnień do plików w systemie Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Uprawnienia jawne mają wyższy priorytet niż uprawnienia odziedziczone, nawet niż odziedziczone uprawnienia Odmów.": true,
+                "Istnieją trzy możliwe stany uprawnienia: przyznany (allowed), nieprzyznany (denied) oraz zabroniony (undefined), z czego nieprzyznany ma wyższy priorytet nad przyznanym.": true,
+                "Uprawnienia definiują możliwość podejmowania pewnych czynności w systemie operacyjnym np. tworzenie kopii zapasowych, instalacja oprogramowania.": false,
+                "System plików NTFS oferuje mniejsze możliwości zarządzania dostępem do plików niż system plików FAT32.": false
+            }
+        },
+        {
+            "question": "Po wykonaniu polecenia chmod 666 plik.txt, użytkownik nie będący właścicielem pliku plik.txt oraz nienależącym do tej samej grupy co grupa pliku, będzie miał:",
+            "type": "checkbox",
+            "answers": {
+                "Prawo do odczytu i zapisu dla pliku plik.txt.": true,
+                "Prawo do odczytu, zapisu i wykonania dla pliku plik.txt.": false,
+                "Tylko prawo do odczytu dla pliku plik.txt.": false,
+                "Tylko prawo do zapisu dla pliku plik.txt.": false
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe stwierdzenia na temat grup wbudowanych w systemie Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Służą do nadawania praw użytkownikom w systemie.": true,
+                "Zawierają m.in. grupę administratorów.": true,
+                "Administrator może swobodnie dodawać nowe grupy wbudowane.": false,
+                "Definiują domyślną strukturę organizacji zarządzania użytkownikami.": false
+            }
+        },
+        {
+            "question": "W systemie Windows na dysku D (format plików NTFS) znajduje się katalog „zaproszenia”. Wewnątrz tego katalogu znajdują się dwa katalogi: „rodzina” oraz „znajomi”. Dla folderu „znajomi” został wyłączony mechanizm dziedziczenia uprawnień. Użytkownikowi Jan zostały zabronione wszystkie uprawnienia do folderu „zaproszenia”.",
+            "type": "checkbox",
+            "answers": {
+                "Użytkownik Jan może utworzyć nowy folder w folderze „znajomi”.": true,
+                "Użytkownik Jan może przeglądać folder „rodzina”.": false,
+                "Użytkownik Jan może przeglądać folder „zaproszenia”.": false,
+                "System plików NTFS nie umożliwia stosowania uprawnień dla plików i folderów": false
+            }
+        },
+        {
+            "question": "W systemie Windows7 plik tekst1.txt, którego właścicielem jest użytkownik so1, ma następujące uprawnienia:<br />Typ | Nazwa | Uprawnienie<br />-------------+------------+--------------------<br />Odmów | grupa1 | Pełna kontrola<br />Zezwalaj | so1 | Odczyt danych<br />Zezwalaj | so2 | Odczyt danych<br />Użytkownik so1 należy do grupy grupa1.<br />Wskaż wszystkie poprawne odpowiedzi. Jeśli nie podano inaczej, odpowiedź zakłada niezmienność uprawnień do pliku tekst1.txt.",
+            "type": "checkbox",
+            "answers": {
+                "Użytkownik so1 może przyznać użytkownikowi so2 uprawnienia do usuwania tego pliku.": true,
+                "Użytkownik so2 może odczytać zawartość tego pliku.": true,
+                "Użytkownik so1 może zmienić właściciela tego pliku na użytkownika so2.": false,
+                "Użytkownik so1 może odczytać zawartość tego pliku": false
+            }
+        },
+        {
+            "question": "Dla przykładowe pliku C:\\tajnyfolder\\plan.doc w systemie Windows7 dla systemu plików NTFS mamy następujące fragmenty listy ACL dla poszczególnych<br />użytkowników/grup i poziomów zagnieżdżenia:<br />Czesio Anusiak Óczniowie<br />Read Write Read Write Read Write<br />C:\\ Allow Allow -- -- Allow --<br />|_tajnyfolder\\ Allow -- -- Allow -- Deny<br />|_plan.doc Allow -- Allow Allow -- --<br />Użytkownicy Czesio I Anusiak należą do grupy Óczniowie, innych uprawnień w systemie nie zdefiniowano. Dziedziczenie jest włączone",
+            "type": "checkbox",
+            "answers": {
+                "Czesio może czytać i zapisać na dysku C.": true,
+                "Czesio i Anusiak mogą odczytać plik plan.doc.": true,
+                "Anusiak może czytać i zapisać a dysku C.": false,
+                "Czesio i Anusiak mogą zapisać plik plan.doc": false
+            }
+        },
+        {
+            "question": "Pani Frał w pracowni komputerowej po zajęciach drugiej be w ramach porządków na dysku przenosi pliki należące do grupy Óczniowie (do której ma komplet uprawnień zapisu, odczytu i modyfikacji) do katalogów. Przeniosła z folderu c:\bałagan dwa pliki. Należący do Czesia chistoriazombiakow.pdf do folderu d:\\czesio (gdzie ma on pełen dostęp i jest właścicielem) oraz należący do Maślany plik jak_byc_mamoniarzem.pdf do folderu c:\\maslana (gdzie ma on pełen dostęp i jest właścicielem). Po zakończeniu tych operacji:",
+            "type": "checkbox",
+            "answers": {
+                "Pani Frał stanie się właścicielem pliku chistoriazombiaków.pdf.": true,
+                "Maślana pozostanie właścicielem pliku jak_byc_mamoniarzem.pdf": true,
+                "Czesio pozostanie właścicielem pliku chistoriazombiaków.pdf.": false,
+                "Pani Frał stanie się właścicielem pliku jak_byc_mamoniarzem.pdf": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczących kopii zapasowej plików w systemie Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Po skonfigurowaniu wykonywania kopii zapasowej system Windows śledzi zmiany i dodaje je do kopii zapasowej.": true,
+                "Nie jest możliwe wykonanie kopii zapasowej do lokalizacji sieciowej.": false,
+                "Kopie zapasowe można wykonywać tylko ręcznie.": false,
+                "Domyślnie mechanizm kopii zapasowej jest włączony i obejmuje podstawowe foldery systemowe.": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące tworzenia kopii zapasowych plików w Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Domyślnie mechanizm nie jest skonfigurowany.": true,
+                "Kopia może być zapisana na CD/DVD.": true,
+                "Umożliwia wykonanie kopii plików danych użytkownika.": true,
+                "Nie można ustalić harmonogramu automatycznego tworzenia kopii": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące punktów przywracania w systemie Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Są tworzone przy ważnych zdarzeniach systemowych (np. Windows Update).": true,
+                "Aby je utworzyć, ochrona systemu musi być włączona.": true,
+                "Umożliwiają przywrócenie tylko całego systemu (bez możliwości wyboru pojedynczego pliku).": false,
+                "Poprzednia wersja pliku pojawia się w zakładce „Poprzednie wersje” od razu po utworzeniu punktu (bez modyfikacji pliku).": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące funkcji Ochrona systemu Windows7:",
+            "type": "checkbox",
+            "answers": {
+                "Można ją włączyć dla dysków niesystemowych.": true,
+                "Zapisuje informacje o poprzednich wersjach zmodyfikowanych plików.": true,
+                "Jest automatycznie włączona dla dysku systemowego.": true,
+                "Wyłączenie Ochrony dla wybranego dysku NIE powoduje usunięcia utworzonych do tego momentu czasu punktów przywracania systemu": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące odtwarzania plików i folderów w systemie Windows7 w zakładce „Poprzednie wersje”:",
+            "type": "checkbox",
+            "answers": {
+                "Odtwarzanie pliku za pomocą przycisku „Kopiuj” kopiuje plik do wybranej przez użytkownika lokalizacji.": true,
+                "Odtwarzanie folderu z punktu przywracania systemu jest możliwe nawet jeśli usunie się go poprzez Shift+Del.": true,
+                "Odtwarzanie folderu za pomocą przycisku „Kopiuj” do oryginalnej lokalizacji spowoduje natychmiastowe zastąpienie folderu o tej samej nazwie w tej lokalizacji (bez ostrzeżenia użytkownika).": false,
+                "Poprzednią wersję pliku można otworzyć, skopiować lub przywrócić zarówno z kopii zapasowej jak i punktu przywracania systemu.": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące mechanizmu bibliotek w systemie Windows7.:",
+            "type": "checkbox",
+            "answers": {
+                "Domyślnym folderem zapisu jest pierwszy uwzględniony w bibliotece folder.": true,
+                "Biblioteka nie jest folderem dyskowym.": true,
+                "Biblioteki służą do zarządzania, organizowania danych z różnych lokalizacji.": true,
+                "Biblioteka jest folderem dyskowym.": false,
+                "Biblioteki nie są automatycznie indeksowane.": false,
+                "Biblioteka może posiadać więcej niż jeden domyślny folder zapisu.": false,
+                "Usunięcie pliku w bibliotece nie usuwa go z jego fizycznej lokalizacji.": false,
+                "Usunięcie biblioteki powoduje usunięcie wszystkich plików w niej zawartych.": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące rejestru Windowsa7:",
+            "type": "checkbox",
+            "answers": {
+                "Przechowuje informacje konfiguracyjne systemu.": true,
+                "Windows posiada wbudowany edytor rejestru regedit.exe.": true,
+                "Jest składowany na dysku w postaci JEDNEGO pliku.": false,
+                "Wszystkie klucze lub wartości zapisane w rejestrze są w postaci nieszyfrowanej.": false
+            }
+        }
+    ]
+}

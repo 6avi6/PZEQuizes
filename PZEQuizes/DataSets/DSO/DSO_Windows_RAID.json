@@ -1,0 +1,331 @@
+﻿{
+    "questions": [
+        {
+            "question": "Na komputerze posiadającym 5 dysków ma zostać zainstalowany system operacyjny Windows 2008 Server, który powinien zapewnić pracę z minimalnym prawdopodobieństwem utraty danych oraz łatwą administracją dyskami. Jaką konfigurację powinien wybrać administrator zakładając, że nie może użyć macierzy sprzętowych?",
+            "type": "checkbox",
+            "answers": {
+                "wszystkie dyski spięte w mirror": false,
+                "2 dyski spięte w mirror, pozostałe 3 dyski spięte w RAID5": true,
+                "wszystkie 5 dysków spiętych w RAID5": false,
+                "dyski spięte w spanned volume, 2 dyski spięte w mirror": false
+            }
+        },
+        {
+            "question": "Maksymalna ilość dysków, które mogą ulec awarii bez utraty danych wynosi:",
+            "type": "checkbox",
+            "answers": {
+                "1, dla 2 dysków pracujących w RAID0": false,
+                "1, dla 3 dysków pracujących w RAID5": true,
+                "1, dla 2 dysków pracujących w RAID1": true,
+                "2, dla 3 dysków pracujących w RAID5": false
+            }
+        },
+        {
+            "question": "RAID:",
+            "type": "checkbox",
+            "answers": {
+                "jest stosowane w celu zwiększenia niezawodności": true,
+                "wymaga minimum 3 dysków fizycznych do pracy": false,
+                "jest stosowane w celu zwiększenia wydajności transmisji danych": true,
+                "jest stosowane w celu powiększenia przestrzeni dostępnej jako jedna całość": true
+            }
+        },
+        {
+            "question": "Mirrored volume w systemie Windows 2008 ma następujące właściwości:",
+            "type": "checkbox",
+            "answers": {
+                "może chronić wolumen bootowalnego systemu operacyjnego Windows 2008": true,
+                "do założenia wymaga 2 identycznych partycji na dyskach typu „basic disk”": false,
+                "można go utworzyć na 2 dyskach": true,
+                "wymaga zakupienia specjalnego kontrolera dysków": false
+            }
+        },
+        {
+            "question": "Które z poniższych zdań na temat macierzy RAID5 są prawdziwe?",
+            "type": "checkbox",
+            "answers": {
+                "RAID5 działa poprawnie do awarii więcej niż jednego dysku": true,
+                "Macierz RAID5 wymaga minimum 4 dysków": false,
+                "W n-dyskowej macierzy bity parzystości są na n-1 dyskach": false,
+                "Macierz złożona z n jednakowych dysków ma objętość n-1 dysków": true
+            }
+        },
+        {
+            "question": "Aby wykorzystać programowy RAID5 w systemie Windows 2008 Serwer należy posiadać komputer z zainstalowanymi",
+            "type": "checkbox",
+            "answers": {
+                "trzema dyskami": false,
+                "trzema dyskami oraz kontrolerem umożliwiającym systemowi Windows 2008 Server utworzenie programowej macierzy RAID5": false,
+                "czterema dyskami": true,
+                "pięcioma dyskami": true
+            }
+        },
+        {
+            "question": "Dla których wolumenów prawdopodobieństwo utraty danych jest większe niż dla wolumenu prostego (simple volume):",
+            "type": "checkbox",
+            "answers": {
+                "spanned volume": true,
+                "striped volume": true,
+                "RAID5": false,
+                "mirrored volume": false
+            }
+        },
+        {
+            "question": "Na ilu dyskach można założyć wolumen paskowany używając systemu operacyjnego Windows 2008?",
+            "type": "checkbox",
+            "answers": {
+                "na 1": false,
+                "na 2": true,
+                "na 3": true,
+                "na 4": true
+            }
+        },
+        {
+            "question": "",
+            "type": "checkbox",
+            "answers": {
+                "": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawne stwierdzenia dotyczące dysków podstawowych i dynamicznych w systemach Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Dyski podstawowe posiadają te same możliwości i funkcje co dyski dynamiczne jednak ich konfiguracja jest nieco trudniejsza": false,
+                "Dyski dynamiczne dostępne są tylko w systemach windows z rodziny serwer": false,
+                "Dyski podstawowe pozwalają na tworzenie podstawowych partycji, rozszerzonych partycji oraz dysków logicznych": true,
+                "W niektórych wersjach systemu windows istnieje możliwość scalenia kilku oddzielnych dynamicznych dysków w jeden wolumen dynamiczny": true
+            }
+        },
+        {
+            "question": "Na komputerze posiadającym 6 dysków zostanie zainstalowany system operacyjny Windows 2008 Server. Która konfiguracja pozwoli na pracę z najlepszym wykorzystaniem przestrzeni na dyskach zakładając, że nie można użyć macierzy sprzętowych?",
+            "type": "checkbox",
+            "answers": {
+                "2 dyski spięte w mirror, 3 dyski spięte w RAID5": false,
+                "2 dyski spięte w mirror, pozostałe 4 dyski spięte w wolumen paskowany": true,
+                "wszystkie 6 dysków spiętych w RAID5": false,
+                "utworzone 3 mirrory po 2 dyski każdy": false
+            }
+        },
+        {
+            "question": "Na ilu dyskach można założyć wolumen paskowany używając systemu operacyjnego Windows 7?",
+            "type": "checkbox",
+            "answers": {
+                "na 1": false,
+                "na 2": true,
+                "na 3": true,
+                "na 5": true
+            }
+        },
+        {
+            "question": "Na komputerze posiadającym 3 dyski zostanie zainstalowany system operacyjny Windows 2008 Server. Która konfiguracja pozwoli na pracę z najlepszym wykorzystaniem przestrzeni na dyskach zakładając, że nie można użyć macierzy sprzętowych?",
+            "type": "checkbox",
+            "answers": {
+                "2 dyski spięte w mirror, jeden dysk bez zabezpieczeń": true,
+                "3 dyski spięte w spanned volume": false,
+                "wszystkie 3 dyski spięte w RAID5": false,
+                "wszystkie dyski spięte w mirror": false
+            }
+        },
+        {
+            "question": "Które konfiguracje RAID zwiększają wydajność (gdzie wzrost wydajności należy zrozumieć jako wzrost prędkości odczytu i zapisu)?",
+            "type": "checkbox",
+            "answers": {
+                "RAID0": true,
+                "RAID0+1": true,
+                "RAID1+0": true,
+                "RAID1": false
+            }
+        },
+        {
+            "question": "W systemie Windows 7 na 5 dyskach za pomocą systemu operacyjnego został założony RAID5. Po pewnym czasie podczas pracy systemu 1 dysk uległ uszkodzeniu.",
+            "type": "checkbox",
+            "answers": {
+                "odzyskiwanie danych będzie możliwe tylko z ostatniej archiwizacji": false,
+                "jeśli uszkodzony dysk zostanie wymieniony na nowy to po ponownym uruchomieniu systemu dane zostaną automatycznie odzyskane": false,
+                "danych nie będzie można odzyskać": false,
+                "w systemie Windows 7 nie można użyć RAID5": true
+            }
+        },
+        {
+            "question": "Konfiguracja RAID0:",
+            "type": "checkbox",
+            "answers": {
+                "Pojemność wszystkich połączonych dysków jest równa N*pojemność_najmniejszego_dysku, gdzie N to liczba połączonych dysków.": true,
+                "Nie dostarcza żadnego zabezpieczenia danych.": true,
+                "Znajduje idealne zastosowanie gdzie wydajność jest ważniejsza od bezpieczeństaw danych.": true,
+                "Pojemność wszystkich połączonych dysków jest równa pojemności najmniejszego z nich.": false
+            }
+        },
+        {
+            "question": "Jakie są dostępne typy dysków dynamicznych w systemie Windows 2003?",
+            "type": "checkbox",
+            "answers": {
+                "Mirror": true,
+                "Spanned Volume": true,
+                "Stripped Volume": true,
+                "Simple Volume": true
+            }
+        },
+        {
+            "question": "W konfiguracji RAID1:",
+            "type": "checkbox",
+            "answers": {
+                "Dane zapisywane są na obu dyskach równocześnie.": true,
+                "Dane są zapisywane na kolejnych dyskach bit po bicie, tak jak w przypadku RAID2.": false,
+                "Efektywna pojemność wynosi 50% pojemności dysków.": true,
+                "Wykorzystuje paskowanie dysków.": false
+            }
+        },
+        {
+            "question": "Które z poniższych zdań opisują macierz RAID1 (mirroring)?",
+            "type": "checkbox",
+            "answers": {
+                "RAID1 oferuje możliwość strippingu danych.": false,
+                "Całkowita pojemność danych macierzy jest równa pojemności największego dysku.": false,
+                "Pojemność macierzy jest równa pojemności najmniejszego dysku pomnożonego przez liczbę dysków.": false,
+                "Odporność na awarię N-1 dysków w N-dyskowej macierzy.": true
+            }
+        },
+        {
+            "question": "W przypadku którego typu konfiguracji dysków istnieje możliwość odzyskania danych jeśli jeden z dysków macierzy ulegnie awarii?",
+            "type": "checkbox",
+            "answers": {
+                "konfiguracja typu stripped volume": false,
+                "konfiguracja typu RAID5": true,
+                "konfiguracja typu mirror": true,
+                "konfiguracja typu spanned volume": false
+            }
+        },
+        {
+            "question": "Mirrored volume w systemie Windows 2008 ma następujące właściwości:",
+            "type": "checkbox",
+            "answers": {
+                "może chronić wolumen z bootowalnym systemem operacyjnym Windows 2008.": true,
+                "może obejmować więcej niż 2 dyski.": false,
+                "całkowicie likwiduje ryzyko utraty danych.": false,
+                "nie można go założyć na dyskach typu 'basic disk'.": true
+            }
+        },
+        {
+            "question": "Który z typów RAID zapewni bezpieczeństwo przy awarii jednego dysku?",
+            "type": "checkbox",
+            "answers": {
+                "RAID0+1": true,
+                "RAID0": false,
+                "RAID1": true,
+                "RAID5": true
+            }
+        },
+        {
+            "question": "Wskaż poprawną odpowiedź:",
+            "type": "checkbox",
+            "answers": {
+                "Przestrzeń macierzy w RAID0 jest zależna od rozmiaru najmniejszego z użytych dysków.": true,
+                "RAID0+1 i RAID1+0 udostępniają 100% sumy pojemności wszystkich użytych dysków.": false,
+                "RAID4 to macierz, której dane na dyskach są paskowane.": false,
+                "Awaria dwóch dysków w RAID6 nie powoduje utraty danych.": true
+            }
+        },
+        {
+            "question": "Programowy RAID5 w systemie Windows 2008 Server:",
+            "type": "checkbox",
+            "answers": {
+                "można utworzyć już na 2 dyskach.": false,
+                "można utworzyć na 4 dyskach.": true,
+                "Zwiększa odporność systemu na awarie dysków.": true,
+                "można założyć na dyskach typu 'dynamic' lub basic.": false
+            }
+        },
+        {
+            "question": "Jakie właściwości ma programowy RAID5 w systemie operacyjnym Windows 2008?",
+            "type": "checkbox",
+            "answers": {
+                "można go założyć na 5 dyskach.": true,
+                "umożliwia lepsze wykorzystanie przestrzeni na dyskach niż wolumen paskowany.": false,
+                "zapewnia bezawaryjną pracę systemu.": false,
+                "pozwala uniknąć fragmentacji systemu plików.": false
+            }
+        },
+        {
+            "question": "Zaznacz zdania prawdziwe:",
+            "type": "checkbox",
+            "answers": {
+                "RAID występuje wyłącznie sprzętowy.": false,
+                "RAID występuje wyłącznie programowy.": false,
+                "RAID występuje zarówno programowy jak i sprzętowy.": true,
+                "Nie ma żadnej możliwości uruchomienia RAID w domowym komputerze PC.": false
+            }
+        },
+        {
+            "question": "Które z podanych zdań są prawdziwe?",
+            "type": "checkbox",
+            "answers": {
+                "RAID programowy pozwala na bezpośredni start systemu z macierzy dyskowej.": false,
+                "RAID sprzętowy posiada wyższą wydajność od RAID programowego, gdyż przeliczaniem sum kontrolnych zajmuje się dedykowany kontroler.": true,
+                "RAID programowy posiada większą kompatybilność z mniej popularnymi systemami operacyjnymi, gdyż wszystkie systemy operacyjne obsługują technologię RAID.": false,
+                "RAID sprzętowy pozwala na bezpośredni start systemu z macierzy dyskowej.": true
+            }
+        },
+        {
+            "question": "W systemie windows 2008 na 5 dyskach za pomocą systemu operacyjnego został założony RAID5 Po pewnym czasie podczas pracy systemu 2 dyski uległy uszkodzeniu.",
+            "type": "checkbox",
+            "answers": {
+                "jeśli uszkodzone dyski zostaną wymienione na nowe to po ponownym uruchomieniu systemu dane zostaną automatycznie odzyskane": false,
+                "odzyskiwanie danych będzie przezroczyste dla użytkowników jeśli dyski są typu hot swap": false,
+                "w systemie Windows 2008 nie można użyć RAID5": false,
+                "dane będzie można odzyskać tylko z archiwizacji, a nie z RAID5": true
+            }
+        },
+        {
+            "question": "Jakie właściwości ma programowy RAID5 na systemie operacyjnym Windows 2008?",
+            "type": "checkbox",
+            "answers": {
+                "można go założyć na pięciu dyskach": true,
+                "umożliwia lepsze wykorzystanie przestrzeni na dyskach niż wolumen paskowany": false,
+                "zapewnia bezawaryjną pracę systemu": false,
+                "pozwala uniknąć fragmentacji systemu plików": false
+            }
+        },
+        {
+            "question": "Konfiguracja RAID2:",
+            "type": "checkbox",
+            "answers": {
+                "jest rozszerzeniem architektury RAID0": true,
+                "dane są zapisywane na kolejnych dyskach macierzy bit po bicie": true,
+                "cechuje się dużą wydajnością przy operacjach odczytu": false,
+                "jest często stosowana w macierzach dyskowych": false
+            }
+        },
+        {
+            "question": "Dyski typu podstawowego (ang. basic disks) pozwalają na:",
+            "type": "checkbox",
+            "answers": {
+                "oznaczenie partycji jako aktywnej": true,
+                "rozszerzenie woluminów prostych (ang. simple volume)": false,
+                "tworzenie partycji podstawowej": true,
+                "tworzenie woluminów RAID5": false
+            }
+        },
+        {
+            "question": "Dla których wolumenów prawdopodobieństwo utraty danych jest mniejsze niż dla wolumenu łączonego (spanned volume):",
+            "type": "checkbox",
+            "answers": {
+                "mirrored volume": true,
+                "striped volume": false,
+                "simple volume": true,
+                "RAID5": true
+            }
+        },
+        {
+            "question": "Jakie właściwości ma programowy RAID5 na systemie operacyjnym Windows 2008?",
+            "type": "checkbox",
+            "answers": {
+                "zapewnia bezawaryjną pracę systemu": false,
+                "chroni system przed awarią tylko jednego dysku": true,
+                "pozwala uniknąć fragmentacji systemu plików": false,
+                "umożliwia lepsze wykorzystanie przestrzeni na dyskach niż wolumen paskowany": false
+            }
+        }
+    ]
+}

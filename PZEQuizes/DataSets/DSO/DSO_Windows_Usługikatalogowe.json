@@ -1,0 +1,364 @@
+﻿{
+    "questions": [
+        {
+            "question": "Wykonanie kwerendy do wyszukiwania wyłaczonych kont uzytkowników jest mozliwe za pomoca:",
+            "type": "checkbox",
+            "answers": {
+                "polecenia ds-query": false,
+                "polecenia dsquery": true,
+                "konsoli Active Directory Users and Computers": true,
+                "polecenia ds-get": false
+            }
+        },
+        {
+            "question": "Role FSMO mozna:",
+            "type": "checkbox",
+            "answers": {
+                "Przejmowac": true,
+                "Filtrowac": false,
+                "Nadpisywac": false,
+                "Transferowac": true
+            }
+        },
+        {
+            "question": "W jednostkach organizacyjnych (Organization Unit) mozna utworzyc:",
+            "type": "checkbox",
+            "answers": {
+                "Uzytkownika": true,
+                "Grupe": true,
+                "Komputer": true,
+                "Drukarke": true
+            }
+        },
+        {
+            "question": "Za pomoca jakiego polecenia mozna dodac obiekt okreslonego typu (korzystajac z wiersza polecen) w Active Directory",
+            "type": "checkbox",
+            "answers": {
+                "dscreate user": false,
+                "dsadd user": true,
+                "dsadd computer": true,
+                "dscreate computer": false
+            }
+        },
+        {
+            "question": "Wybierz prawidłowe odpowiedzi dotyczace struktury Active Directory:",
+            "type": "checkbox",
+            "answers": {
+                "Jesli domeny wchodzace w skład lasu maja nieciagłe nazwy DNS, tworza kilka odrebnych drzew w obrebie lasu": true,
+                "Drzewo posiada zawsze przynajmniej jedna domene - domene najwyzszego poziomu (ang. root) - korzen drzewa": true,
+                "Drzewo domen - domeny potomne moga, ale nie musza zawierac nazwy bezposredniej domeny nadrzednej": false,
+                "Las jest zestawem przynajmniej dwóch lub wiecej drzew, które formuja zwarta, ciagła przestrzen nazw.": false
+            }
+        },
+        {
+            "question": "Do czego słuzy polecenie dsget?",
+            "type": "checkbox",
+            "answers": {
+                "Wyswietla rózne własciwosci grupy, włacznie z członkami grupy w katalogu": false,
+                "Wyswietla własciwosci komputera w katalogu.": false,
+                "Umozliwia dodawanie uzytkowników, grup, komputerów, kontaktów i jednostek organizacyjnych do usługi Active Directory.": true,
+                "Umozliwia tworzenie, modyfikowanie i usuwanie obiektów katalogu.": false
+            }
+        },
+        {
+            "question": "Jakie obiekty mozna dodawac za pomoca polecenia dsadd?",
+            "type": "checkbox",
+            "answers": {
+                "Grupy": true,
+                "Uzytkowników": true,
+                "Jednostki organizacyjne": true,
+                "Pliki": false
+            }
+        },
+        {
+            "question": "Wskaz zdania prawdziwe dotyczace usługi Active Directory:",
+            "type": "checkbox",
+            "answers": {
+                "Struktura Active Directory ma strukture drzewiasta.": true,
+                "Liscmi drzewa moga byc uzytkownicy, grupy i": true,
+                "Nie ma mozliwosci nadania okreslonemu uzytkownikowi praw do zarzadzania uzytkownikami w jednostce organizacyjnej bez nadawania (...)": false,
+                "Mozliwe jest kopiowanie uzytkowników.": true
+            }
+        },
+        {
+            "question": "Program dsget.exe:",
+            "type": "checkbox",
+            "answers": {
+                "wymaga praw administratora do działania": true,
+                "moze byc uruchomione w graficznym interfejsie uzytkownika za pomoca odpowiedniej opcji linii polecen.": false,
+                "ma tekstowy interfejs uzytkownika.": true,
+                "umozliwia tworzenie jednostek organizacyjnych.": false
+            }
+        },
+        {
+            "question": "Jakie mozliwosci daje uzycie polecenia dsadd (jako polecenie dla Active Directory)?",
+            "type": "checkbox",
+            "answers": {
+                "Nie moze dodawac obiektu typu Computer do katalogu": false,
+                "Nie moze dodac obiektu typu Doman Service do katalogu.": true,
+                "Moze dodawac obiekt typu Computer do katalogu.": true,
+                "Moze dodac obiekt typu Domain Service do katalogu.": false
+            }
+        },
+        {
+            "question": "Róznica pomiedzy zaufaniem do domen forest i external polega na:",
+            "type": "checkbox",
+            "answers": {
+                "Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrebie danego drzewa, zas external we wszystkich drzewach.": false,
+                "Zaufanie typu external pozwala wiekszej liczby domen na korzystanie ze swoich zasobów niz typ forest.": true,
+                "Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrebie drzew połaczonych tego typu zaufaniem, zas external nie musi (...)": true,
+                "Zaufanie typu external jest dwukierunkowe, typu forest tylko jednokierunkowe.": false
+            }
+        },
+        {
+            "question": "Polecenie dsquery:",
+            "type": "checkbox",
+            "answers": {
+                "Zgodnie z okreslonymi kryteriami wykonuje kwerende dotyczaca drzewa usługi DNS.": false,
+                "Jest równowazne poleceniu dsget.": false,
+                "Wykonuje kwerende na dowolnej bazie danych.": false,
+                "Zgodnie z okreslonymi kryteriami wykonuje kwerende dotyczaca usługi Active Directory.": true
+            }
+        },
+        {
+            "question": "Dodac grupe mozna za pomoca:",
+            "type": "checkbox",
+            "answers": {
+                "Konsoli ”Active directory users and computers”.": true,
+                "Polecenia Addgroup.": false,
+                "Polecenia dsadd group.": true,
+                "Polecenia adadd group.": false
+            }
+        },
+        {
+            "question": "Jakie wystepuja typy zaufania w Active Directory:",
+            "type": "checkbox",
+            "answers": {
+                "Lasu (forest)": true,
+                "Wewnetrzne (internal)": false,
+                "Zewnetrzne (external)": true,
+                "Płatka sniegu (snowflake)": false
+            }
+        },
+        {
+            "question": "Struktura Active Directory:",
+            "type": "checkbox",
+            "answers": {
+                "Podstawowa jednostka jest tzw. lisc, który połozony jest w kontenerze w Active Directory nazywanym jednostka centralna.": true,
+                "Liscie i kontenery zorganizowane sa w domeny.": true,
+                "Domeny zorganizowane w drzewo reprezentowane sa w roznych przestrzeniach adresowych DNS.": false,
+                "Domena moze istniec samodzielnie, nie musi istniec w jakims drzewie i jakims lesie": false
+            }
+        },
+        {
+            "question": "Polecenie dsadd moze posłuzyc do:",
+            "type": "checkbox",
+            "answers": {
+                "Modyfikowania obiektów wewnatrz AD.": false,
+                "Dodawania grup do AD.": true,
+                "Dodawania uzytkowników do AD.": true,
+                "Wyszukiwania informacji o obiektach AD.": false
+            }
+        },
+        {
+            "question": "Za pomoca konsoli Active Directory Users and Computers wykonano polecenie ”dsadd Ala -pwd Makota”. Wskaz poprawne odpowiedzi.",
+            "type": "checkbox",
+            "answers": {
+                "Jezeli uzytkownik ”Ala” nie istnieje w systemie wykonanie polecenia nie powiedzie sie.": false,
+                "Powodzenie operacji jest zalezne od poziomu uprawnien wykonujacego go uzytkownika.": true,
+                "W przypadku powodzenia operacji zostanie utworzony nowy uzytkownik o nazwie ”Ala” i hasle ”Makota”.": true,
+                "W przypadku powodzenia operacji hasło istniejacego uzytkownika ”Ala” zostanie zmienione na ”Makota”.": false
+            }
+        },
+        {
+            "question": "Za pomoca polecenia dsadd mozna:",
+            "type": "checkbox",
+            "answers": {
+                "Utworzyc grupe zabezpieczen.": true,
+                "Utworzyc jednostke organizacyjna.": true,
+                "Utworzyc konto uzytkownika.": true,
+                "Utworzyc grupe dystrybucyjna.": true
+            }
+        },
+        {
+            "question": "Czym jest Active Directory?",
+            "type": "checkbox",
+            "answers": {
+                "Narzedzie certyfikujace w Windows Server 2003.": false,
+                "Usługa w systemie Windows, która udostepnia srodki pozwalajace zarzadzac tozsamosciami i relacjami.": true,
+                "Jest to zbiór funkcji, która upraszczaja zarzadzanie uzytkownikami i komputerem.": true,
+                "Nakładka na system Linux pozwalajaca zarzadzac komputerem.": false
+            }
+        },
+        {
+            "question": "Poznane w czasach laboratorium narzedzia pozwalajace na zarzadzanie Active Directory to:",
+            "type": "checkbox",
+            "answers": {
+                "netsh": false,
+                "dsget": true,
+                "dsadd": true,
+                "Przystawka Active Directory Users and Computers": true
+            }
+        },
+        {
+            "question": "Ile kontrolerów moze działac dla domeny w usłudze Active Directory?",
+            "type": "checkbox",
+            "answers": {
+                "wiecej niz 2": true,
+                "2": true,
+                "1": true,
+                "domena moze nie posiadac komputera": false
+            }
+        },
+        {
+            "question": "Które z typów relacji zaufania sa dwukierunkowe?",
+            "type": "checkbox",
+            "answers": {
+                "Lasu (forest)": true,
+                "Zewnetrzne (external)": true,
+                "Obszaru (realm)": true,
+                "Skrótu (shortcut)": true
+            }
+        },
+        {
+            "question": "Aby uruchomic na serwerze usługe Active Directory nalezy:",
+            "type": "checkbox",
+            "answers": {
+                "Utworzyc uzytkownika do zarzadzania usługa.": false,
+                "Zainstalowac serwer DNS.": true,
+                "Dodac role Active Directory Domain Services.": true,
+                "Zainstalowac serwer DHCP.": false
+            }
+        },
+        {
+            "question": "Co to jest jednostka organizacyjna (Organization Unit, OU)?",
+            "type": "checkbox",
+            "answers": {
+                "Pojedynczy komputer wchodzacy w skład domeny Active Directory.": false,
+                "Serwer pracujacy pod kontrola systemu Windows 2008 Server.": false,
+                "Kontener wykorzystywany do grupowania obiektów wewnatrz domeny w logiczne grupy, na których wykonywane sa zadania administracyjne (...)": true,
+                "Serwer słuzacy do zarzadzania protokołem ldap": false
+            }
+        },
+        {
+            "question": "Jakie obiekty moga byc modyfikowane za pomoca usługi Active Directory Sites and Services?",
+            "type": "checkbox",
+            "answers": {
+                "Łacza lokacji i lokacje.": true,
+                "Tylko serwery i lokacje.": false,
+                "Serwery, lokacje, replikacje.": false,
+                "Serwery, podsieci, ustawienia usługi katalogowej (NTDS)": true
+            }
+        },
+        {
+            "question": "Wskaz zdania prawdziwe:",
+            "type": "checkbox",
+            "answers": {
+                "Usługa Active Directory dostepna jest w systemach Windows od wersji Vista.": false,
+                "Za pomoca polecenia dsadd user mozliwe jest dodanie uzytkownika do Active Directory.": true,
+                "Za pomoca polecenia dsadd group mozliwe jest dodanie grupy do Active Directory.": true,
+                "Szablon konta uzytkownika to konto zawierajace wzorcowy zestaw najczesciej wykorzystywanych własciwosci, odpowiednich dla danej grupy uzytkowników.": true
+            }
+        },
+        {
+            "question": "Które polecenie umozliwia usuwanie obiektów okreslonego typu?",
+            "type": "checkbox",
+            "answers": {
+                "dsmod": false,
+                "csvde": false,
+                "dsadd": false,
+                "dsrm": true
+            }
+        },
+        {
+            "question": "W Windows Server 2008 - Active Directory administrator edytujac własciwosci obiektu klasy Uzytkownik, w zakładce Konto ma mozliwosc:",
+            "type": "checkbox",
+            "answers": {
+                "Wyznaczenia daty i godziny, w której konto Uzytkownika zostanie usuniete z systemu.": true,
+                "Zablokowania Uzytkownikowi mozliwosci samodzielnej zmiany hasła.": true,
+                "Ustalenia godzin w których Uzytkownik bedzie mógł lub nie bedzie mógł zalogowac sie do systemu.": true,
+                "Okreslenia do jakich komputerów znajdujacych sie w domenie Uzytkownik ma prawo do zalogowania sie.": true
+            }
+        },
+        {
+            "question": "Za pomoca polecenia dsadd mozna:",
+            "type": "checkbox",
+            "answers": {
+                "Zmodyfikowac konto uzytkownika": false,
+                "Utworzyc jednostke organizacyjna": true,
+                "Utworzyc konto uzytkownika": true,
+                "Przeniesc jednostke organizacyjna z jednej domeny do drugiej": false
+            }
+        },
+        {
+            "question": "Wskaz najwazniejsze funkcje Active directory:",
+            "type": "checkbox",
+            "answers": {
+                "Obsługa LDAP": true,
+                "Obsługa DNS": true,
+                "Obsługa zabezpieczen": true,
+                "Zgodnosc z TCP/IP": true
+            }
+        },
+        {
+            "question": "W jednostce organizacyjnej mozna umieszczac:",
+            "type": "checkbox",
+            "answers": {
+                "Komputery": true,
+                "Uzytkowników": true,
+                "Inne jednostki organizacyjne": true,
+                "Obiekty z innych domen niz domena jednostki organizacyjnej": false
+            }
+        },
+        {
+            "question": "Wskaz poprawne stwierdzenia na temat uprawnien w Active Directory:",
+            "type": "checkbox",
+            "answers": {
+                "Uprawnienia nie moga byc dziedziczone": true,
+                "Istnieje mozliwosc nadania uprawnien administratora na danym komputerze bez posiadania uprawnien administratora w domenie": false,
+                "Aby skopiowac uzytkownika, jego konto musi byc uprzednio wyłaczone": true,
+                "Uzytkownik moze nalezec do wielu grup": false
+            }
+        },
+        {
+            "question": "Jakie protokoły sa wykorzystywane przez Active Directory?",
+            "type": "checkbox",
+            "answers": {
+                "SSH": false,
+                "LDAP": true,
+                "Kerberos": true,
+                "DNS": true
+            }
+        },
+        {
+            "question": "Do czego słuzy polecenie dsadd?",
+            "type": "checkbox",
+            "answers": {
+                "Dodaje mozliwosc zdalnego dostepu do elementu serwisu Active Directory": false,
+                "Dodaje atrybut do elementu serwisu Active Directory": false,
+                "Dodaje połaczenie do zarzadzania elementem serwisu Active Directory": false,
+                "Dodanie okreslony typ elementu do serwisu Active Directory": true
+            }
+        },
+        {
+            "question": "Wskaz prawdziwe zdania dotyczace jednostek organizacyjnych (Organizational Units):",
+            "type": "checkbox",
+            "answers": {
+                "Moga tworzyc strukture hierarchiczna": true,
+                "Grupuja wyłacznie uzytkowników": false,
+                "Moga byc wykorzystane do delegowania uprawnien administracyjnych": true,
+                "Nie moga byc w sobie zagniezdzane": false
+            }
+        },
+        {
+            "question": "Za pomoca konsoli Active Directory Users and Computers wykonano polecenie: „dsmod group Alfa -addmbr Beta”. Wskaz wszystkie poprawne odpowiedzi.:",
+            "type": "checkbox",
+            "answers": {
+                "W przypadku powodzenia operacji do grupy Beta zostanie dodany obiekt Alfa.": false,
+                "W przypadku powodzenia operacji do grupy Alfa zostanie dodany obiekt Beta.": true,
+                "Powodzenie operacji jest zalezne od poziomu uprawnien wykonujacego go uzytkownika.": true,
+                "Obiekt o nazwie Beta moze reprezentowac uzytkownika.": true
+            }
+        }
+    ]
+}

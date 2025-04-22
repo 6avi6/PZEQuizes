@@ -1,0 +1,129 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="270"
+             xmlns:vms="using:PZEQuizes.ViewModels"
+             x:DataType="vms:QuizPanelViewModel"
+             x:Class="PZEQuizes.Views.UIElements.QuizPanel">
+	
+	
+	<Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,0">
+		<Border Background="LightBlue" BorderBrush="#8bced6" Padding="10" BorderThickness="1" CornerRadius="2" MinWidth="200">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/> <!-- Question-->
+					<RowDefinition Height="*"/> <!-- Answ-->
+					<RowDefinition Height="Auto"/> <!-- Button-->
+				</Grid.RowDefinitions>
+
+
+				<TextBlock Text="{Binding CurrentQuestion.CurrentQuestion}" FontSize="16" Grid.Row="0" TextWrapping="Wrap"/>
+
+
+				<ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+					<!-- Binding do CurrentQuestion.AnswerOptions -->
+					<ItemsControl ItemsSource="{Binding CurrentQuestion.AnswerOptions}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Grid Margin="5">
+									<!-- CheckBox answear selection -->
+									<CheckBox IsChecked="{Binding IsChecked, Mode=OneWayToSource}"
+											  HorizontalAlignment="Stretch"
+											  
+												  IsVisible="{Binding DataContext.CurrentQuestion.IsTypeCheckBox, RelativeSource={RelativeSource AncestorType=UserControl}}"
+												  Background="{Binding BackgroundColor}">
+
+										<TextBlock Text="{Binding Text}" TextWrapping="Wrap" />
+									</CheckBox>
+									<!-- Radio answear selection -->
+									<RadioButton IsChecked="{Binding IsChecked, Mode=OneWayToSource}"
+												 HorizontalAlignment="Stretch"
+												 IsVisible="{Binding DataContext.CurrentQuestion.IsTypeRadio, RelativeSource={RelativeSource AncestorType=UserControl}}"
+												 Background="{Binding BackgroundColor}"
+												 GroupName="QuizOptions">
+
+										<TextBlock Text="{Binding Text}" TextWrapping="Wrap"/>
+									</RadioButton>
+									<!-- True/False question answear display -->
+									<StackPanel>
+									<TextBlock Text="Wyjaśnienie:"
+												 HorizontalAlignment="Stretch"
+												 FontWeight="Bold"
+												 TextWrapping="Wrap"
+												 IsVisible="{Binding DataContext.IsAnswearTrueFalseVisible, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
+									<TextBlock Text="{Binding Text}"
+												 HorizontalAlignment="Stretch"
+												 TextWrapping="Wrap"
+												 IsVisible="{Binding DataContext.IsAnswearTrueFalseVisible, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
+									</StackPanel>
+									</Grid>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</ScrollViewer>
+
+
+				<!-- Button Submit -->
+				<Button Content="{Binding MainQuizPanelButtonText}" Command="{Binding SubmitCommand}"
+					Grid.Row="2"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Bottom"
+					Width="200"
+					Height="40"
+					Background="#4CAF50"
+					Foreground="White"
+					FontSize="14"
+					IsVisible="{Binding IsSubmitButtonVisible}"
+					BorderThickness="0"
+					Margin="0,3,0,10"
+					HorizontalContentAlignment="Center"
+					VerticalContentAlignment="Center"/>
+				<Grid Grid.Row="2">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+
+					<!-- Button Prawda -->
+					<Button Content="Prawda"
+						Command="{Binding SubmitCommand}"
+						CommandParameter="true"
+						Grid.Column="0"
+						HorizontalAlignment="Right"
+						VerticalAlignment="Bottom"
+						Width="98"
+						Height="40"
+						Background="{Binding BackgroundColorTrue}"
+						Foreground="White"
+						FontSize="14"
+						IsVisible="{Binding CurrentQuestion.IsTypeTrueFalse}"
+						BorderThickness="0"
+						Margin="0,3,2,54" 
+						HorizontalContentAlignment="Center"
+						VerticalContentAlignment="Center"/>
+					
+					<!-- Button Fałsz -->
+					<Button Content="Fałsz"
+						Command="{Binding SubmitCommand}"
+						CommandParameter="false"
+						Grid.Column="1"
+						HorizontalAlignment="Left"
+						VerticalAlignment="Bottom"
+						Width="98"
+						Height="40"
+						Background="{Binding BackgroundColorFalse}"
+						Foreground="White"
+						FontSize="14"
+						IsVisible="{Binding CurrentQuestion.IsTypeTrueFalse}"
+						BorderThickness="0"
+						Margin="2,3,0,54"
+						HorizontalContentAlignment="Center"
+						VerticalContentAlignment="Center"/>
+				</Grid>
+			</Grid>
+		</Border>
+	</Grid>
+	
+
+</UserControl>

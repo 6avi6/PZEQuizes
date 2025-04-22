@@ -1,0 +1,293 @@
+﻿{
+    "questions": [
+        {
+            "question": "Za pomocą polecenia dpkg (z odpowiednimi parametrami) w systemie Ubuntu/Debian można:",
+            "type": "checkbox",
+            "answers": {
+                "Usunąć wybrany pakiet": true,
+                "Wyświetlić szczegółowe informacje na temat wybranego pakietu": true,
+                "Zainstalować określony pakiet": true,
+                "Pobrać wybrany pakiet z Internetu": false
+            }
+        },
+        {
+            "question": "aptitude to:",
+            "type": "checkbox",
+            "answers": {
+                "interfejs tekstowy narzędzia APT": true,
+                "polecenie służące do aktualizacji bazy pakietów w systemie Debian": true,
+                "zaawansowany system do zarządzania oprogramowaniem w systemie Debian": true,
+                "interfejs graficzny narzędzia APT": false
+            }
+        },
+        {
+            "question": "Zaznacz, które z poniższych wpisów są prawidłowymi wpisami w pliku sources –list narzędzia APT:",
+            "type": "checkbox",
+            "answers": {
+                "deb cdrom:[Ubuntu 14.04_Trusty Tahr_-Release i386(20140416.1)]/ trusty main restricted": true,
+                "deb http://pl.archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse": true,
+                "deb-src http://pl.archive.ubuntu.com/ubuntu/ trusty main restricted": true,
+                "deb ssh://user@myrepo.com trusty main restricted multiverse": true
+            }
+        },
+        {
+            "question": "Makefile to:",
+            "type": "checkbox",
+            "answers": {
+                "Skrypt zawierający polecenia wykorzystywane podczas kompilacji plików źródłowych": true,
+                "Polecenie służące do instalacji skompilowanych plików źródłowych": false,
+                "Skrypt uruchamiany przed kompilacją pozwalający na sprawdzenie czy w systemie zainstalowane są wymagane biblioteki": false
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe odpowiedzi dotyczące zarządzania oprogramowaniem pod systemem Linux Debian:",
+            "type": "checkbox",
+            "answers": {
+                "Plik /etc/apt/sources.list to plik zawierający listę dostępnych repozytoriów wykorzystywanych przez narzędzie APT": true,
+                "Aby mieć możliwość kompilowania plików źródłowych pod systemem Linux Debian musi być wcześnie zainstalowany pakiet build-essentials": true,
+                "Pakiety binarne przeznaczone dla systemu Linux Ubuntu mają rozszerzenie deb.": true,
+                "Aby mieć możliwość kompilowania plików źródłowych pod systemem Linux Debian musi być zainstalowany pakiet make-install": false,
+                "Pakiety binarne przeznaczone dla systemu Linux Debian mają rozszerzenie pkg": false,
+                "Pakiety binarne przeznaczone dla systemu Linux Ubuntu mają rozszerzenie .rpm.": false
+            }
+        },
+        {
+            "question": "Wybierz polecenia narzędzia APT umożliwiające dodanie płyty cdrom do listy repozytorów w pliku /etc/apt/sources.list:",
+            "type": "checkbox",
+            "answers": {
+                "apt-cdrom add": true,
+                "apt-cdrom install": false,
+                "apt-get cdrom": false,
+                "apt-get install cdrom": false
+            }
+        },
+        {
+            "question": "Użytkownik rozpakował źródła program, zamierza go skompilować I zainstalować pod systemem Linux Debian. Po rozpakowaniu źródeł w katalogu ze źródłami znajduje się między innymi plik Makefile. Zaznacz poprawną, typową sekwencje poleceń, które należy wykonać aby w tym przypadku skompilować i zainstalować oprogramowanie:",
+            "type": "checkbox",
+            "answers": {
+                "make; make install;": true,
+                "/configure; make; make install;": false,
+                "make configure; make; make install;": false,
+                "make install; make; ./configure;": false
+            }
+        },
+        {
+            "question": "Zaznacz typy repozytoriów, które mogą być wykorzystane przez narzędzie APT do pobierania pakietów:",
+            "type": "checkbox",
+            "answers": {
+                "cdrom //cd-rom": true,
+                "file": true,
+                "ftp": true,
+                "ssh": true,
+                "http": true,
+                "telnet": false,
+                "www": false
+            }
+        },
+        {
+            "question": "Polecenie „LDD” umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Sprawdzenie zależności od bibliotek zainstalowanego programu w systemie": true,
+                "Instalację oprogramowania z lokalnej paczki .deb": false,
+                "Sprawdzenie zależności od innych pakietów zainstalowanego programu w systemie": false,
+                "Załadowanie i uruchomienie określonego programu w tle": false
+            }
+        },
+        {
+            "question": "Na jakie komponenty podzielone są repozytoria w systemach Linux Ubuntu:",
+            "type": "checkbox",
+            "answers": {
+                "Multiverse": true,
+                "Restricted": true,
+                "Universe": true,
+                "Global": false
+            }
+        },
+        {
+            "question": "make install to:",
+            "type": "checkbox",
+            "answers": {
+                "Polecenie służące do instalacji skompilowanych plików źródłowych": true,
+                "Polecenie służące do kompilacji plików źródłowych": false,
+                "Skrypt uruchamiany przed kompilacją pozwalający na sprawdzenie czy w systemie zainstalowane są wymagane biblioteki": false,
+                "Skrypt zawierający polecenia wykorzystywane podczas kompilacji plików źródłowych": false
+            }
+        },
+        {
+            "question": "W pliku /etc/sources.list:",
+            "type": "checkbox",
+            "answers": {
+                "Mogą znajdować się m.in.repozytoria dodane za pomocą polecenia apt-cdrom": true,
+                "W każdej linii zaczynającej się od słów „deb” lub „deb-src” musi znajdować się jedno ze słów: main, universe, restricted, multiverse": true,
+                "Przyjmuje się, że wpisane tam pakiety należą do sekcji main, chyba ze podano inaczej": false,
+                "Znajduje się lista wszystkich pakietów, których kopia kodu źródłowego znajduje się na lokalnym systemie": false
+            }
+        },
+        {
+            "question": "W pliku /etc/apt/sources-list znajduje się następujący wpis:<br>deb-src http://ftp.pl.debian.org/debian lenny main restricted<br>Zaznacz poprawne zdania dotyczące powyższego wpisu:",
+            "type": "checkbox",
+            "answers": {
+                "Repozytorium, do którego odnosi się wpis zawiera pakiety źródłowe (do kompilacji)": true,
+                "Wpis odnosi się do pakietów pochodzących z dystrybucji lenny": true,
+                "Repozytorium, do którego odnosi się wpis zawiera pakiety binarne (pre-kompilowane pakiety, przeznaczone dla konkretnej dystrybucji)": false,
+                "Wpis odnosi się do pakietów pochodzących z dystrybucji restricted": false
+            }
+        },
+        {
+            "question": "W pliku /etc/apt/sources-list znajduje się następujący wpis:<br>deb-src http://pl.archive.ubuntu.com/ubuntu/ trusty main restricted<br>Zaznacz poprawne zdania dotyczące powyższego wpisu:",
+            "type": "checkbox",
+            "answers": {
+                "Repozytorium, do którego odnosi się wpis zawiera pakiety źródłowe (do kompilacji)": true,
+                "Wpis odnosi się do pakietów pochodzących z dystrybucji trusty": true,
+                "Repozytorium, do którego odnosi się wpis zawiera pakiety binarne (pre-kompilowane pakiety, przeznaczone dla konkretnej dystrybucji)": false,
+                "Wpis odnosi się do pakietów pochodzących z dystrybucji restricted": false
+            }
+        },
+        {
+            "question": "Zaznacz, które z czynności wykonywane są przez skrypt configure:",
+            "type": "checkbox",
+            "answers": {
+                "Sprawdzenie, czy w systemie są wszystkie składniki potrzebne do instalacji oprogramowania": true,
+                "Wygenerowanie pliku config.status": true,
+                "Instaluje program, kopiując skompilowane składniki aplikacji w odpowiednie miejsca w systemie plików": false,
+                "Uruchamienie kompilacji plików źródłowych": false
+            }
+        },
+        {
+            "question": "Wykonanie skryptu configure umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Sprawdzenie, czy są wszystkie składniki potrzebne do instalacji programu": true,
+                "Ustalenie wstępnej konfiguracji dla instalowanej aplikacji": true,
+                "Wygenerowanie pliku nagłówkowego „C” (*.h) specyficznego dla danego systemu": true,
+                "Zainstalowanie skompilowanych wcześniej składników aplikacji": false
+            }
+        },
+        {
+            "question": "Podaj poprawne nazwy wierszy i kolumn opisujące poniższą tabelkę sekcji repozytoriów Debian:<br>III IV<br>I Main Restricted<br>II Universe Multiverse",
+            "type": "checkbox",
+            "answers": {
+                "I-Wspierane, II-NIE wspierane, III-Oprogramowanie zgodne z licencją open source, IV-Oprogramowanie NIE zgodne z licencją open source": true,
+                "I-NIE wspierane, II-Wspierane, III-Oprogramowanie NIE zgodne z licencją open source, IV-Oprogramowanie zgodne z licencją open source": false,
+                "I-Wspierane, II-NIE wspierane, III-Oprogramowanie NIE zgodne z licencją open source , IV-Oprogramowanie zgodne z licencją open source": false,
+                "I-NIE wspierane, II-Wspierane, III-Oprogramowanie zgodne z licencją open source, IV-Oprogramowanie NIE zgodne z licencją open source": false
+            }
+        },
+        {
+            "question": "Zaznacz, które z poniższych elementów mogą być zawarte w pakietach binarnych aplikacji:",
+            "type": "checkbox",
+            "answers": {
+                "Informacje o prawach autorskich": true,
+                "Pliki konfiguracyjne": true,
+                "Pliki wykonywalne": true,
+                "Strony man": true,
+                "Źródła aplikacji": false
+            }
+        },
+        {
+            "question": "Zaznacz zdania prawdziwe w stosunku do systemu APT:",
+            "type": "checkbox",
+            "answers": {
+                "Listę zainstalowanych pakietów można uzyskać poleceniem dpkg": true,
+                "Repozytorium nie musi znajdować się w Internecie": true,
+                "Wykorzystuje repozytoria zdefiniowane w /etc/apt/sources.list": true,
+                "Sekcje repozytorim to: Main, Limited, Universe, Multiworld": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące polecenia apt-get:",
+            "type": "checkbox",
+            "answers": {
+                "Dostępny jest tylko z poziomu konta roota bądź osób uprawnionych": true,
+                "Umożliwia instalację, aktualizację oraz deinstalację oprogramowania w systemie Linux": true,
+                "Umożliwia kompilację programów ze źródeł": false,
+                "Umożliwia zarządzanie bazą danych repozytoriów": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące polecenia apt-cache:",
+            "type": "checkbox",
+            "answers": {
+                "Umożliwia przegląd wszystkich pakietów": true,
+                "Umożliwia sprawdzenie zależności pakietów": true,
+                "Umożliwia zarządzanie repozytoriami w poszukiwaniu pakietów": true,
+                "Umożliwia instalację oprogramowania źródeł": false
+            }
+        },
+        {
+            "question": "Wskaż polecenie/a, które umożliwi Ci zlokalizowanie pliku tekstowego w strukturze katalogów domowych:",
+            "type": "checkbox",
+            "answers": {
+                "Find": true,
+                "Locate": true,
+                "Whereis": false,
+                "Which": false
+            }
+        },
+        {
+            "question": "Jakie polecenia są dostępne dla użytkownika uprawnionego przez sudo w narzędziu apt-get w systemie Ubuntu/Debian?",
+            "type": "checkbox",
+            "answers": {
+                "apt-get update": true,
+                "apt-getremove nazwa_pakietu": false,
+                "apt-get depends nazwa_pakietu": false,
+                "apt-get touch nazwa_pliku": false
+            }
+        },
+        {
+            "question": "W repozytorium pakietów, w sekcji Universe, znajduje się oprogramowanie:",
+            "type": "checkbox",
+            "answers": {
+                "Wolne ale niewspierane": true,
+                "Zgodne z licencją Open Source ale niewspierane przez dystrybucję": true,
+                "Niezgodne z licencją Open Source, ale wspierane przez dystrybucję": false,
+                "Niezgodne z licencją Open Source i niewspierane przez dystrybucję": false,
+                "Wolne i wspierane": false,
+                "Zamknięte, ale wspierane": false,
+                "Zamknięte i niewspierane": false,
+                "Zgodne z licencją Open Source i wspierane przez dystrybucję": false
+            }
+        },
+        {
+            "question": "configure to:",
+            "type": "checkbox",
+            "answers": {
+                "Skrypt uruchamiany przed kompilacją pozwalający na sprawdzenie czy w systemie zainstalowane są wymagane biblioteki": true,
+                "Polecenie służące do instalacji skompilowanych plików źródłowych": false,
+                "Polecenie służące do kompilacji plików źródłowych": false,
+                "Skrypt zawierający polecenia wykorzystywane podczas kompilacji plików źródłowych": false
+            }
+        },
+        {
+            "question": "Do instalacji pakietów służy narzędzie:",
+            "type": "checkbox",
+            "answers": {
+                "apt-get": true,
+                "aptitude": true,
+                "dpkg": true,
+                "synaptic": true
+            }
+        },
+        {
+            "question": "Do zainstalowania nowego pakietu oprogramowania w systemie Linux Ubuntu można użyć programu:",
+            "type": "checkbox",
+            "answers": {
+                "apt-get": true,
+                "aptitude": true,
+                "dpkg": true,
+                "synaptic": true
+            }
+        },
+        {
+            "question": "Pakiety binarne w dystrybucji Ubuntu mogą zawierać:",
+            "type": "checkbox",
+            "answers": {
+                "Pliki konfiguracyjne": true,
+                "Pliki wykonywalne": true,
+                "Strony man": true,
+                "Źródła aplikacji": false
+            }
+        }
+    ]
+}

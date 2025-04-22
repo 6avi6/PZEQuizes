@@ -1,0 +1,42 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:sys="clr-namespace:System;assembly=mscorlib"
+			 
+			 mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="270"
+             xmlns:vms="using:PZEQuizes.ViewModels.UIElements"
+             x:DataType="vms:NavigationBarViewModel"
+             x:Class="PZEQuizes.Views.UIElements.NavigationBar"
+			 x:Name="Root"
+             xmlns:avalonia="clr-namespace:Avalonia.Controls;assembly=Avalonia.Controls">
+
+	<Grid VerticalAlignment="Top" HorizontalAlignment="Stretch">
+		<Menu Background="#c6cecf" Foreground="White" FontSize="14">
+			<MenuItem Header="Plik">
+				<MenuItem Header="Otwórz bazę" Command="{Binding OpenDatabaseCommand}"/>
+				<MenuItem Header="Resetuj pytania" Command="{Binding ResetQuestionsCommand}"/>
+			</MenuItem>
+			<MenuItem Header="Ustawienia">
+				<MenuItem Header="{Binding ShuffleStatus}" Command="{Binding ToggleShuffleCommand}"/>
+
+				<MenuItem Header="Punktacja">
+					<MenuItem.ItemsSource>
+						<Binding Path="ScoringOptions" />
+					</MenuItem.ItemsSource>
+					<MenuItem.ItemTemplate>
+						<DataTemplate>
+							<MenuItem Header="{Binding Label}"
+									  Command="{Binding DataContext.SetScoringOptionCommand, ElementName=Root}"
+									  CommandParameter="{Binding}" >
+							</MenuItem>
+						</DataTemplate>
+					</MenuItem.ItemTemplate>
+				</MenuItem>
+				
+				
+			</MenuItem>
+			<MenuItem Header="Pomoc" Command="{Binding HelpCommand}"/>
+		</Menu>
+	</Grid>
+</UserControl>

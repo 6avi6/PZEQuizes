@@ -1,0 +1,205 @@
+﻿{
+    "questions": [
+        {
+            "question": "Partycja SWAP w systemie Linux:",
+            "type": "checkbox",
+            "answers": {
+                "Jest używana gdy zaczyna brakować w systemie wolnej pamięci RAM": true,
+                "Jest niezbędna do poprawnego działania systemu": false,
+                "Służy do przechowywania osobistych plików użytkowników": false,
+                "Musi mieć rozmiar dokładnie dwa razy większy od pamięci RAM zainstalowanej na komputerze": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawne odpowiedzi dotyczące FHS w Linux Debian:",
+            "type": "checkbox",
+            "answers": {
+                "/etc – to katalog zawierający pliki konfiguracyjne systemu operacyjnego oraz pliki konfiguracyjne ważniejszych programów zainstalowanych w systemie": true,
+                "/home – to katalog zawierający katalogi domowe użytkowników": true,
+                "/proc – katalog będący wirtualnym obrazem działającego systemu": true,
+                "/bin – to katalog zawierający jądro systemu oraz programy i pliki związane z uruchamianiem systemu operacyjnego": false,
+                "/dev – to katalog będący wirtualnym obrazem działającego systemu": false,
+                "/var – to katalog, który zawiera urządzenia, które mogą (lub są) dostępne w systemie Linux": false
+            }
+        },
+        {
+            "question": "Zgodnie ze standardem Filesystem Hierarchy Standard (FHS):",
+            "type": "checkbox",
+            "answers": {
+                "W katalogu /etc powinny znajdować się pliki konfiguracyjne, ważniejszych usług systemowych.": true,
+                "W katalogu /proc jest zamontowany wirtualny system plików, który udostępnia informacje o działającym systemie.": true,
+                "Katalog /root jest katalogiem nadrzędnym dla wszystkich innych katalogów.": false,
+                "Katalog /usr jest katalogiem, w którym użytkownicy zapisują swoje własne pliki.": false
+            }
+        },
+        {
+            "question": "Plik /etc/fstab ma następującą postać:<br />/dev/hda3/ext3 defaults 0 0<br />/dev/hda2/home ext4 defaults 0 0<br />/dev/hdb1/windows vfat noauto 0 0<br />Prawdą jest, że:",
+            "type": "checkbox",
+            "answers": {
+                "/usr/bin jest przechowywany na innym dysku niż folder zawierający pliki domowe użytkowników": true,
+                "Na pierwszym dysku są conajmniej 3 partycje": true,
+                "Partycja z systemem Windows zostanie zamontowana automatycznie przy starcie systemu": false,
+                "Przy formatowaniu partycji z systemem stracimy dane użytkownika": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne ścieżki do katalogu domowego użytkownika root:",
+            "type": "checkbox",
+            "answers": {
+                "/root": true,
+                "/usr/root": false,
+                "/home/root": false,
+                "Użytkownik root nie posiada katalogu domowego": false
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe odpowiedzi dotyczące polecenia init oraz jego parametrów:",
+            "type": "checkbox",
+            "answers": {
+                "init 6 – restart system": true,
+                "init 3 – uruchomienie systemu w tzw. 3-cim poziomie uruchomieniowym": true,
+                "init 1 – wyłączenie systemu": false,
+                "init 0 – restart systemu": false
+            }
+        },
+        {
+            "question": "Wskaż, które pliki reprezentują dyski lub partycje na kontrolerze SATA w systemie Ubuntu/Debian:",
+            "type": "checkbox",
+            "answers": {
+                "/dev/sdb": true,
+                "/dev/sda1": true,
+                "/dev/hda1": false,
+                "/dev/fd0": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące organizacji systemu plików w systemie Linux:",
+            "type": "checkbox",
+            "answers": {
+                "W katalogu /boot znajdują pliki jądra systemu.": true,
+                "W katalogu /dev fizyczne urządzenia reprezentowane są jako pliki.": true,
+                "Katalog /home to katalog domowy konkretnego użytkownika.": false,
+                "Katalog /usr to katalog domowy konkretnego użytkownika.": false
+            }
+        },
+        {
+            "question": "Dany jest komputer z dwoma dyskami po 200GB, oraz z 4GB pamięci RAM. Na pierwszym podpiętym do kontrolera SATA dysku zainstalowano system operacyjny Windows, oraz jedną z partycji drugiego dysku przeznaczono na dane dla systemu Windows. Dodatkowo, na drugim dysku zostanie zainstalowany system operacyjny Linux Ubuntu. W trakcie instalacji Linux-a zdaniem administratora jest podział dysku na partycje w taki sposób, aby utworzyć partycję, do której będzie dostęp z obydwu systemów operacyjnych bez konieczności instalacji narzędzi firm trzecich. Spośród wymienionych, zaznacz poprawne konfiguracje dotyczące drugiego dysku. Weź pod uwagę aktualne zalecenia dotyczące rozmiaru pamięci swap.<br />Device Type Mount Point Size",
+            "type": "checkbox",
+            "answers": {
+                "/dev/sdb1 reiserFS / 50000 MB<br />/dev/sdb2 reiserFS /home 98000 MB<br />/dev/sdb3 fat32 /home/wymiana 50000 MB<br />/dev/sdb4 swap 2000 MB": true,
+                "/dev/sdb1 ext4 / 90000 MB<br />/dev/sdb2 fat32 /mnt/windows 90000 MB<br />/dev/sdb3 swap 20000 MB": false,
+                "/dev/sdb1 ext4 / 100000 MB<br />/dev/sdb2 reiserFS /mnt/windows 98000 MB<br />/dev/sdb3 swap 2000 MB": false,
+                "/dev/sda ext4 / 100000 MB<br />/dev/sdb fat32 /mnt/windows 98000 MB<br />/dev/sdc swap 2000 MB": false
+            }
+        },
+        {
+            "question": "W systemie Linux polecenie kill:",
+            "type": "checkbox",
+            "answers": {
+                "Wysyła sygnał do procesu.": true,
+                "Wywołanie polecenia z PIDem procesu spowoduje wysłanie sygnału TERM do procesu.": true,
+                "Wywołanie polecenia z jakimkolwiek przełącznikiem spowoduje zamknięcie wskazanego procesu.": false,
+                "Wylogowanie wszystkich użytkowników danego komputera.": false
+            }
+        },
+        {
+            "question": "Dostępny jest komputer z dwoma dyskami po 200GB, oraz z 4GB pamięci RAM. Na pierwszym podpiętym do kontrolera SATA dysku zainstalowano system operacyjny Windows, a jedną partycję z drugiego dysku przeznaczono również dla systemu Windows. Dodatkowo, na drugim dysku zostanie zainstalowany system operacyjny LinuxUbuntu. W trakcie instalacji Linux-a zdaniem administratora jest podział dysku na partycje w taki sposób, aby utworzyć partycję, do której będzie dostęp z obydwusystemów operacyjnych bez konieczności instalacji narzędzi firm trzecich. Zaznacz, które konfiguracje dla drugiego dysku spośród wymienionych poniżej są poprawne. Weź pod uwagę aktualne zalecenia dotyczące rozmiaru pamięci swap.<br />Device Type Mount Point Size",
+            "type": "checkbox",
+            "answers": {
+                "/dev/sdb1 ext4 / 100000 MB<br />/dev/sdb2 fat32 /home/wymiana 98000 MB<br />/dev/sdb3 swap 2000 MB": true,
+                "/dev/sdb1 ext4 /home 198000 MB<br />/dev/sdb2 swap 2000 MB": false,
+                "/dev/sdb1 ext4 / 100000 MB<br />/dev/sdb2 reiserfs /home/wymiana 98000 MB<br />/dev/sdb3 swap 2000 MB": false,
+                "/dev/sda ext4 / 100000 MB<br />/dev/sdb fat32 /home/wymiana 98000 MB<br />/dev/sdc swap 2000 MB": false
+            }
+        },
+        {
+            "question": "Które polecenia umożliwią zmianę hasła w systemie Linux Debian:",
+            "type": "checkbox",
+            "answers": {
+                "vi /etc/shadow": true,
+                "passwd": true,
+                "chpasswd": false,
+                "shadow": false
+            }
+        },
+        {
+            "question": "Do zainstalowania nowego pakietu oprogramowania w systemie Linux Ubuntu można użyć programu:",
+            "type": "checkbox",
+            "answers": {
+                "apt-get": true,
+                "aptitude": true,
+                "dpkg": true,
+                "synaptic": true
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi dotyczące procesu init w systemie Linux:",
+            "type": "checkbox",
+            "answers": {
+                "Jest to proces rodzic wszystkich procesów.": true,
+                "Jest to proces, który działa jedynie w momencie uruchamiania systemu.": false,
+                "Identyfikator PID tego procesu jest zawsze równy 0.": false,
+                "Nie ma takiego procesu w systemie Linux": false
+            }
+        },
+        {
+            "question": "Poniżej przedstawiono wynik polecenia ls -l wydanego przez użytkownika test, który jest administratorem systemu.<br />-r—r—r—l test test 0 2008-01-03 14:57 444.cpp<br />-rw-rw-r—l test test 0 2008-01-03 14:56 123.c<br />Następnie użytkownik test wykonał polecenie sudo chown sol 444.cpp<br />Wybierz jedną lub więcej:",
+            "type": "checkbox",
+            "answers": {
+                "Po wykonaniu polecenia grupa właściciela pliku będzie ustawiona na test.": true,
+                "Po wykonaniu polecenia uprawnienia pliku nie zmienią się.": true,
+                "Po wykonaniu polecenia właścicielem pliku będzie użytkownik test.": false,
+                "Wykonanie polecenia się nie powiedzie.": false
+            }
+        },
+        {
+            "question": "Zaznacz, które z czynności wykonywane są przez skrypt configure:",
+            "type": "checkbox",
+            "answers": {
+                "Wygenerowanie pliku config.status.": true,
+                "Sprawdzenie, czy w systemie są wszystkie składniki potrzebne do instalacji oprogramowania.": true,
+                "Uruchamianie kompilacji plików źródłowych.": false,
+                "Instaluje program, kopiując skompilowane składniki aplikacji w odpowiednie miejsca w systemie plików.": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu plik, który zawiera listę użytkowników systemu i ich identyfikator UID to:",
+            "type": "checkbox",
+            "answers": {
+                "/etc/passwd": true,
+                "/etc/shadow": false,
+                "/dev/users": false,
+                "/usr/bin/passwd": false
+            }
+        },
+        {
+            "question": "W systemie Debian/Ubuntu plik /bin/passwd:",
+            "type": "checkbox",
+            "answers": {
+                "Jest dostępny do wykonania dla wszystkich użytkowników.": true,
+                "Służy do zmiany hasła użytkownika.": true,
+                "Służy do tworzenia nowych kont użytkowników.": false,
+                "Zawiera nazwy i UID użytkowników systemu.": false
+            }
+        },
+        {
+            "question": "Aby zapisać aktualną datę do pliku tekstowego o nazwie date należy wydać polecenie:",
+            "type": "checkbox",
+            "answers": {
+                "O2 date > date": true,
+                "O3 time >> date": false,
+                "O4 time-date > date": false,
+                "O1 time > date": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić pliki tylko o rozszerzeniach jpeg i jpg należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "ls *.jpg; ls *.jpeg": true,
+                "ls *.{jpg,jpeg}": true,
+                "ls *.j?pg": false
+            }
+        }
+    ]
+}

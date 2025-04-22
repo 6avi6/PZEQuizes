@@ -1,0 +1,73 @@
+﻿{
+    "questions": [
+        {
+            "question": "Domyślnie w systemie Windows 7 w momencie podłączenia zdalnego pulpitu (Remote Desktop) lokalnie zalogowany użytkownik: ",
+            "type": "checkbox",
+            "answers": {
+                "Zostaje automatycznie wylogowany": true,
+                "Jest informowany o próbie podłączenia zdalnego pulpitu i pytany o zgodę": false,
+                "Może bez zmian kontynuować swoją pracę": false,
+                "Nie może w żaden sposób stwierdzić, że nastąpiło podłączenie pulpitu zdalnego": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne zdania dotyczące zdalnego połączenia za pomocą Remote Desktop Connection w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "O1 Możliwe jest zablokowanie możliwości zdalnego połączenia z komputerem w jego ustawieniach systemu": true,
+                "O1 Narzędzie Remote Desktop pozwala na połączenie i zdalną pracę na komputerze w innej lokalizacji": true,
+                "O1 W ustawieniach systemu można wskazać którzy użytkownicy mają prawo do zdalnego połączenia *": true,
+                "O2 Możliwa jest konfiguracja zdalnego połączenia, w której można korzystać na zdalnym komputerze z lokalnych dysków": true,
+                "O4 Możliwa jest konfiguracja połączenia, w której można korzystać na zdalnym komputerze z lokalnego schowka": true,
+                "Możliwa jest konfiguracja zdalnego połączenia, w której można korzystać ze schowka kopiując dane między połączonymi komputerami": true,
+                "Możliwość zdalnego połączenia z komputerem może zostać zablokowana w jego ustawieniach systemu": true,
+                "Użytkownicy należący do grupy Administrators mają domyślnie prawo do zdalnego połączenia z komputerem, na którym zezwolono na takie połączenie": true,
+                "W ustawieniach systemu można wskazać którzy użytkownicy mają prawo do zdalnego połączenia *": true,
+                "O2 Remote Desktop Connection jest narzędziem pozwalającym na zarządzanie kilkoma zdalnymi połączeniami w jednym oknie aplikacji *": false,
+                "O2 Zdalne połączenie za pomocą Remote Desktop Connection możliwe jest tylko po otrzymaniu pliku zaproszenia od zdalnego komputera **": false,
+                "O3 Aby możliwe było zdalne połączenie do komputera musi on być uruchomiony w trybie „remote” ***": false,
+                "O3 Narzędzie Remote Desktop Connection pozwala jedynie na oglądanie pulpitu zdalnego komputera (nie umożliwia wykonania żadnej akcji na zdalnym komputerze) ****": false,
+                "Aby możliwe było zdalne połączenie do komputera musi on być uruchomiony w trybie „remote” ***": false,
+                "Narzędzie Remote Desktop Connection pozwala jedynie na oglądanie pulpitu zdalnego komputera (nie umożliwia wykonania żadnej akcji na zdalnym komputerze) ****": false,
+                "Remote Desktop Connection jest narzędziem pozwalającym na zarządzanie kilkoma zdalnymi połączeniami w jednym oknie aplikacji *": false,
+                "Wykonanie zdalnego połączenia za pomocą narzędzia Remote Desktop Connection nie zakłóca pracy użytkownikowi lokalnie pracującemu przy danym komputerze": false,
+                "Zdalne połączenie za pomocą Remote Desktop Connection możliwe jest tylko po otrzymaniu pliku zaproszenia do zdalnego komputera **": false,
+                "Zdalne połączenie za pomocą Remote Desktop Connection możliwe jest tylko za zgodą użytkownika pracującego na komputerze, do którego się łączymy": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne zdania dotyczące zdalnej pomocy (Remote Assistance) w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "O1 Możliwe jest zablokowanie możliwości przyjęcia zdalnej pomocy w ustawieniach systemu * ": true,
+                "O1 Zaproszenie wygenerowane w celu uzyskania zdalnej pomocy zawsze jest zabezpieczone hasłem **": true,
+                "O3 Możliwe jest zablokowanie możliwości przyjęcia zdalnej pomocy w ustawieniach systemu *": true,
+                "Możliwe jest zablokowanie możliwości przyjęcia zdalnej pomocy w ustawieniach systemu * ": true,
+                "Możliwe jest zablokowanie w ustawieniach systemu możliwości przejęcia kontroli nad komputerem, któremu udzielana jest zdalna pomoc": true,
+                "Przebieg sesji zdalnej pomocy jest domyślnie zapisywany w pliku log ": true,
+                "Przejęcie kontroli nad komputerem, któremu udzielana jest zdalna pomoc jest możliwe tylko po wyrażeniu na to zgody przez użytkownika, któremu pomoc jest udzielana ": true,
+                "Zaproszenie wygenerowane w celu uzyskania zdalnej pomocy zawsze jest zabezpieczone hasłem **": true,
+                "Zdalna pomoc może zostać uzyskana uruchamiając z linii poleceń narzędzie msra.exe ": true,
+                "O2 Narzędzie Remote Assistance pozwala na komunikację głosową między zdalnymi komputerami *": false,
+                "O2 Przejęcie kontroli nad komputerem, któremu udzielana jest zdalna pomoc wiąże się z wylogowaniem jego użytkownika **": false,
+                "O3 Zaproszenie wygenerowane w celu uzyskania zdalnej pomocy może być niezabezpieczone hasłem": false,
+                "Narzędzie Remote Assistance pozwala na komunikację głosową między zdalnymi komputerami *": false,
+                "Narzędzie Remote Assistance pozwala na komunikację wideo między zdalnymi komputerami": false,
+                "Nawiązanie połączenia zdalnej pomocy wiąże się z wylogowaniem aktualnie pracujące na komputerze użytkownika": false,
+                "Przejęcie kontroli nad komputerem, któremu udzielana jest zdalna pomoc wiąże się z wylogowaniem jego użytkownika **": false,
+                "Wspólną kontrolę na komputerem może zakończyć jedynie użytkownik udzielający pomocy": false,
+                "Zabezpieczenie hasłem zaproszenia do zdalnej pomocy jest opcjonalne i może zostać skonfigurowane we właściwościach Remote Assistance": false
+            }
+        },
+        {
+            "question": "Remote Desktop w systemie Windows 7: ",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala na korzystanie ze schowka pomiędzy zdalnie połączonymi komputeram": true,
+                "Umożliwia dostęp do zasobów zdalnego komputera ": true,
+                "Umożliwia zdalne połączenia z komputere": true,
+                "Wykorzystuje sieć lokalną lub Internet ": true
+            }
+        }
+    ]
+}

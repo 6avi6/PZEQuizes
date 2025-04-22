@@ -1,0 +1,143 @@
+﻿{
+    "questions": [
+        {
+            "question": "Do funkcji Windows APi należą:",
+            "type": "checkbox",
+            "answers": {
+                "CreateWindowsEx": true,
+                "strcmp": false,
+                "ShowWindow": true,
+                "atoi": false
+            }
+        },
+        {
+            "question": "Kiedy musi być zarejestrowana klasa okna w Windows API",
+            "type": "checkbox",
+            "answers": {
+                "klasa okna może być zarejestrowana zarówno przed jak i po utworzeniu okna": false,
+                "przed utworzeniem okna": true,
+                "po utworzeniu okna": false,
+                "klasa okna nie jest rejestrowana w Window API": false
+            }
+        },
+        {
+            "question": "HWND:",
+            "type": "checkbox",
+            "answers": {
+                "Jest strukturą przechowującą wskaźniki do poszczególnych okien aplikacji": false,
+                "Jest wskaźnikiem na funkcję obsługującą komunikaty napływające do okna aplikacji": false,
+                "Jest uchwytem okna aplikacji": true,
+                "Jest funkcją pozwalającą na zdefiniowanie głównego okna aplikacji": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić krótki komunikat dla użytkownika przy użyciu okna modalnego można użyć funkcji:",
+            "type": "checkbox",
+            "answers": {
+                "ShowDialog(...)": false,
+                "MsgBox(...)": false,
+                "MessageBox(...)": true,
+                "ShowModDialog(...)": false
+            }
+        },
+        {
+            "question": "Kod programów pisanych z bezpośrednim wykorzystaniem Win32API musi zawierać:",
+            "type": "checkbox",
+            "answers": {
+                "Instrukcję #include": false,
+                "Wywołanie funkcji CreateWindowEx(...)": false,
+                "Funkcję WinMain(...)": true,
+                "Funkcję WINAPI(...)": false
+            }
+        },
+        {
+            "question": "Windows API pozwala na:",
+            "type": "checkbox",
+            "answers": {
+                "komunikację sieciową": true,
+                "dostęp do systemu plików": true,
+                "tworzenie interfejsu graficznego": true,
+                "dostęp do rejestrów systemu": true
+            }
+        },
+        {
+            "question": "Aby mozliwa była zdalna istalacja, to maszyna kliencka moze uruchamiac sie z:",
+            "type": "checkbox",
+            "answers": {
+                "dysku twardego": false,
+                "karty sieciowej": true,
+                "napedu CD / DVD": false,
+                "nie ma to znaczenia": false
+            }
+        },
+        {
+            "question": "MDi w API jest skrótem od:",
+            "type": "checkbox",
+            "answers": {
+                "Media Download Interface": false,
+                "Mass Data Interface": true,
+                "Multicolor Data Interface": false
+            }
+        },
+        {
+            "question": "UpdateWindow:",
+            "type": "checkbox",
+            "answers": {
+                "Jest funkcją wysyłającą komunikat do okna aplikacji informującym go o potrzebie przerysowania": true,
+                "Jest domyślną funkcją obsługującą przerysowanie okna lub jego fragmentu": false,
+                "Jest komunikatem wysyłanym do okna bezpośrednio po jego wyświetleniu": false,
+                "Jest komunikatem wysyłanym do okna aplikacji informującym go o potrzebie przerysowania": false
+            }
+        },
+        {
+            "question": "Czy dany przycisk został naciśnięty możemy sprawdzić poprzez:",
+            "type": "checkbox",
+            "answers": {
+                "Porównanie uchwytu do przycisku wewnątrz procedury obsługi komunikatów przy zdarzeniu WM_COMMAND": true,
+                "Porównanie adresu kontrolki przycisku": false,
+                "Porównanie ID przypisanego do przycisku wewnątrz procedury obsługi komunikatów przy zdarzeniu WM_COMMAND": true,
+                "Wykonanie procedury obsługi przerwania danego przycisku": false
+            }
+        },
+        {
+            "question": "Wyświetlenie okna Message Box:",
+            "type": "checkbox",
+            "answers": {
+                "Powoduje utworzenie dla niego nowego procesu w systemie": false,
+                "Jest wywołaniem blokującym (blokuje wykonanie dalszej części kodu aż do zamknięcia Message Box'a)": true,
+                "Polega na obsłudze odpowiedniego komunikatu w pętli obsługi komunikatów.": false,
+                "Możemy uzyskać poprzez wywołanie kodu: MessageBox(NULL, L\"Welcome to Win32 Application Development\n\", NULL, NULL);": true
+            }
+        },
+        {
+            "question": "DefWindowProc",
+            "type": "checkbox",
+            "answers": {
+                "Jest domyślną funkcją obsługującą komunikaty napływające do okna aplikacji": true,
+                "Jest wskaźnikiem na funkcję obsługującą komunikaty napływające do okna aplikacji": false,
+                "Jest funkcją pozwalającą na zdefiniowanie głównego okna aplikacji": false,
+                "Jest strukturą pozwalająca na m.in. zdefiniowanie głównego okna aplikacji": false
+            }
+        },
+        {
+            "question": "Jakie rodzaje komunikatów mogą docierać do okna?",
+            "type": "checkbox",
+            "answers": {
+                "zmiana rozmiaru okna": true,
+                "pojedyncze bądź podwójne kliknięcie myszą w obszarze okna": true,
+                "zmiana położenia okna": true,
+                "naciśnięcie klawisza": true
+            }
+        },
+        {
+            "question": "WNDCLASS/WNDCLASSEX",
+            "type": "checkbox",
+            "answers": {
+                "Obsługuje kolejkę komunikatów napływających do okna aplikacji": false,
+                "Jest strukturą przechowującą wskaźniki do poszczególnych okien aplikacji": false,
+                "Jest strukturą pozwalającą zdefiniować np. kolory okna aplikacji": true,
+                "Jest odpowiednikiem funkcji main() w programach pisanych w WinAPI": false
+            }
+        }
+    ]
+}

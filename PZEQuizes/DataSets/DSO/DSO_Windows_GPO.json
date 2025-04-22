@@ -1,0 +1,344 @@
+﻿{
+    "questions": [
+        {
+            "question": "Na jakich poziomach w Active Directory mogą być przypisywane obiekty GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Lokalnie ": true,
+                "Na poziomie lokacji": false,
+                "Na poziomie domeny": true,
+                "Na poziomie jednostki organizacyjnej": true
+            }
+        },
+        {
+            "question": "Aby wyświetlić wynikowy zestaw zasad dla użytkownia Sysop należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "gpresult /gpo Sysop": false,
+                "gpresult /?": false,
+                "gpresult /user Sysop": true,
+                "gpresult /u Sysop": false
+            }
+        },
+        {
+            "question": "Wskaż prawdziwe zdania dotyczące GPO",
+            "type": "checkbox",
+            "answers": {
+                "Akronin GPO rozwija się jako Group Policy Operation": false,
+                "Za pomocą GPO Standard Desktop można zabronić dostępu do Panelu Sterowania": true,
+                "Dane jednego GPO mogą być przypisane tylko jednej jednostce organizacyjnej": false,
+                "Nie da się wyłączyć stosowania zasad GPO danej jednostki organizacyjnej bez usuwania GPO lu łącza obiektu": false
+            }
+        },
+        {
+            "question": "Gdzie w rejestrze systemowym można znaleźć wpisy wynikające z GPO?",
+            "type": "checkbox",
+            "answers": {
+                "HKEY LOCAL MACHINE (HKLM)": true,
+                "HKEY CLASSES ROOT (HKCR)": false,
+                "HKEY CURRENT USER (HKCU)": true,
+                "HKEY USERS (HKU)": false
+            }
+        },
+        {
+            "question": "W jaki sposób można modyfikować domyślne przetwarzanie obiektów zasad grupy?",
+            "type": "checkbox",
+            "answers": {
+                "Blokując dziedziczenie zasad grupy": true,
+                "Definiując warunkowe wprowadzanie ustawień.": false,
+                "Wyłączając przetwarzanie konkretnego łącza GPO": true,
+                "Wyłączając nadpisywanie ustawień wprowadzanych przez konkretne łącze GPO.": true
+            }
+        },
+        {
+            "question": "Group Policy Management Console umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Wszystkie funkcje konsoli Power Shell, oraz dodatkowo funkcje zarządzania obiektami GPO": false,
+                "Stworzenie kopii zapasowej obiektów GPO": true,
+                "Łatwiejsze zarządzanie obiektami GPO, dzięki graficznemu interfejsowi użytkownika": true,
+                "Tworzenie logów każdej operacji użytkownika w wybranej przez administratora grupie": false
+            }
+        },
+        {
+            "question": "System Windows w ramach zarządzania GPO umożliwia:",
+            "type": "checkbox",
+            "answers": {
+                "Filtrowanie ustawień GPO - wyłączenie stosowania określonych zasad GPO": true,
+                "Wymuszanie stosowania zasad GPO": true,
+                "Przeglądanie wdrażania elementów GPO dla danej jednostki organizacyjnej": true,
+                "Blokowanie dziedziczenia ustawień obiektów GPO": true
+            }
+        },
+        {
+            "question": "Które narzędzia służą do tworzenia i zarządzania GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Konsola Group Policy Management": true,
+                "narzędzie gpadd": false,
+                "Group Policy Object Editor z Active Directory Users and Computers": true,
+                "narzędzie gpomod": false
+            }
+        },
+        {
+            "question": "GPO jest to: Wskaż wszystkie poprawne odpowiedzi.",
+            "type": "checkbox",
+            "answers": {
+                "Zbiór ustawień, który określa jak będzie się zachowywał i wyglądał system, dla zdefiniowanych grup użytkowników.": true,
+                "Narzędzie administracyjne, służące do zarządzania zasadami grup.": false,
+                "Obiekt, mogący istnieć tylko lokalnie zawierający zasady działania systemu dla grup użytkowników.": false,
+                "Zbiór obiektów zawierający ustawienia dotyczące zasad działania systemu, po jednym obiekcie na każdego użytkownika.": false
+            }
+        },
+        {
+            "question": "W jaki sposób można wyznaczyć efektywne ustawienia dla obiektów GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Za pomocą polecenia gpoeffective": false,
+                "Za pomocą Group Policy Preferences": false,
+                "Za pomocą Group Policy Results Wizards": true,
+                "Za pomocą polecenia gpresult": true
+            }
+        },
+        {
+            "question": "Program \"GPRESULT\" służy do:",
+            "type": "checkbox",
+            "answers": {
+                "Zmiany zasad GPO": false,
+                "Zmiany efektywnych ustawień GPO": false,
+                "Usuwania zasad GPO": false,
+                "Przeglądania efektywnych ustawień GPO": true
+            }
+        },
+        {
+            "question": "Które z podanych funkcji może pełnić narzędzie Group Policy Results w kontekście zasad grup?",
+            "type": "checkbox",
+            "answers": {
+                "Generowanie raportów o wpływie zasad grupy na konkretnego użytkownika lub komputer.": true,
+                "Rejestrowanie prób ominięcia lokalnych zabezpieczeń": false,
+                "Wyświetlanie informacji o efektywnych ustawieniach dla obiektów jednostki organizacyjnej.": true,
+                "Eksportowanie ustawień, aby umożliwić ich ponowne wdrożenie w dowolnym momencie.": false
+            }
+        },
+        {
+            "question": "Które narzędzia służą do tworzenia i zarządzania GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Narzędzia gpmod": false,
+                "Konsola Group Policy Management": true,
+                "Group Policy Object Editor z Active Directory Users and Computers": true,
+                "Narzędzie gpadd": false
+            }
+        },
+        {
+            "question": "Diagnozujesz problem z ustawieniami Zasad Grupy w dużej domenie. chcesz się dowiedzieć, jakie ustawienia są stosowane dla danego komputera.",
+            "type": "checkbox",
+            "answers": {
+                "Przeglądasz ustawienia zasad grupy w konsoli Active Directory Users and Computers": false,
+                "Korzystasz z narzędzia gpresult": true,
+                "Korzystasz z  \"Group Policy Result\" w konsoli Group Policy Management": true,
+                "Nie jest możliwe uzyskanie takich informacji": false
+            }
+        },
+        {
+            "question": "Jakimi narzędziami możesz konfigurować GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Group Policy Management Console": true,
+                "Active Directory Sites and Services": true,
+                "Remote Desktop Assistance": false,
+                "Edytor obiektów zasad grup": true
+            }
+        },
+        {
+            "question": "Jaki będzie wynik polecenia gpresult /user user1 w Windows Serwer 2008?",
+            "type": "checkbox",
+            "answers": {
+                "Wyświetlenie rezultatu wykonania polecenia gpupdate dla użytkownika user1": false,
+                "Nie ma takiego polecenia": false,
+                "Wyświetlenie ustawień zmiennych globalnych użytkownika user1": false,
+                "Wyświetlenie zasad grup dla użytkownika user1": true
+            }
+        },
+        {
+            "question": "Wskaż prawdziwe zdania dotyczące Group Policy Objects",
+            "type": "checkbox",
+            "answers": {
+                "Dany obiekt GPO można przypisać tylko do jednej jednostki organizacyjnej": false,
+                "Zasady zawarte w GPO przypisanym do domeny są domyślnie dziedziczone przez jednostki organizacyjne tej domeny": true,
+                "Do jednej jednostki organizacyjnej można przypisać wiele różnych obiektów GPO": true,
+                "Zasady obiektów GPO przypisanych jednostkom podrzędnym domyślnie nadpisują zasady odziedziczone z GPO jednostek nadrzędnych": true
+            }
+        },
+        {
+            "question": "Co się stanie, jeśli pewne ustawienia obiektu zasad grup ustawimy na poziomie domeny na pewną wartość, a na poziomie komputera ustawimy na przeciwną?",
+            "type": "checkbox",
+            "answers": {
+                "Zastosowane zostanie ustawienie na poziomie \"komputera\"": true,
+                "Wystąpu konflikt i zostanie zgłoszony błąd": false,
+                "Poczas uruchamiania tego komputera losowo wybierana będzie wartość, która będzie się do niego stosować": false,
+                "Zastosowane zostanie ustawienie ustalone na poziomie \"domeny\"": false
+            }
+        },
+        {
+            "question": "Konsola Group Policy Managment",
+            "type": "checkbox",
+            "answers": {
+                "Umożliwia raportowanie ustawień GPO": true,
+                "Pozwala na łączenie jednostek organizacyjnych z GPO": true,
+                "Jest domyślnie zainstalowana w każdej wersji Windowsa 7": false,
+                "Pozwala zmienić ustawienia dziedziczenia GPO": true
+            }
+        },
+        {
+            "question": "Zasady grup (GPO) przypisane danemu komputerowi:",
+            "type": "checkbox",
+            "answers": {
+                "Dotyczą tylko administratoeów danego komputera.": false,
+                "Obowiązują wszystkich użytkowników komputera": true,
+                "Nie istnieją. Zasady grup mogą zostać przypisane jedynie użytkownikowi.": false,
+                "Są stosowane podczas uruchamiania komputera": true
+            }
+        },
+        {
+            "question": "Z jakich części składają się obiekty zasad grup (Group Policy Object)?",
+            "type": "checkbox",
+            "answers": {
+                "Ustawienia systemu": false,
+                "Ustawienia komputera": true,
+                "Ustawienia użytkownika": true,
+                "Ustawienie domyślne": false
+            }
+        },
+        {
+            "question": "Poniższy skrypt vbs wykonany po zalogowaniu użytkownika: Set objNetowrk = Wscript.CreateObject(\"Wscript.Network\") objNetwork.NapNetworkDrive \"S.:\"\\ LondonPublic\"",
+            "type": "checkbox",
+            "answers": {
+                "Udostępni dysk S jako London LondonPublic": false,
+                "Podmontuje zdalny zasób sieciowy": true,
+                "Umożliwi dostęp do zdalnego zasobu sieciowego jako dysk S": true,
+                "Utworzy nowy zasób sieciowy London LondonPublic": false
+            }
+        },
+        {
+            "question": "Aby sprawdzić wynikowe ustawienia GPO należy skorzystać z polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "gpoutcome": false,
+                "gpsummary": false,
+                "gpupdate": false,
+                "gpresult": true
+            }
+        },
+        {
+            "question": "Jakie narzędzia służą do konfigurowania Group Policy:",
+            "type": "checkbox",
+            "answers": {
+                "Narzędzi dsmod": false,
+                "Konsola Active Directory Users and Computers": false,
+                "Polecenie dsquery": false,
+                "Konsola Group Policy Managment": true
+            }
+        },
+        {
+            "question": "Czy dane GPO może być przypidane kilku różnym jednostkom organizacyjnym?",
+            "type": "checkbox",
+            "answers": {
+                "Tak, może być przypisane, jeżeli te jednostki organizacyjne są zawarte w jednej domenie dla której jest przypisane GPO": true,
+                "Nie, nie może być przypisane, jeżeli jednostki te są zawarte w jednej domenie dla której jest przypisane GPO.": false,
+                "Nie, dane GPO zawsze jest przypisane tylko jednej jednostce organizacyjnej": false,
+                "Dane GPO może być zawsze przypisane kilku różnym jednostkom organizacyjnym. W każdej sytuacji.": false
+            }
+        },
+        {
+            "question": "Opcja \"Zablokuj dziedziczenie zasad\"",
+            "type": "checkbox",
+            "answers": {
+                "blokuje obiekty zasad grupy, które są stosowane wyżej w hierarchii domen i jednostek organizacyjnych usługi Active Directory.": true,
+                "może blokować obiekty zasad grupy, dla których włączono opcję \"Nie zastępuj\"": false,
+                "Może być ustawiona w jednostkach organizacyjnych": true,
+                "Może być ustawiona w poszczególnych obiektach zasad grupy": false
+            }
+        },
+        {
+            "question": "Obiekt GPO może zostać przypisany bezpośrednio do:",
+            "type": "checkbox",
+            "answers": {
+                "Domeny": true,
+                "Jednostki organizacyjnej": true,
+                "Konkretnego komputera": false,
+                "Konkretnego użytkownika": false
+            }
+        },
+        {
+            "question": "Wskaż poprawne zdania dotyczące dziedziczenia zasad grup w Windows Server 2008",
+            "type": "checkbox",
+            "answers": {
+                "Jawne określenie ustawienia zasad grupy w kontenerze podrzędnym zastępuje ustawienie odziedziczone z kontenera nadrzędnego": true,
+                "Ustawienia zasad, które są wyłączone, są dziedziczone jako wyłączone": false,
+                "Po zaznaczenia pola wyboru \"Nie zastępuj\" (wymuszanie dziedziczenia) kontenery podrzędne są zmuszane do dziedziczenia zasad, chyba że zasady te wchdzą w konflikt z zasadami kontenerów podrzędnych": false,
+                "Nieskonfigurowane ustawienia zasad w jednostce nadrzędnej może być dziedziczone przez jednostkę podrzędną": false
+            }
+        },
+        {
+            "question": "Które z podanych funkcji może pełnić narzędzie Group Policy Results w kontekście zasad grup?",
+            "type": "checkbox",
+            "answers": {
+                "Wyświetlanie informacji o efektywnych ustawieniach dla obiektów jednostki organizacyjnej.": true,
+                "Eksportowanie ustawień, aby umożliwić ich ponowne wdrożenie w dowolnym momencie": false,
+                "Rejestrowanie prób ominięcia lokalnych zabezpieczeń": false,
+                "Generowanie raportów w wpływie zasad grupy na konkretnego użytkownika lub komputer": true
+            }
+        },
+        {
+            "question": "Ustawienia Group Policy są aplikowane w sytuacji, gdy:",
+            "type": "checkbox",
+            "answers": {
+                "Przy nawiązaniu połączenia VPN": true,
+                "Użytkownik się loguje": true,
+                "Co zadany czas": true,
+                "Komputer jest uruchamiany": true
+            }
+        },
+        {
+            "question": "Opcja \"Zablokuj dziedziczenie zasad\" w AD Users and Computers",
+            "type": "checkbox",
+            "answers": {
+                "nie blokuje dziedziczenia w obiektach zasad grupy, dla których ustawiono wymuszenie dziedziczenia": true,
+                "może być ustawiona tylko w domenach i jednostkach organizacyjnych": true,
+                "może być ustawiona w domenach, jednostkach organizacyjnych oraz w poszczególnych obiektach zasad grupy": false,
+                "może być ustawiona tylko w poszczególnych obiektach zasad grupy": false
+            }
+        },
+        {
+            "question": "Za pomocą GPO można uzyskać:",
+            "type": "checkbox",
+            "answers": {
+                "Przekierowanie folderu domowego \"My Documents\"": true,
+                "Ograniczenie uprawnień dla wszystkich użytkowników, którzy są zalogowani na danym komputerze": true,
+                "Ograniczenie uprawnień dla jednostki organizacyjnej": true,
+                "Ograniczenie uprawnień polegające na zabronieniu dostępu do panelu sterowania": true
+            }
+        },
+        {
+            "question": "Jak są dziedziczone uprawnienia wynikające z GPO?",
+            "type": "checkbox",
+            "answers": {
+                "Nie są dziedziczone. Każdemu obiektowi należy nadać uprawnienia osobno.": false,
+                "Są dziedziczone przez całą strukturę - jeśli dany obiekt ma rodzica, to jako domyślne przejmuje jego uprawnienia.": true,
+                "Domyślnie nie są dziedziczone, aby aktywować dziedziczenie należy dla OU ustawić opcję \"Allow Privileges Inherintance\"": false,
+                "Dzieci dziedziczą jedynie najmniej restrykcyjne uprawnienia swoich rodziców": false
+            }
+        },
+        {
+            "question": "Ustawienia Group Policy dla kont użytkowników mogą zawierać:",
+            "type": "checkbox",
+            "answers": {
+                "Skrypty logowania": true,
+                "Konfigurację ustawień pulpitu": true,
+                "Przekierowanie folderu": true,
+                "Prawa do dostępu do zasobów lokalnych": false
+            }
+        }
+    ]
+}

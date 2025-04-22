@@ -1,0 +1,183 @@
+﻿{
+    "questions": [
+        {
+            "question": "Efekt polecenia ls -l file.txt jest następujący: ",
+            "type": "checkbox",
+            "answers": {
+                "setfacl -m u:friend:4, g:class:6 file.txt": true,
+                "setfacl -m u:friend:r, g:class:rw file.txt": true,
+                "setfacl -m u:r:friend, g:rw:class file.txt": false,
+                "setfacl -x u:friend:4, g:class6 file.txt": false
+            }
+        },
+        {
+            "question": "Efekt polecenia ls -l test jest następujący: ",
+            "type": "checkbox",
+            "answers": {
+                "setfacl -d -m g:teacher:rwx test": true,
+                "brak poprawnej odpowiedzi": false,
+                "setacl -m g:teacher:rwx test": false,
+                "nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik": false
+            }
+        },
+        {
+            "question": "Którym poleceniem można zmienić ustawienia pliku file, tak aby użytkownik user1 miał pełne uprawnienia, a grupa group1 mogła czytać i modyfikować, ale nie mogła go wykonać jako skryptu?",
+            "type": "checkbox",
+            "answers": {
+                "setfacl -m u:user1:7, g:group1:6 file": true,
+                "setfacl -m u:user1:r-x, g:group1:rw- file": false,
+                "setfacl -m u:user1:6, g:group1:7 file": false,
+                "setfacl -m u:user1:rwx, g:group1:rw- file": true
+            }
+        },
+        {
+            "question": "Polecenie getfacl:",
+            "type": "checkbox",
+            "answers": {
+                "zwraca informacje na temat aktualnych uprawnień zdefiniowanych na liście ACL": true,
+                "usuwa uprawnienia zdefiniowane na liście ACL": false,
+                "zwraca informację na temat właściciela pliku": true,
+                "Pozwala wyświetlić informacje na temat uprawnień zdefiniowanych w ACL dla kilku plików na raz": true
+            }
+        },
+        {
+            "question": "Zaznacz odpowiadające sobie mapowanie typów ACL na standardowe Linuxowe klasy użytkowników:",
+            "type": "checkbox",
+            "answers": {
+                "named user - owner": false,
+                "owner - owner": true,
+                "mask - group": true,
+                "owning group - group": false
+            }
+        },
+        {
+            "question": "Polecenie, w wyniku którego każdy nowoutworzony PLIK będzie miał uprawnienia -rwxr-x--- to:",
+            "type": "checkbox",
+            "answers": {
+                "umask 027": false,
+                "umask 750": false,
+                "brak poprawnej odpowiedzi": true
+            }
+        },
+        {
+            "question": "Polecenie setfacl -m u:user1:6, g:group1:7 file.txt:",
+            "type": "checkbox",
+            "answers": {
+                "Ustawi prawa do pliku \"file.txt\" wszystkich użytkowników jako rwx.": false,
+                "Umożliwi użytkownikowi o nazwie \"user1\" wykonanie pliku \"file.txt\".": false,
+                "Ustawi prawa do pliku \"file.txt\" użytkownika o nazwie \"user1\" jako rw-, a grupy o nazwie \"group1\" jako rwx.": true,
+                "Ustawi prawa do pliku \"file.txt\" użytkownika o nazwie \"user1\" jako r--m a grupy o nazwie \"group1\" jako ---.": false
+            }
+        },
+        {
+            "question": "W systemie Linux Debian użytkownik wykonał sekwencję poleceń: ",
+            "type": "checkbox",
+            "answers": {
+                "---rwxr-x 1 labso labso 0 2010-06-11 16:30 test": false,
+                "-rw----w- labso labso 0 2010-06-11 16:30 test": true,
+                "-rwx----wx 1 labso labso 0 2010-06-11 16:30 test": false,
+                "-rw-rw-r-- 1 labso labso 0 2010-06-11 16:30 test": false
+            }
+        },
+        {
+            "question": "Wskaż poprawną odpowiedź dotyczącą instalacji ACL na komputerze z systemem ubuntu/debian:",
+            "type": "checkbox",
+            "answers": {
+                "ACL nie znajduje się oficjalnie w repozytorium. Należy pobrać źródła z internetu oraz samodzielnie przeprowadzić kompilację oraz konfigurację.": false,
+                "Nie jest wymagana instalacja ACL. Systemy te zawierają preinstalowane paczki związane z ACL.": false,
+                "Należy zainstalować acl komendą sudo apt-get install acl. Instalator automatycznie skonfiguruje system do pracy z ACL.": false,
+                "Należy zainstalować acl komendą sudo apt-get install acl, a następnie manualnie przeprowadzić konfigurację systemów plików w pliku /etc/fstav podłączając ACL.": true
+            }
+        },
+        {
+            "question": "Uprawnienia dla nowo tworzonych plików przy masce 066 wyglądają następująco:",
+            "type": "checkbox",
+            "answers": {
+                "-rwxrwxrwx": false,
+                "-rw-rw-r--": false,
+                "---rw-rw-": false,
+                "-rw------": true
+            }
+        },
+        {
+            "question": "W stosunku do chmod, lista ACL rozszerzyła możliwości przyznawania praw o:",
+            "type": "checkbox",
+            "answers": {
+                "Określenie praw do pliku dla dowolnej grupy.": true,
+                "Określenie praw do pliku dla dowolnego użytkownika.": true,
+                "Określenie praw do pliku dla innych - other.": false,
+                "Określenie praw do pliku dla właściciela - owner.": false
+            }
+        },
+        {
+            "question": "W systemie Linux z działającym systemem ACL wydano polecenie getfacl mySong.bin. Otrzymano następujący wynik: ",
+            "type": "checkbox",
+            "answers": {
+                "użytkownik z grupy dzieci może odczytywać plik mySong.bin": true,
+                "użytkownik maria może odczytywać plik mySong.bin": true,
+                "użytkownik maria może modyfikować plik mySong.bin": false,
+                "uzytkowik z grupy dzieci może modyfikować plik mySong.bin": true
+            }
+        },
+        {
+            "question": "Zaznacz poprawne odpowiedzi dotyczące maski oraz wyznaczania uprawnień dla wpisów ACL powiązanych z klasą grupy:",
+            "type": "checkbox",
+            "answers": {
+                "Maska definiuje maksymalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy": true,
+                "Uprawnienia efektywne powstają przez zsumowanie uprawnień maski z uprawnieniami odpowiedniej klasy ACL": false,
+                "Maska definiuje minimalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy": false,
+                "Uprawnienia efektywne powstają przez przecięcie uprawnień maski z uprawnieniami odpowiedniej klasy ACL": true
+            }
+        },
+        {
+            "question": "Wskaż poprawne stwierdzenia dotyczące Linux ACL",
+            "type": "checkbox",
+            "answers": {
+                "Uprawnienie typu named-group można zamaskować": true,
+                "Maska w Linux ACL określa maksymalne uprawnienia": true,
+                "Uprawnienie wpisu ACL other można zamaskować": false,
+                "Uprawnienie typu named-user można zamaskować": true
+            }
+        },
+        {
+            "question": "Aby korzystać w systemie Linux z Acces Control List (ACL) należy:",
+            "type": "checkbox",
+            "answers": {
+                "ACL jest domyślnie włączony zaraz po instalacji dystrybucji systemu Linux.": false,
+                "Dodać obsługę ACL do wszytskich systemów plików w pliku /etc/fstab.": true,
+                "Żadna odpowiedź nie jest poprawna.": false,
+                "Zainstalować pakiet acl.": true
+            }
+        },
+        {
+            "question": "Efekt polecenia ls -l test.txt jest następujący: ",
+            "type": "checkbox",
+            "answers": {
+                "brak poprawnej odpowiedzi": false,
+                "setfacl -d -m g:teachers:rwx test": false,
+                "setfacl -m g:teachers:rwx test": false,
+                "Nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik": true
+            }
+        },
+        {
+            "question": "W jaki sposób można sprawdzić, czy dany plik ma zdefiniowane dodatkowe uprawnienia ACL?",
+            "type": "checkbox",
+            "answers": {
+                "Poprzez użycie polecenia getfacl": true,
+                "Poprzez użycie polecenia filefrag": false,
+                "Korzystając z polecenia ps z argumentem -aux": false,
+                "Używając polecenia ls": true
+            }
+        },
+        {
+            "question": "Polecenie, wyniku którego każdy nowoutworzony KATALOG w systemie Debian będzie miał uprawnienia 644 to:",
+            "type": "checkbox",
+            "answers": {
+                "umask 644": false,
+                "brak poprawnej odpowiedzi": false,
+                "umask 133": true,
+                "umask 022": false
+            }
+        }
+    ]
+}

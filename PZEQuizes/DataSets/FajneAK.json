@@ -1,0 +1,858 @@
+{
+    "questions": [
+        {
+            "question": "Czy w CISC moze byc wykonana w VLIW",
+            "type": "truefalse",
+            "answers": {
+                "Nie, architektura VLIW dotyczy mikroprocesorów i miała na celu jak najwieksze zmniejszenie jednostki centralnej i jej rozkazów (RISC).": false
+            }
+        },
+        {
+            "question": "Czy w CISC wystepuje model wymiany danych typu pamiec - pamiec",
+            "type": "truefalse",
+            "answers": {
+                "Tak, posiada równiez niewielka ilosc rejestrów.": true
+            }
+        },
+        {
+            "question": "Czy w CISC jest mała liczba rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "Nie, w tej architekturze jest PEŁNA (complex) lista rozkazów. Niektóre z zaawansowanych plecen nawet nie były wykorzystywane, i bum! tak powstał RISC.": false
+            }
+        },
+        {
+            "question": "Czy w RISC wystepuje model wymiany danych typu rej-rej",
+            "type": "truefalse",
+            "answers": {
+                "Tak, a komunikacja z pamiecia operacyjna odbywa sie wyłacznie za pomoca rozkazów LOAD i STORE.": true
+            }
+        },
+        {
+            "question": "Czy w RISC jest mała liczba trybów adresowania",
+            "type": "truefalse",
+            "answers": {
+                "Tak, raptem 4 w procesorze RISC I podczas gdy CISCi moga miec ich kilkanascie, w tym takie bardzo złozone.": true
+            }
+        },
+        {
+            "question": "Czy w RISC jest wykonywanych kilka rozkazów w jednym takcie",
+            "type": "truefalse",
+            "answers": {
+                "Fałsz. Prawdziwe wykonywanie wielu rozkazów w jednym takcie wymaga superskalarnosci - wielu jednostek potokowych. Cecha architektury RISC jest potokowosc, ale pojedyncza.": false
+            }
+        },
+        {
+            "question": "Czy w RISC jest wykonywanych kilka rozkazów w jednym takcie (w danej chwili czasu)",
+            "type": "truefalse",
+            "answers": {
+                "Chodzi o przetwarzanie potokowe. Tu jest haczyk - pierwszy procesor RISC I (1980) stawiał sobie za cel wykonanie jednego rozkazu w jednym takcie i dokładnie tak brzmiało jego załozenie projektowe. Jednak jego fizyczna realizacja (1982) posiadała dwustopniowy potok. Równiez w wykładach jako cecha tej architektury jest napisane ”Intensywne wykorzystanie przetwarzania potokowego”, co odnosi sie do faktu, ze obecnie nie ma procesora typu RISC, który go nie ma. Wg mnie prawda.": true
+            }
+        },
+        {
+            "question": "Czy w RISC jest wykonywanych kilka instrukcji procesora w jednym rozkazie asemblerowym",
+            "type": "truefalse",
+            "answers": {
+                "Nic mi na ten temat nie wiadomo. Brzmi jednak zbyt hardo i odlegle od tematu zmniejszania ilosci rozkazów.": false
+            }
+        },
+        {
+            "question": "Czy w RISC jest układ sterowania w postaci logiki szytej",
+            "type": "truefalse",
+            "answers": {
+                "Tak": true
+            }
+        },
+        {
+            "question": "Architektura RISC charakteryzuje sie nieduza liczba trybów adresowania",
+            "type": "truefalse",
+            "answers": {
+                "Cecha architektury RISC jest prostota. Wszystkie rozkazy posiadaja jednakowy rozmiar i wystarcza minimalna liczba trybów adresowania.": true
+            }
+        },
+        {
+            "question": "Architektura RISC charakteryzuje się modelem obliczen pamiec - pamiec",
+            "type": "truefalse",
+            "answers": {
+                "Nie, ten model był stosowany w CISCach, które posiadały niewielka liczbe rejestrów poniewaz były drozsze oraz obawiano sie wzrostu czasu przełaczania kontekstu.": false
+            }
+        },
+        {
+            "question": "Architektura RISC charakteryzuje się wykorzystaniem mikroprogramowalnych układów sterujacych",
+            "type": "truefalse",
+            "answers": {
+                "Takie układy były stosowane w CISCach. Jest to tez rozwiazanie bardzo stare (poczatki w latach 50-tych).": false
+            }
+        },
+        {
+            "question": "Architektura RISC charakteryzuje się niezbyt obszerna lista rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "RISC dazył do uproszenie listy rozkazów, które w CISCach były ogromne i z wiekszosci sie nie korzystało.": true
+            }
+        },
+        {
+            "question": "Architektura RISC charakteryzuje się intensywnym wykorzystaniem przetwarzania potokowego",
+            "type": "truefalse",
+            "answers": {
+                "Był to jeden z kluczowych elementów sukcesu procesorów RISC.": true
+            }
+        },
+        {
+            "question": "Okna rejestrów chronia przez hazardem danych",
+            "type": "truefalse",
+            "answers": {
+                "Lolnope, od tego sa mechanizmy skoków opóznionych i przewidywania rozgałezien. Okno rejestrów zapewnia ciagłe i optymalne wykonywanie procedur.": false
+            }
+        },
+        {
+            "question": "Okna rejestrów minimalizuja liczbe odwołan do pamieci operacyjnej przy operacjach wywołania procedur",
+            "type": "truefalse",
+            "answers": {
+                "Tak, dokładnie do tego one słuza. Rejestr niski procedury A staje sie rejestrem wysokim procedury B itd. Innymi słowy, procedura A wywołuje procedure B, i tak dalej. I po cos w tym wszystkim sa rejestry globalne.": true
+            }
+        },
+        {
+            "question": "Okna rejestrów sa charakterystyczne dla architektury CISC",
+            "type": "truefalse",
+            "answers": {
+                "Nie, zostały zaprojektowane specjalnie dla architektury RISC. Jako pierwszy posiadał je procesor RISC I.": false
+            }
+        },
+        {
+            "question": "Okna rejestrów sa zamykane po błednym przewidywaniu wykonania skoków warunkowych.",
+            "type": "truefalse",
+            "answers": {
+                "W mechanizmie prognozowania rozgałezien jest mozliwosc błednego przewidywania. Jednak błedna prognoza powoduje tylko zmiane strategii (przewidywanie wykonania lub niewykonania), a nie zamykanie okna.": false
+            }
+        },
+        {
+            "question": "Okna rejestrów sa przesuwane przy operacjach wywołania procedur",
+            "type": "truefalse",
+            "answers": {
+                "Tak, z kazda nowa wywołana procedura okno rejestrów przesuwane jest w dół (ze 137 do 0)": true
+            }
+        },
+        {
+            "question": "Okna rejestrów Sa przesuwane przy wystapieniu rozkazów rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "W architekturze SPARC okno jest przesuwane rozkazami SAVE i RESTORE, na zyczenie programisty, a nie na wskutek rozkazów warunkowych.": false
+            }
+        },
+        {
+            "question": "Okna rejestrów Sa otwierane przy wystepowaniu rozkazów rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "Sa otwierane przy wywołaniu funkcji.": false
+            }
+        },
+        {
+            "question": "Przetwarzanie potokowe Nie jest realizowane dla operacji zmiennoprzecinkowych",
+            "type": "truefalse",
+            "answers": {
+                "Nie ma takiego ograniczenia. Przetwarzanie potokowe dotyczy optymalizacji czasu wykonywania rozkazów - podziału realizacji rozkazu na fazy. Owszem, dla argumentów zmiennoprzecinkowych moga wystapic problemy zwiazane z czasem obliczen (uniemozliwienie wykonania rozkazu w jednym takcie), co moze zablokowac napełnianie potoku, jednak nie uniemozliwia to zastosowania potoku.": false
+            }
+        },
+        {
+            "question": "Przetwarzanie potokowe Nie jest realizowane w procesorach CISC",
+            "type": "truefalse",
+            "answers": {
+                "Przetwarzanie potokowe znalazło zastosowanie głównie w architekturze RISC, jednak CISC tez z niej korzysta. Przykłady: VAX 11/780 (CISC), Ultra SPARC III (RISC)": false
+            }
+        },
+        {
+            "question": "Przetwarzanie potokowe Daje przyspieszenie nie wieksze od liczby segmentów (stopni) jednostki potokowej",
+            "type": "truefalse",
+            "answers": {
+                "Tak, przyspieszenie jest stosunkiem czasu wykonywania n rozkazów dla procesora niepotokowego oraz czasu dla procesora potokowego. W idealnym przypadku, gdy kazdy stopien dzieli okres rozkazu po równo, a liczba rozkazów dazy do nieskonczonosci, stosunek ten jest równy P - ilosci stopni.": true
+            }
+        },
+        {
+            "question": "Przetwarzanie potokowe W przypadku wystapienia zaleznosci miedzy danymi wywołuje bład i przerwanie wewnetrzne.",
+            "type": "truefalse",
+            "answers": {
+                "Hm, dobre pytanie. Tak, zaleznosci danych moga wystapic (zjawisko hazardu) i rozdupic program, ale po to własnie istnieja mechanizmy by temu zapobiegac. Kazda szanujaca sie architektura to potrafi: albo sprzetowo, albo na etapie kompilacji, która modyfikuje i optymalizuje program. A jezeli po modyfikacji pewien rozkaz nie wykona sie w jednym takcie, napełnianie potoku jest przerywane (ale błedu chyba nie wywala), patrz wyzej.": false
+            }
+        },
+        {
+            "question": "Przetwarzanie potokowe Jest realizowane tylko dla operacji zmiennoprzecinkowych",
+            "type": "truefalse",
+            "answers": {
+                "Pfff, no chyba nie XD Jest realizowane dla kazdego rodzaju rozkazu.": false
+            }
+        },
+        {
+            "question": "Mechanizmy potokowe stosowane sa w celu Uszeregowania ciagu wykonywanych rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "Nie, zupełnie nie o to chodzi. Ciag moze zostac uszeregowany przez kompilator w celu optymalizacji. Jednak celem tego mechanizmu jest zrównoleglenie wykonywania rozkazów ! zmiana kolejnosci ich realizacji nie jest załozeniem.": false
+            }
+        },
+        {
+            "question": "Mechanizmy potokowe stosowane sa w celu Uzyskania równoległej realizacji rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "No tyc. Potoki umozliwiaja realizacje wielu rozkazów jednoczesnie dzielac jednostke centralna na wg stopni, jak np. pobranie rozkazu i wykonania rozkazu. Dzieki temu dwa rozkazy moga wykonywac sie jednoczesnie, oba w innych fazach (jednostkach czasu).": true
+            }
+        },
+        {
+            "question": "Mechanizmy potokowe stosowane sa w celu Przyspieszenia realizacji rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "Tak, to główny cel. Umozliwienie wykonania rozkazów umozliwia przyspieszenie, które oblicza sie jako stosunek czasu wykonywania rozkazów w procesorze niepotokowym do czasu realizacji w procesorze potokowym. W idealnym przypadku jest ono równe P - ilosci podziałów / stopni / faz / zwał jak zwał.": true
+            }
+        },
+        {
+            "question": "Hazard danych Czasami moze byc usuniety przez zmiane kolejnosci wykonania rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "Tak, słuzy do tego mechanizm skoków opóznionych, który odbywa sie na poziomie kompilacji programu.": true
+            }
+        },
+        {
+            "question": "Hazard danych Nie wystepuje w architekturze superskalarnej",
+            "type": "truefalse",
+            "answers": {
+                "Wystepuje wszedzie tam gdzie jest potokowe przetwarzania rozkazów.": false
+            }
+        },
+        {
+            "question": "Hazard danych Jest eliminowany przez zastosowanie specjalnego bitu w kodzie program",
+            "type": "truefalse",
+            "answers": {
+                "Nic mi o tym nie wiadomo. Pewne dodatkowe bity sa wykorzystywane w mechanizmie przewidywania rozgałezien, który słuzy do eliminacji hazardu, jednak on to odbywa sie PRZED realizacja programu i sprowadza sie do zmiany kolejnosci wykonywania rozkazów przez kompilator. Nic nie dodaje do tresci programu.": false
+            }
+        },
+        {
+            "question": "Hazard danych Moze wymagac wyczyszczenia potoku i rozpoczecia nowej (...)",
+            "type": "truefalse",
+            "answers": {
+                "Nie wiem jak hazard danych moze czegokolwiek wymagac skoro jest zjawiskiem ubocznym i je eliminujemy. Sprzetowa i programowa": false
+            }
+        },
+        {
+            "question": "Hazard danych mozna ominac Poprzez rozgałezienia",
+            "type": "truefalse",
+            "answers": {
+                "Nie, rozgałezienie to po prostu instrukcje typu IF, które tworza takie rozgałezienia. Mechanizm przewidywania rozgałezien jest stosowany do usuwania hazardu sterowania zwiazanego ze skokami i rozgałezieniami.": false
+            }
+        },
+        {
+            "question": "Hazard danych mozna ominac Poprzez uproszczenie adresowania - adresowanie bezposrednie.",
+            "type": "truefalse",
+            "answers": {
+                "Bullshit. Nie wiem w czym miało by pomóc uproszczenia adresowania, poza pójsciem w strone RISCu, ale na hazard to nie pomoze. Tym mozna tylko skrócic czas odwołania sie do danych.": false
+            }
+        },
+        {
+            "question": "Hazard danych mozna ominac Przez zamiane rozkazów",
+            "type": "truefalse",
+            "answers": {
+                "Tak, i na tym polega mechanizm skoków opóznionych, które moga program zmodyfikowac (dodac rozkaz NOP) albo zoptymalizowac, własnie zamieniaja rozkazy kolejnoscia.": true
+            }
+        },
+        {
+            "question": "Dla unikniecia hazardu danych mozna Zastosowac uproszczone metody adresacji.",
+            "type": "truefalse",
+            "answers": {
+                "RISC nie eliminuje hazardu XD Skracaja tylko czas dostepu do pamieci.": false
+            }
+        },
+        {
+            "question": "Dla unikniecia hazardu danych mozna Wykorzystac szyne zwrotna.",
+            "type": "truefalse",
+            "answers": {
+                "Szyna zwrotna jest stosowana by zastosowac ”wyprzedzajace pobieranie argumentów”, które eliminuje prawdziwa zaleznosc danych (RAW).": true
+            }
+        },
+        {
+            "question": "Dla unikniecia hazardu danych mozna Zastosowac specjalny bit w kodzie rozkazu.",
+            "type": "truefalse",
+            "answers": {
+                "Jeden dodatkowy bicik nie sprawi, ze argument bedzie odczytany poprawnie.": false
+            }
+        },
+        {
+            "question": "Dla unikniecia hazardu danych mozna Zastosowac tablice historii rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "Ona eliminuje hazard sterowania.": false
+            }
+        },
+        {
+            "question": "Dla unikniecia hazardu danych mozna Wstrzymac na 1 takt napełnianie potoku.",
+            "type": "truefalse",
+            "answers": {
+                "Tak, to moze wyeliminowac antyzaleznosc (WAR).": true
+            }
+        },
+        {
+            "question": "Mechanizm skoków opóznionych Polega na opóznianiu wykonywania skoku do czasu wykonania rozkazu nastepnego za skokiem",
+            "type": "truefalse",
+            "answers": {
+                "Tak, cały ten mechanizm sprowadza sie do opóznienia efektu skoku o jeden rozkaz. Zapewnia to, ze rozkaz nastepny po skoku zawsze bedzie wykonywany w całosci.": true
+            }
+        },
+        {
+            "question": "Mechanizm skoków opóznionych Wymaga wstrzymania potoku na jeden takt.",
+            "type": "truefalse",
+            "answers": {
+                "Nie, mechanizm potoków nie musi byc wstrzymywany. Mechanizm ten zmienia postac programu w trakcie kompilacji, ale na sama realizacje potoku nie ma wpływu (afaik, not sure).": false
+            }
+        },
+        {
+            "question": "Mechanizm skoków opóznionych Powoduje bład na koncu petli",
+            "type": "truefalse",
+            "answers": {
+                "Pfff, jak programista ssie pałe to tak, jednak w załozeniu tak sie nie dzieje.": false
+            }
+        },
+        {
+            "question": "Mechanizm skoków opóznionych Wymaga umieszczenia rozkazu NOP za rozkazem skoku lub reorganizacje programu",
+            "type": "truefalse",
+            "answers": {
+                "Tak, mechanizm sprowadza sie do tego, i tylko do tego, patrz pierwsza odpowiedz.": true
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Zawiera m.in. adresy rozkazów rozgałezien",
+            "type": "truefalse",
+            "answers": {
+                "Tak, tablica ta zawiera bit waznosci, adres rozkazu rozgałezienia, bity historii oraz adres docelowy rozgałezienia.": true
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Pozwala zminimalizowac liczbe błednych przewidywan rozgałezien w zagniezdzonej petli",
+            "type": "truefalse",
+            "answers": {
+                "Tak, z tego co wiem jest strategia dynamiczna i najbardziej optymalna ze wszystkich - skonczony automat przewidywania rozgałezien oparty na tej tablicy (z dwoma bitami historii) moze byc zrealizowany na dwóch bitach.": true
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Nie moze byc stosowana w procesorach CISC",
+            "type": "truefalse",
+            "answers": {
+                "Ten mechanizm słuzy zabezpieczeniu przed hazardem, który wystepuje w przetwarzaniu potokowym, a z tego korzystaja zarówno CISC jak i RISC.": false
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Jest obsługiwana przez jadro systemu operacyjnego",
+            "type": "truefalse",
+            "answers": {
+                "Chyba nie, ten mechanizm znajduje sie w sprzecie procesora.": false
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Jest stosowana do statycznego przewidywania rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "Ona słuzy do dynamicznego przewidywania rozgałezien. Poczatkowe strategie sa statyczne, ale pózniej zmieniaja sie w dynamiczne.": false
+            }
+        },
+        {
+            "question": "Tablica historii rozgałezien Pozwala zapamietac cała historie wykonan kazdego rozkazu rozgałezienia.",
+            "type": "truefalse",
+            "answers": {
+                "Tablica poswieca dla kazdego rozkazu pewna skonczona liczbe bitów w celu przewidzenia rozgałezienia.": false
+            }
+        },
+        {
+            "question": "W tablicy historii rozgałezien z 1 bitem historii mozna zastosowac nastepujacy algorytm przewidywania (najbardziej złozony) : Skok opózniony",
+            "type": "truefalse",
+            "answers": {
+                "Nie, skoki opóznione nie słuza do przewidywania rozgałezien, sa zupełnie innym mechanizmem eliminacji hazardu.": false
+            }
+        },
+        {
+            "question": "W tablicy historii rozgałezien z 1 bitem historii mozna zastosowac nastepujacy algorytm przewidywania (najbardziej złozony) : Przewidywanie, ze rozgałezienie (skok warunkowy) zawsze nastapi",
+            "type": "truefalse",
+            "answers": {
+                "Nie, to strategia statyczna, która moze byc wykonywana gdy adres rozkazu rozgałezienia NIE jest w tablicy. Nie wykorzystuje bitu historii.": false
+            }
+        },
+        {
+            "question": "W tablicy historii rozgałezien z 1 bitem historii mozna zastosowac nastepujacy algorytm przewidywania (najbardziej złozony) : Przewidywanie, ze rozgałezienie nigdy nie nastapi",
+            "type": "truefalse",
+            "answers": {
+                "Nie, to strategia statyczna, która moze byc wykonywana gdy adres rozkazu rozgałezienia NIE jest w tablicy. Nie wykorzystuje bitu historii.": false
+            }
+        },
+        {
+            "question": "W tablicy historii rozgałezien z 1 bitem historii mozna zastosowac nastepujacy algorytm przewidywania (najbardziej złozony) : Przewidywanie, ze kolejne wykonanie rozkazu rozgałezienia bedzie przebiegało tak samo jak poprzednie",
+            "type": "truefalse",
+            "answers": {
+                "Tak, i to jest wszystko na co stac historie 1-bitowa. Historia 2-bitowa umozliwia interpretacje:- historii ostatniego wykonania skoku - tak lub nie; - przewidywania nastepnego wykonania skoku - tak lub nie A zamiana strategii nastepuje dopiero po drugim błedzie przewidywania.": true
+            }
+        },
+        {
+            "question": "W tablicy historii rozgałezien z 1 bitem historii mozna zastosowac nastepujacy algorytm przewidywania (najbardziej złozony) : Wstrzymanie napełniania potoku",
+            "type": "truefalse",
+            "answers": {
+                "Nie, wstrzymywanie potoku moga spowodowac algorytmy zajmujace sie eliminacja hazardu danych - zaleznosci miedzy argumentami.": false
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Zapewnienia spójnosci pamieci podrecznej",
+            "type": "truefalse",
+            "answers": {
+                "Nie, to problem komputerów wieloprocesorowych.": false
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Tablicy historii rozgałezien",
+            "type": "truefalse",
+            "answers": {
+                "Tak, to najprawdopodobniej najlepszy słuzacy ku temu mechanizm. Stara sie przewidywac czy skok bedzie wykonany badz nie, wykorzystuje do tego kilka strategii.": true
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Techniki wyprzedzajacego pobrania argumentu",
+            "type": "truefalse",
+            "answers": {
+                "Nie, ten mechanizm słuzy do eliminacji hazardu danych - zaleznosci miedzy argumentami.": false
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Wystawienia do programu rozkazów typu „nic nie rób”",
+            "type": "truefalse",
+            "answers": {
+                "Tak, tym rozkazem jest NOP i jest wstawiany przez mechanizm skoków opóznionych, który słuzy do zabezpieczania potoku.": true
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Protokołu MESI",
+            "type": "truefalse",
+            "answers": {
+                "Nie, on jest od zapewnienia spójnosci pamieci wspólnej czy jakos tak.": false
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Wykorzystania techniki skoków opózniajacych",
+            "type": "truefalse",
+            "answers": {
+                "Tak, umozliwiaja ona modyfikacje programu (wstawienie rozkazu NOP), albo jego optymalizacje (zamiana kolejnosci wykonywania rozkazów.) Mechanizm ten opóznia efekt skoku o jeden rozkaz, co zapewnia, ze rozkaz po skoku bedzie w całosci wykonany.": true
+            }
+        },
+        {
+            "question": "Problemy z potokowym wykonywaniem rozkazów skoków (rozgałezien) moga byc wyeliminowane lub ograniczone przy pomocy: Technologii MMX",
+            "type": "truefalse",
+            "answers": {
+                "Polega zupełnie na czym innym.": false
+            }
+        },
+        {
+            "question": "Konsekwencja błedu przy przewidywaniu rozgałezien moze byc Wstrzymanie realizowanego watku i przejscie do realizacji innego watku",
+            "type": "truefalse",
+            "answers": {
+                "Przewidywanie rozgałezien odbywa sie lokalnie, osobno dla kazdego watku.": false
+            }
+        },
+        {
+            "question": "Konsekwencja błedu przy przewidywaniu rozgałezien moze byc Koniecznosc wyczyszczenia kolejki rozkazów do potoku",
+            "type": "truefalse",
+            "answers": {
+                "W przypadku jezeli mechanizm przewidywania rozgałezienia sie pomyli i zacznie pobierac rozkazy z błednego rozgałezienia, potok rozkazów musi zostac wyczyszczony. Czyli np. w IFie miało byc true, a okazało sie, ze false, to nalezy zbedne pobrane rozkazy wyczyscic.": true
+            }
+        },
+        {
+            "question": "Konsekwencja błedu przy przewidywaniu rozgałezien moze byc Koniecznosc wyczyszczenia tablicy historii rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "W przypadku błedu nalezy tablice aktualizowac, aby w przyszłosci to rozgałezienie było przewidywane z wieksza dokładnoscia.": false
+            }
+        },
+        {
+            "question": "Konsekwencja błedu przy przewidywaniu rozgałezien moze byc Przerwanie realizowanego procesu / watku i sygnalizacja wyjatku",
+            "type": "truefalse",
+            "answers": {
+                "Nie, nalezy jedynie zmienic strategie / przejsc do innej gałezi, a nie usuwac proces. Bład przewidywania rozgałezien nie jest czyms na tyle złym, by przerywac program. To naturalna konsekwencja potokowosci, z która nalezy sie uporac.": false
+            }
+        },
+        {
+            "question": "Konsekwencja błedu przy przewidywaniu rozgałezien moze byc Koniecznosc przemianowania rejestrów w procesorach",
+            "type": "truefalse",
+            "answers": {
+                "Przemianowanie rejestrów wystepuje by procesorach skalarnych w celu równoległej realizacji zadan na potokach.": false
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Liczba rozkazów, które procesor moze wykonac w 1 takcie zalezy od liczby jednostek potokowych w procesorze",
+            "type": "truefalse",
+            "answers": {
+                "Procesory superskalarne posiadaja wiele jednostek potokowych, które sa konieczne by móc wykonywac wiele rozkazów w jednym takcie. Od ich liczby zalezy owa liczba rozkazów.": true
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Liczba rozkazów, które procesor moze wykonac w jednym takcie, zalezy od liczby stopni potoku.",
+            "type": "truefalse",
+            "answers": {
+                "Nie, liczba stopni potoku mówi, na ile czesci dzieli sie dany rozkaz w tej jednostce potokowej. One umozliwiaja wykonanie wielu rozkazów w jednej jednostce czasu, jednak nie przekłada sie to bezposrednio na liczbe rozkazów, ze wzgledu na zawikłania czasowe, oraz nie jest to idea procesora superskalarnego.": false
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Liczba rozkazów pobieranych z pamieci, w kazdym takcie musi przekraczac liczbe jednostek potokowych",
+            "type": "truefalse",
+            "answers": {
+                "Liczba pobranych rozkazów powinna byc co najmniej równa ilosci jednostek potokowych.": false
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Liczba rozkazów, które procesor moze wykonac w taktach zalezy od liczby jednostek potokowych w procesorze",
+            "type": "truefalse",
+            "answers": {
+                "Procesory superskalarne posiadaja wiele jednostek potokowych, które sa konieczne by móc wykonywac wiele rozkazów w jednym takcie. Od ich liczby zalezy owa liczba rozkazów.": true
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Jest mozliwe równoległe wykonywanie kilku rozkazów w jednym procesorze (rdzeniu)",
+            "type": "truefalse",
+            "answers": {
+                "Tak, własnie taka jest idea stworzenia procesorów superskalarnych, by móc w jednym takcie wykonac > 1 liczby instrukcji. Zapewnia to niepojedyncza liczba jednostek potokowych.": true
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Rozszerzenia architektury wykorzystujace model SIMD umozliwiaja wykonanie rozkazów wektorowych",
+            "type": "truefalse",
+            "answers": {
+                "Tak, ”pojedyncza instrukcja - wiele urzadzen”. To rozszerzenie korzysta z mozliwosci architektury superskalarnej - mozliwosci wykonywania wielu rozkazów w 1 takcie - i realizuje pojedynczy rozkaz na wielu rejestrach jednoczesnie.": true
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Nie wystepuje prawdziwa zaleznosc danych",
+            "type": "truefalse",
+            "answers": {
+                "Niestety wystepuje, i prawde mówiac, wystepuje tutaj kazdy rodzaj zaleznosci miedzy rozkazami: prawdziwa zaleznosc danych, zaleznosc wyjsciowa oraz antyzaleznosc.": false
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Moga wystapic nowe formy hazardu danych: zaleznosci wyjsciowe miedzy rozkazami oraz antyzaleznosci",
+            "type": "truefalse",
+            "answers": {
+                "Tak, brak uzasadnienia.": true
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Nie wystepuje hazard danych (problemy z potokowym wykonaniem rozkazów o zaleznych argumentach).",
+            "type": "truefalse",
+            "answers": {
+                "Nie, brak uzasadnienia.": false
+            }
+        },
+        {
+            "question": "W procesorach superskalarnych Hazard sterowania jest całkowicie eliminowany przez statyczne strategie przewidywania rozgałezien.",
+            "type": "truefalse",
+            "answers": {
+                "Superskalarna architektura ma mechanizm dynamicznego przewidywania, a poza tym, ani statyczne, ani dynamiczne strategie nie eliminuja całkowicie hazardu sterowania.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Dotyczy systemów SMP",
+            "type": "truefalse",
+            "answers": {
+                "Zdecydowanie nie tylko. Architektura superskalarna wymaga mechanizmu potokowego, czyli dotyczy głównie architektury RISC.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Wymaga zastosowania protokołu MESI",
+            "type": "truefalse",
+            "answers": {
+                "Nie, architektura superskalarna wymaga jedynie zastosowania co najmniej dwóch jednostek potokowych.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Umozliwia równoległe wykonywanie kilku rozkazów w jednym procesorze",
+            "type": "truefalse",
+            "answers": {
+                "Tak, i taki jest cel jej istnienia. Umozliwia to mechanizm potokowy.": true
+            }
+        },
+        {
+            "question": "Architektura superskalarna Wywodzi sie z architektury VLIW",
+            "type": "truefalse",
+            "answers": {
+                "Wrecz odwrotnie, to VLIW wykorzystuje architekture superskalarna na której opiera swój podział rozkazów na paczki.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Wykorzystuje wiele potokowych jednostek funkcjonalnych",
+            "type": "truefalse",
+            "answers": {
+                "Tak, wymagane sa co najmniej dwie jednostki potokowe, poniewaz architektura superskalarna w załozeniu moze wykonywac wiele rozkazów w jednym takcie.": true
+            }
+        },
+        {
+            "question": "Architektura superskalarna Nie dopuszcza do wystapienia hazardu sterowania",
+            "type": "truefalse",
+            "answers": {
+                "Hazard sterowania jest problemem jednostek potokowych i musze one byc rozwiazane przez skoki opóznione lub tablice historii rozgałezien. Sama architektura superskalarna nie gwarantuje rozwiazania tego problemu.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Umozliwia wykonanie wielu rozkazów w jednym takcie",
+            "type": "truefalse",
+            "answers": {
+                "Jest to idea architektury superskalarnej.": true
+            }
+        },
+        {
+            "question": "Architektura superskalarna Wykorzystuje model obliczen pamiec - pamiec",
+            "type": "truefalse",
+            "answers": {
+                "Ta architektura nie jest ograniczona do jednego modelu obliczen.": false
+            }
+        },
+        {
+            "question": "Architektura superskalarna Jest stosowana tylko w procesorach wielordzeniowych",
+            "type": "truefalse",
+            "answers": {
+                "Architektura superskalarna to nie wielordzeniowosc! Jednostka superskalarna wykonuje wiele instrukcji jednoczesnie, ale w pojedynczym watku. Z kolei procesor wielordzeniowy potrafi wykonywac wiele watków, czyli wiele ciagów instrukcji jednoczesnie. Jednostka superskalarna moze byc rdzeniem, ale ofc nie tylko w tym typie procków jest stosowana.": false
+            }
+        },
+        {
+            "question": "Przetwarzanie wielowatkowe Zapewnia lepsze wykorzystanie potoków",
+            "type": "truefalse",
+            "answers": {
+                "Tak, ma na celu minimalizacje strat cykli w trakcie realizacji watku, jakie moga powstac na wskutek: - chybionych odwołan do pamieci podrecznej; - błedów w przewidywaniu rozgałezien; - zaleznosci miedzy argumentami": true
+            }
+        },
+        {
+            "question": "Przetwarzanie wielowatkowe Minimalizuje straty wynikajace z chybionych odwołan do pamieci podrecznej",
+            "type": "truefalse",
+            "answers": {
+                "Tak, brak uzasadnienia.": true
+            }
+        },
+        {
+            "question": "Przetwarzanie wielowatkowe Wymaga zwielokrotnienia zasobów procesora (rejestry, liczniki rozkazów, itp.)",
+            "type": "truefalse",
+            "answers": {
+                "Niestety tak, jest to warunek sprzetowej realizacji wielowatkowosci.": true
+            }
+        },
+        {
+            "question": "Przetwarzanie wielowatkowe Nie moze byc stosowane w przypadku hazardu danych",
+            "type": "truefalse",
+            "answers": {
+                "Nie, hazard danych wynika z zaleznosci miedzy argumentami, które sa naturalnym ryzykiem przy stosowaniu mechanizmu potokowego. Nie powinny byc blokowane z tego powodu, tym bardziej,": false
+            }
+        },
+        {
+            "question": "Pojecie równoległosci na poziomie rozkazów Dotyczy architektury MIMD",
+            "type": "truefalse",
+            "answers": {
+                "Nie, ten rodzaj równoległosci dotyczy mechanizmów potokowych (CISC i RISC), architektury superskalarnej oraz VLIW.": false
+            }
+        },
+        {
+            "question": "Pojecie równoległosci na poziomie rozkazów Odnosi sie m.in. do przetwarzania potokowego",
+            "type": "truefalse",
+            "answers": {
+                "Tak, idea mechanizmu potoków jest zrównoleglenie rozkazów i mozliwosc wykonywania wielu z nich w tej samej chwili czasu.": true
+            }
+        },
+        {
+            "question": "Pojecie równoległosci na poziomie rozkazów Dotyczy architektury MPP",
+            "type": "truefalse",
+            "answers": {
+                "Nie, brak uzasadnienia.": false
+            }
+        },
+        {
+            "question": "Pojecie równoległosci na poziomie rozkazów Dotyczy m.in. architektury superskalarnej",
+            "type": "truefalse",
+            "answers": {
+                "Tak, brak uzasadnienia.": true
+            }
+        },
+        {
+            "question": "Efektywne wykorzystanie równoległosci na poziomie danych umozliwiaja Komputery wektorowe",
+            "type": "truefalse",
+            "answers": {
+                "Ogółem zastosowanie tej równoległosci jest mozliwe gdy mamy do czynienia z wieloma danymi, które moga byc przetwarzane w tym samym czasie. A grafika, wektory, macierze itp. do takich naleza.": true
+            }
+        },
+        {
+            "question": "Efektywne wykorzystanie równoległosci na poziomie danych umozliwiaja Komputery macierzowe",
+            "type": "truefalse",
+            "answers": {
+                "Ogółem zastosowanie tej równoległosci jest mozliwe gdy mamy do czynienia z wieloma danymi, które moga byc przetwarzane w tym samym czasie. A grafika, wektory, macierze itp. do takich naleza.": true
+            }
+        },
+        {
+            "question": "Efektywne wykorzystanie równoległosci na poziomie danych umozliwiaja Klastry",
+            "type": "truefalse",
+            "answers": {
+                "Ogółem zastosowanie tej równoległosci jest mozliwe gdy mamy do czynienia z wieloma danymi, które moga byc przetwarzane w tym samym czasie. A grafika, wektory, macierze itp. do takich naleza.": true
+            }
+        },
+        {
+            "question": "Efektywne wykorzystanie równoległosci na poziomie danych umozliwiaja Procesory graficzne",
+            "type": "truefalse",
+            "answers": {
+                "Ogółem zastosowanie tej równoległosci jest mozliwe gdy mamy do czynienia z wieloma danymi, które moga byc przetwarzane w tym samym czasie. A grafika, wektory, macierze itp. do takich naleza.": true
+            }
+        },
+        {
+            "question": "Efektywne wykorzystanie równoległosci na poziomie danych umozliwiaja Rozszerzenia SIMD procesorów superskalarnych",
+            "type": "truefalse",
+            "answers": {
+                "Ogółem zastosowanie tej równoległosci jest mozliwe gdy mamy do czynienia z wieloma danymi, które moga byc przetwarzane w tym samym czasie. A grafika, wektory, macierze itp. do takich naleza.": true
+            }
+        },
+        {
+            "question": "Wielowatkowosc współbiezna w procesorze wielopotokowym zapewnia Mozliwosc wprowadzenia rozkazów róznych watków do wielu potoków",
+            "type": "truefalse",
+            "answers": {
+                "Tak, jest to charakterystyczna cecha tego typu wielowatkowosci. Z kolei wielowatkowosci grubo- i drobnoziarniste umozliwiaja wprowadzenie do wielu potoków wyłacznie jednego watku (w jednym takcie!)": true
+            }
+        },
+        {
+            "question": "Wielowatkowosc współbiezna w procesorze wielopotokowym zapewnia Realizacje kazdego z watków do momentu wstrzymania któregos rozkazu z danego watku",
+            "type": "truefalse",
+            "answers": {
+                "Tak, watek jest realizowany do momentu wstrzymania rozkazu. Te sama ceche posiada wielowatkowosc gruboziarnista. Z kolei wielowatkowosc drobnoziarnista w kolejnych taktach realizuje naprzemiennie rozkazy kolejnych watków.": true
+            }
+        },
+        {
+            "question": "Wielowatkowosc współbiezna w procesorze wielopotokowym zapewnia Przełaczanie watków co takt",
+            "type": "truefalse",
+            "answers": {
+                "Nie, to umozliwia tylko wielowatkowosc drobnoziarnista.": false
+            }
+        },
+        {
+            "question": "Wielowatkowosc współbiezna w procesorze wielopotokowym zapewnia Automatyczne przemianowanie rejestrów",
+            "type": "truefalse",
+            "answers": {
+                "Głowy nie dam, ale chyba zadna wielowatkowosc nie zapewnia automatycznego przemianowania.": false
+            }
+        },
+        {
+            "question": "Metoda przemianowania rejestrów jest stosowana w celu eliminacji Błednego przewidywania rozgałezien",
+            "type": "truefalse",
+            "answers": {
+                "Nie, do tego słuzy m.in. tablica historii rozgałezien.": false
+            }
+        },
+        {
+            "question": "Metoda przemianowania rejestrów jest stosowana w celu eliminacji Chybionego odwołania do pamieci podrecznej",
+            "type": "truefalse",
+            "answers": {
+                "Nie, to jest problem architektury VLIW i eliminuje sie do przez przesuniecie rozkazów LOAD jak najwyzej, tak aby zminimalizowac czas ewentualnego oczekiwania": false
+            }
+        },
+        {
+            "question": "Metoda przemianowania rejestrów jest stosowana w celu eliminacji Prawdziwej zaleznosci danych",
+            "type": "truefalse",
+            "answers": {
+                "Nie, od tego jest metoda wyprzedzajacego pobierania argumentu.": false
+            }
+        },
+        {
+            "question": "Metoda przemianowania rejestrów jest stosowana w celu eliminacji Zaleznosci wyjsciowej miedzy rozkazami.",
+            "type": "truefalse",
+            "answers": {
+                "Tak, ta metoda eliminuje powyzszy i ponizszy problem. Polega na dynamicznym przypisywaniu rejestrów do rozkazów.": true
+            }
+        },
+        {
+            "question": "Metoda przemianowania rejestrów jest stosowana w celu eliminacji Antyzaleznosci",
+            "type": "truefalse",
+            "answers": {
+                "Tak, brak uzasadnienia.": true
+            }
+        },
+        {
+            "question": "Wyprzedzajace pobranie argumentu pozwala rozwiazac konflikt wynikajacy z Zaleznosci wyjsciowej miedzy rozkazami",
+            "type": "truefalse",
+            "answers": {
+                "Te zaleznosc musi kontrolowac układ sterujacy.": false
+            }
+        },
+        {
+            "question": "Wyprzedzajace pobranie argumentu pozwala rozwiazac konflikt wynikajacy z Prawdziwej zaleznosci danych",
+            "type": "truefalse",
+            "answers": {
+                "Tak, do tego słuzy, patrz: prawdziwa zaleznosc danych": true
+            }
+        },
+        {
+            "question": "Wyprzedzajace pobranie argumentu pozwala rozwiazac konflikt wynikajacy z Błednego przewidywania rozgałezien",
+            "type": "truefalse",
+            "answers": {
+                "Nie powoduje konfliktów, nalezy je tylko obsłuzyc i ograniczyc liczbe wystepowan.": false
+            }
+        },
+        {
+            "question": "Wyprzedzajace pobranie argumentu pozwala rozwiazac konflikt wynikajacy z Antyzaleznosci miedzy rozkazami",
+            "type": "truefalse",
+            "answers": {
+                "Rozkazowi, który odczytuje jakas zmienna, od razu jest podrzucana jej zmieniona wartosc. zamiast przechodzic przez rejestr posredni (zapis i ponowny odczyt).": true
+            }
+        },
+        {
+            "question": "Przepustowosc (moc obliczeniowa) duzych komputerów jest podawana w GFLOPS",
+            "type": "truefalse",
+            "answers": {
+                "To jest do zapamietania na prostu - takie sa standardy": true
+            }
+        },
+        {
+            "question": "Przepustowosc (moc obliczeniowa) duzych komputerów jest podawana w Liczbie instrukcji wykonywanych na sekunde",
+            "type": "truefalse",
+            "answers": {
+                "To jest do zapamietania na prostu - takie sa standardy": false
+            }
+        },
+        {
+            "question": "Przepustowosc (moc obliczeniowa) duzych komputerów jest podawana w Liczbie operacji zmiennoprzecinkowych na sekunde",
+            "type": "truefalse",
+            "answers": {
+                "To jest do zapamietania na prostu - takie sa standardy": true
+            }
+        },
+        {
+            "question": "Przepustowosc (moc obliczeniowa) duzych komputerów jest podawana w Mb/sek",
+            "type": "truefalse",
+            "answers": {
+                "To jest do zapamietania na prostu - takie sa standardy": false
+            }
+        },
+        {
+            "question": "Podstawa klasyfikacji Flynna jest Liczba jednostek przetwarzajacych i sterujacych w systemach komputerowych",
+            "type": "truefalse",
+            "answers": {
+                "Kryterium klasyfikacji Flynna jest liczba strumieni rozkazów oraz liczba strumieni danych w systemie komputerowym. NIC WIECEJ, NIC MNIEJ.": false
+            }
+        },
+        {
+            "question": "Podstawa klasyfikacji Flynna jest Protokół dostepu do pamieci operacyjnej",
+            "type": "truefalse",
+            "answers": {
+                "Kryterium klasyfikacji Flynna jest liczba strumieni rozkazów oraz liczba strumieni danych w systemie komputerowym. NIC WIECEJ, NIC MNIEJ.": false
+            }
+        },
+        {
+            "question": "Podstawa klasyfikacji Flynna jest Liczba modułów pamieci operacyjnej w systemach komputerowych",
+            "type": "truefalse",
+            "answers": {
+                "Kryterium klasyfikacji Flynna jest liczba strumieni rozkazów oraz liczba strumieni danych w systemie komputerowym. NIC WIECEJ, NIC MNIEJ.": false
+            }
+        },
+        {
+            "question": "Podstawa klasyfikacji Flynna jest Sposób połaczenia jednostek przetwarzajacych z modułami pamieci operacyjnej.",
+            "type": "truefalse",
+            "answers": {
+                "Kryterium klasyfikacji Flynna jest liczba strumieni rozkazów oraz liczba strumieni danych w systemie komputerowym. NIC WIECEJ, NIC MNIEJ.": false
+            }
+        },
+        {
+            "question": "Podstawa klasyfikacji Flynna jest Liczba strumieni rozkazów i danych w systemach komputerowych",
+            "type": "truefalse",
+            "answers": {
+                "Kryterium klasyfikacji Flynna jest liczba strumieni rozkazów oraz liczba strumieni danych w systemie komputerowym. NIC WIECEJ, NIC MNIEJ.": true
+            }
+        }
+    ]
+}

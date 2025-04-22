@@ -1,0 +1,763 @@
+﻿{
+    "questions": [
+        {
+            "question": "Polecenie> get-childitem C:ntestn* -include *.txt -recurse | remove-item",
+            "type": "checkbox",
+            "answers": {
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem .txt z folderu \"C:\test\" i podfolderów.": true,
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem .txt z folderu \"C:\test\", bez podfolderów.": false,
+                "Znajduje i wypisuje wszystkie pliki z rozszerzeniem .txt z folderu \"C:\test\", bez podfolderów.": false,
+                "Jest niepoprawne": false
+            }
+        },
+        {
+            "question": "Które wersje systemu Windows NIE wpierają PowerShella?",
+            "type": "checkbox",
+            "answers": {
+                "Windows 2000 SP4": true,
+                "Windows 2000": true,
+                "Windows Server 2008": false,
+                "Windows 7": false
+            }
+        },
+        {
+            "question": "Które polityki wykonywania skryptów w PowerShell zabraniają wykonywania skryptów pochodzących z lokalnego komputera, jeśli skrypty te nie są podpisane przez zaufanego wydawcę?",
+            "type": "checkbox",
+            "answers": {
+                "Restricted": true,
+                "AllSigned": true,
+                "RemoteSigned": false,
+                "Unrestricted": false
+            }
+        },
+        {
+            "question": "Po wykonaniu poniższego skryptu w PowerShell: przedmiot = 'DSO' if ($przedmiot -eq 'DSO') {'Dedykowane Systemy Operacyjne'} elseif ($przedmiot -eq 'PK') {'Programowanie Komputerów'} else {'Nieznany przedmiot'}",
+            "type": "checkbox",
+            "answers": {
+                "Na ekranie zostanie wyświetlony napis \"Nieznany przedmiot\".": false,
+                "Wartość zmiennej $przedmiot nie ulegnie zmianie.": true,
+                "Na ekranie pojawi się komunikat o błędzie składniowym.": false,
+                "Do zmiennej $przedmiot zostanie przypisana wartość \"Dedykowane Systemy Operacyjne\".": false
+            }
+        },
+        {
+            "question": "Aby zwrócić wszystkie obiekty w bieżącej lokalizacji nalezy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "Get-children": true,
+                "Copy-item": false,
+                "Get-content": false,
+                "Get-process": false
+            }
+        },
+        {
+            "question": "Polecenie \"PS> get-process d* | stop-process\"",
+            "type": "checkbox",
+            "answers": {
+                "poszczególne polecenia należą do tzw. poleceń Cmdlet. (należy do poleceń Cmdlet - inna odpowiedź) ": false,
+                "zatrzymuje wszystkie uruchomione procesy.": true,
+                "zatrzymuje wszystkie procesy działające na partycji D.": true,
+                "zatrzymuje wszystkie procesy których nazwa rozpoczyna się literą \"d\".": true
+            }
+        },
+        {
+            "question": "Zaznacz poprawne przyporządkowania aliasów do Cmdletów",
+            "type": "checkbox",
+            "answers": {
+                "taskkill -> Kill-Process": false,
+                "ls -> Get-ChildItem": true,
+                "help -> Get-Help": true,
+                "man -> Get-Help": true
+            }
+        },
+        {
+            "question": "Polecenie Get-EventLog w Windows PowerShell pozwala:",
+            "type": "checkbox",
+            "answers": {
+                "Zapisywać informacje do dziennika zdarzeń.": false,
+                "Takie polecenie nie istnieje.": false,
+                "Pobierać wpisy z dziennika zdarzeń.": true,
+                "Pobierać wpisy z pliku C:\\Var\\Log\\Messages.": false
+            }
+        },
+        {
+            "question": "Polecenia natywne dla Windows PowerShell, które pozwalają na wykonywanie podstawowych operacji na obiektach w środowisku WPS to:",
+            "type": "checkbox",
+            "answers": {
+                "Potoki (pipelines)": false,
+                "Aplety poleceń (cmdlets)": true,
+                "Aplety skryptowe (scriptlets)": false,
+                "Komendy linii poleceń (line commands)": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne zdania dotyczące interpretera Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "PowerShell jest oparty o .NET": true,
+                "PowerShell nie udostępnia mechanizmów potoku.": false,
+                "PowerShell pozwala ustawić różne polityki kontrolujące jakie skrypty można uruchomić.": true,
+                "PowerShell jest kompatybilny z bashem.": false
+            }
+        },
+        {
+            "question": "Polityka Restricted wykonywania plików:",
+            "type": "checkbox",
+            "answers": {
+                "Jest domyślną polityką w środowisku PowerShell.": true,
+                "Pozwala na uruchamianie skryptów z rozszerzeniem .ps1.": false,
+                "Nie pozwala na wykonywanie komend w oknie interpretera.": false,
+                "Pozwala na uruchamianie skryptów z rozszerzeniem .ps1xml.": false
+            }
+        },
+        {
+            "question": "Które polecenie wypisze zawartość bieżącego katalogu z pominięciem plików o rozszerzeniu .exe?",
+            "type": "checkbox",
+            "answers": {
+                "Dir *.exe": false,
+                "gci -exclude *.exe": true,
+                "Get-Childitem -exclude *.exe": true,
+                "ls -include *.exe": false
+            }
+        },
+        {
+            "question": "Wskaż poprawne polecenia PowerShell usuwające z bieżącego katalogu pliki większe niż 2kB:",
+            "type": "checkbox",
+            "answers": {
+                "Get-Childitem |  Where-Object ( $_.length > 2kB ) | Remove-Item": false,
+                "Get-Childitem | Remove-Item | Where ( $_.length > 2kB )": false,
+                "Get-Childitem | Where-Object ( $_.length -gt 2kB ) | Remove-Item": true,
+                "ls | where-object { $_.length -gt 2kB } | rm": true
+            }
+        },
+        {
+            "question": "Polecenie \"PS> get-process | where-object { $_.WS -gt 300MB } | stop-process\" wydane w interpreterze Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Listuje procesy, które zużywają więcej niż 300 MB.": false,
+                "Szuka procesu, który zużywa więcej niż 300 MB i wyświetla nazwę.": false,
+                "Szuka procesu, który zużywa więcej niż 300 MB i zatrzymuje go.": true,
+                "Szuka procesu, który zużywa mniej niż 300 MB i zatrzymuje go.": false
+            }
+        },
+        {
+            "question": "Która z wersji systemu Windows obsługuje interpreter PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "Windows Vista": true,
+                "Windows 7": true,
+                "Windows XP SP2/SP3": true,
+                "Windows 95": false
+            }
+        },
+        {
+            "question": "Polecenie Set-Location w Cmdlets (PowerShell) ma swój odpowiednik w interpreterze komend cmd.exe. Jest to:",
+            "type": "checkbox",
+            "answers": {
+                "chdir": true,
+                "set": false,
+                "sloc": false,
+                "cd": true
+            }
+        },
+        {
+            "question": "Które z poleceń są poprawnymi podstawowymi aliasami w Windows PowerShell, służącymi do czyszczenia ekranu?\textsl{}",
+            "type": "checkbox",
+            "answers": {
+                "Clear-Console": false,
+                "Clear-Host": false,
+                "clear": true,
+                "cls": true
+            }
+        },
+        {
+            "question": "W celu zatrzymania procesów zużywających więcej niż 100MB pamięci RAM należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "PS> stop-process | where-object { $_.WS -gt 100MB }": true,
+                "PS> stop-process $Memory -gt 100MB": false,
+                "PS> get-process | where-object { $Memory -gt 100MB } | stop-process": true,
+                "PS> get-process | where-object { $_.WS -gt 100MB } | stop-process}": false
+            }
+        },
+        {
+            "question": "Zaznacz poprawne zdania dotyczące powłoski PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Wszystkie zmienne są obiektami .NET.": true,
+                "Do zmiennych odwołuje się używając znaku $.": true,
+                "Część zmiennych jest obiektami .NET.": false,
+                "Do zmiennych odwołuje się używając znaku #.": false
+            }
+        },
+        {
+            "question": "Za pomocą polecenia: Get-Childitem C:\\Work\\ -Recurse -Force | Measure-Object -property length -sum (Komentarz: polecenie measure-object służy do generowania statystyk)",
+            "type": "checkbox",
+            "answers": {
+                "Znajdziemy liczbę plików i ich całkowity rozmiar w folderze C:\\Work oraz w podfolderach.": true,
+                "Wypiszemy zawartość folderu C:\\Work.": false,
+                "Wypiszemy największy plik z folderu C:\\Work.": false,
+                "Jest to niepoprawna składnia.": false
+            }
+        },
+        {
+            "question": "Aby usunąć wszystkie pliki z katalogu c:\\temp\\o rozszerzeniu .xls w Windows PowerShell należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "remove-item c:\\temp\\*.xls": true,
+                "get-childitem c:\\temp\\*.xls | foreach-object { remove-item $_.fullname }": true,
+                "remove-item c:\\temp\\* -exclude *.xls": false,
+                "remove-file c:\\temp\\* -extension xls}": false
+            }
+        },
+        {
+            "question": "Polecenie: PS> get-childitem C:\\test\\* -include *.txt -recurse | remove-item ",
+            "type": "checkbox",
+            "answers": {
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem .txt z folderu \"C:\\test\" i podfolderów": true,
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem .txt z folderu \"C:\\test\", bez podfolderów": false,
+                "Znajduje i wypisuje wszystkie pliki z rozszerzeniem .txt z folderu \"C:\\test\", bez podfolderów": false,
+                "Jest niepoprawne.": false
+            }
+        },
+        {
+            "question": "Jakie rozszerzenia mogą mieć skrypty PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                ".wps": false,
+                ".shl": false,
+                ".cmd": false,
+                ".ps1": true
+            }
+        },
+        {
+            "question": "Której z niżej wymienionych polityk uruchamiania skryptów są dostępne w powerShell systemu Windows?",
+            "type": "checkbox",
+            "answers": {
+                "NoneAllowed - nie pozwala na uruchamianie żadnych skryptów.": false,
+                "AllSigned - możliwość uruchomienia tylko podpisanych skryptów.": true,
+                "RemoteSigned - możliwość uruchamiania skryptów lokalnych oraz podpisanych pochodzących z Internetu.": true,
+                "Unrestricted - pozwala na uruchamianie wszystkich skryptów.": true
+            }
+        },
+        {
+            "question": "Czym charakteryzują się komendy (tzw. cmdlety) w PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "Zazwyczaj zwracają obiekty.": true,
+                "Nie mogą mieć zdefiniowanych kilku aliasów jednocześnie.": false,
+                "Mają nazwy postaci \"rzeczownik-czasownik\"": false,
+                "Mają nazwy postaci \"czasownik-rzeczownik\"": true
+            }
+        },
+        {
+            "question": "Aby uzyskać pomoc na temat poleceń w Windows PowerShell należy użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "please": false,
+                "help": true,
+                "Oh genie": false,
+                "Get-Help": true
+            }
+        },
+        {
+            "question": "Aby sprawdzić czy jakiś katalog już istnieje w Windows PowerShell można skorzystac z poleceń:",
+            "type": "checkbox",
+            "answers": {
+                "remove-item": false,
+                "test-path": true,
+                "path": false,
+                "new-item": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie prawdziwe zdania dotyczące interpretera Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Polecenie ls jest aliasem polecenia Get-Children.": true,
+                "PowerShell nie posiada modułów i przystawek pozwalających na rozszerzanie powłoki poprzez dodawanie nowych cmdletów.": false,
+                "W systemie operacyjnym Windows XP SP2 domyślnie zainstalowaną wersją PowerShella jest wersja \"PowerShell v2\"": false,
+                "PowerShell pozwala na przetwarzanie potokowe, które pozwala na przekazywanie obiektu z jednego cmdletu do drugiego, bez potrzeby korzystania z parsowania tekstu czy zmiany formatowania.": true
+            }
+        },
+        {
+            "question": "Polecenie: \"new-item c:\\temp\test -type directory\" spowoduje:",
+            "type": "checkbox",
+            "answers": {
+                "Utworzenie katalogu directory w katalogu c:\\temp\\test": false,
+                "Sprawdzi istnienie katalogu test w katalogu c:\\temp": false,
+                "Utworzenie katalogu test w katalogu c:\\temp": true,
+                "Sprawdzi czy \"test\" w katalogu c:\\temp jest katalogiem": false
+            }
+        },
+        {
+            "question": "Które wersje systemu Windows NIE wspierają PowerShella?",
+            "type": "checkbox",
+            "answers": {
+                "Windows Vista": false,
+                "Windows 2000": true,
+                "Windows XP SP2": false,
+                "Windows 7": false
+            }
+        },
+        {
+            "question": "Które wersje systemu Windows NIE wspierają PowerShella?",
+            "type": "checkbox",
+            "answers": {
+                "Windows 2000": true,
+                "Windows 2000 SP4": true,
+                "Windows Server 2008": false,
+                "Windows 7": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie prawdziwe zdania dotyczące interpretera Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Wszystkie zmienne są obiektami .NET.": true,
+                "Aby skopiować plik należy wpisać polecenie \"Copy-item lokalizacja1 lokalizacja2\"": true,
+                "Aby skopiować plik należy wpisać polecenie \"Set-Location lokalizacja1 lokalizacja2\"": false,
+                "PowerShell jest elementem pakietu Windows Management Framework.": true
+            }
+        },
+        {
+            "question": "W Windows PowerShell poprawnie stworzona pętla to:",
+            "type": "checkbox",
+            "answers": {
+                " $a = 1 do { $a; $a++ } while ($a -lt 10) ": true,
+                " $a = 10 do { $a; $a$ -- $ } while ($a -lt 3) ": false,
+                " for ($a = 1; $a -le 10; $a++) { $a } ": true,
+                " foreach ( $i in get-child c:\\scripts ) {$i.extended} ": false
+            }
+        },
+        {
+            "question": "Co należy wstawić w miejsce znaków zapytania, aby poniższy skrypt PowerShella wyświetlał nazwę procesu w danej chwili najbardziej obciążającego procesor? $ps = get-process  $max = $ps[0]  foreach ($p in $ps )  {  if ( ??? )  { $max = $p } } $max.processname",
+            "type": "checkbox",
+            "answers": {
+                " $p > $max ": false,
+                " $p.cpu -gt $max.cpu ": true,
+                "Brak odpowiedzi w źródle.": false
+            }
+        },
+        {
+            "question": "Aby wyświetlić wszystkie pliki o rozszerzeniu .txt znajdujące się w obecnym katalogu można użyć polecenia:",
+            "type": "checkbox",
+            "answers": {
+                "Get-ChildItem *.* -include *.txt": true,
+                "Get-ChildItem -extension *.txt": false,
+                "Get-ChildItem -exclude *.txt": false,
+                "Get-ChildItem | Where-Object {$_.Attributes -ne \"Directory\" -and $_.Extension -eq \".txt\"}": true
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe komendy ustawiające aktualną lokalizację na „C:\\”:",
+            "type": "checkbox",
+            "answers": {
+                "Set-Location c:\\ ": true,
+                "chdir c:\\ ": true,
+                "cd c\\ ": true,
+                "goto c:\\ ": false
+            }
+        },
+        {
+            "question": "Zaznacz wszystkie prawidłowe odpowiedzi opisujące Windows PowerShell (WPS):",
+            "type": "checkbox",
+            "answers": {
+                "WPS to narzędzie open source do zarządzania systemami Windows spod konsoli linuxowej": false,
+                "WPS zapewnia dostęp do obiektów COM": true,
+                "WPS to środowisko oparte na platformie .NET": true,
+                "WPS to środowisko do automatyzowania zadań administracyjnych przy użyciu skryptów": true
+            }
+        },
+        {
+            "question": "Polecenie dir -exclude *.zip -name -recurse -force",
+            "type": "checkbox",
+            "answers": {
+                "Wyświetli nazwy wszystkich plików znajdujących się w danym katalogu, wraz z plikami ze wszystkich podfolderów i ich podfolderów, wraz z plikami ukrytymi i bez dostępu do nich, bez plików z rozszerzeniem zip": true,
+                "Wyświetli nazwy wszystkich plików, z pominięciem plików z rozszerzeniem zip, znajdujących się tylko w danym katalogu, wraz z plikami ukrytymi i bez dostępu do nich.": false,
+                "Wyświetli nazwy wszystkich plików znajdujących się tylko w danym katalogu, wraz z plikami ukrytymi i bez dostępu do nich.": false,
+                "Wyświetli nazwy wszystkich plików z rozszerzeniem zip znajdujących się w danym katalogu, wraz ze wszystkimi podfolderami, wraz z plikami ukrytymi i bez dostępu do nich.": false
+            }
+        },
+        {
+            "question": "Wskaż polecenia działające w powłoce bash oraz powershell",
+            "type": "checkbox",
+            "answers": {
+                "man": true,
+                "cp": true,
+                "cd": true,
+                "gps": false
+            }
+        },
+        {
+            "question": "Zmienne w interpreterze PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "nie muszą być deklarowane": true,
+                "wymagają określenia typu": false,
+                "mogą mieć różne typy": true,
+                "są obiektami .NET": true
+            }
+        },
+        {
+            "question": "Polecenie PoweShell: „PS> get-process a* | stop-process”",
+            "type": "checkbox",
+            "answers": {
+                "Dotyczy wszystkich procesów (a* = all)": false,
+                "Jest poleceniem błędnym – nie wykona się": false,
+                "Zatrzyma procesy, których lista jest pobierana za pomocą polecenia get-process a*": true,
+                "Dotyczy tylko procesów, których nazwa zaczyna się na literę „a”": true
+            }
+        },
+        {
+            "question": "W interpreterze PowerShell polecenie Get-Process:",
+            "type": "checkbox",
+            "answers": {
+                "Pozwala wypisać wszystkie aktualnie uruchomione procesy": true,
+                "Pozwala zmieniać priorytet procesu": false,
+                "Pozwala zmieniać właściciela procesu na aktualnie zalogowanego użytkownika": false,
+                "Przekierowywuje wynik działania procesu (standardowe wyjście) do pliku": false
+            }
+        },
+        {
+            "question": "Interpreter Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "w systemie Windows 7 (lub Windows Server 2008) wymaga wcześniejszej instalacji": false,
+                "Jest zintegrowany z .NET Framework": true,
+                "Dostarcza środowisko do wykonywania zadań administracyjnych wykonywanych poleceniami cmdlets": true,
+                "Wynikiem polecenia w interpreterze jest ciąg obiektów określonego typu": true
+            }
+        },
+        {
+            "question": "Zanzacz wszystkie prawidłowe sformułowania dotyczące powłoki PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Dzięki operatorowi | (tzw. pipe) można przekierować wyjście jednego polecenia na wejście drugiego, np. get-process | stop-process": true,
+                "Wszystkie zmienne są obiektami .NET": true,
+                "Skrypty pisane dla linuksowego interpretera Bash mogą być uruchamiane w interpreterze PowerShell": false,
+                "Polecenia PowerShell mają ściśle określone nazwy, do których nie można tworzyć aliasów.": false
+            }
+        },
+        {
+            "question": "Które z poniższych par słów przedstawiają pewien cmdlet oraz jego alias w Windows PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "Set-Location, cd": true,
+                "Get-Help, man": true,
+                "Remove-File, rm": false,
+                "Remove-Item, del": true
+            }
+        },
+        {
+            "question": "Liczby od 1 do 5 wypisze następujący skrypt:",
+            "type": "checkbox",
+            "answers": {
+                "$i = 1 do { Write-Host $i $i++ } while ($i -le 5)": true,
+                "$i = 1 do { echo $i $i++ } while ($i -le 5)": true,
+                "$i = 1 do { echo i i++ } while ($i -le 5)": false,
+                "$i = 1 do { print $i i++ } while ($i -le 5)": false
+            }
+        },
+        {
+            "question": "Które polecenia są poprawne i wyświetlają, posortowaną wg. pewnej kolumny, zawartośd bieżącego katalogu?",
+            "type": "checkbox",
+            "answers": {
+                "ls | Sort-Object name": true,
+                "ls | Sort-name": false,
+                "ls | Sort-Object Length": true,
+                "ls | Sort(Length)": false
+            }
+        },
+        {
+            "question": "Polecenie: \"get-childitem C:\\* -include *.txt\" wydane w Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "wyświetli nazwy wszystkich plików o rozszerzeniu \".txt\" znajdujących się w ścieżce C:\\ ": true,
+                "wyświetli nazwy wszystkich plików o rozszerzeniu \".txt\" znajdujących się w ścieżce C:\\i jej podkatalogach": false,
+                "wyświetli tylko nazwy wszystkich plików o rozszerzeniu \".txt\" znajdujących się w ścieżce C:\\ ": false,
+                "wyświetli m.in. nazwę i czas ostatniego czas ostatniego zapisu wszystkich plików o rozszerzeniu \".txt\" znajdujących się w ścieżce C:\\ ": true
+            }
+        },
+        {
+            "question": "Która z wersji systemu Windows obsługuje interpreter Windows PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "Windows 98": false,
+                "Windows XP": true,
+                "Windows Vista": true,
+                "Windows 7": true
+            }
+        },
+        {
+            "question": "PS E:\test> ls  Directory: E:\\test  Mode   LastWriteTime Length name  $ ----\\;\\;\\;\\;\\;\\;-------------\\;\\;\\;------\\;\\;\\;---- $  $ -a--- $  2012-06-02    16:12  0 a.xyz  $ -a--- $  2012-06-02    16:12  0 b.xyz  $ -a--- $  2012-06-02    16:12  0 c.xyz  $ -a--- $  2012-06-02    16:12  0 d.xyy  $ -a--- $  2012-06-02    16:12  0 e.xxy  PS E:\\test> get-childitem C:\\test\\* -include *.xyz -recurse | remove-item  Zaznacz możliwe do otrzymania wyniki działania komendy ls z dowolnymi parametrami po wykonaniu powyższej komendy: ",
+            "type": "checkbox",
+            "answers": {
+                "Directory: E:\\test  Mode  LastWriteTime Length name  ----  ------------- ------ ---- -a--- 2012-06-02    16:12  0 d.xyy -a--- 2012-06-02    16:12  0 e.xyy": true,
+                "Directory: E:\\test  Mode  LastWriteTime Length name  ----  ------------- ------ ---- -a--- 2012-06-02    16:12  0 e.xxy": true,
+                "d.xyy e.xxy  PS E:\\test>": true,
+                "Directory: E:\\test": true
+            }
+        },
+        {
+            "question": "Zdania prawdziwe, opisujące zmienne PowerShell, to:",
+            "type": "checkbox",
+            "answers": {
+                "Zmienne muszą mieć zdefiniowany typ": false,
+                "Wszystkie zmienne są obiektami .NET": true,
+                "Nie muszą być deklarowane": true,
+                "Wszystkie zmienne są globalne": false
+            }
+        },
+        {
+            "question": "Które z podanych przykładów pętli są poprawne w PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "foreach ($i in get-childitem c:\\scripts) {$i.extension}": true,
+                "for($zm = 1; $zm -le 10; $zm++) {$zm}": true,
+                "for(a = 1; i < 10; ++i) {i}": false,
+                "while($i -lt 10) {$i}": false
+            }
+        },
+        {
+            "question": "Które z przytoczonych niżej cech odnoszą się do powłoki PowerShell?",
+            "type": "checkbox",
+            "answers": {
+                "Korzystanie z pętli for, while i until jest niedozwolone.": false,
+                "Odwoływanie się do zmiennych jest możliwa poprzez użycie znaku $": true,
+                "Zmienne nie mogą mieć zakresów widoczności": false,
+                "Wszystkie zmienne są obiektami .NET": true
+            }
+        },
+        {
+            "question": "Które polecenie powłoki PowerShell wyświetli listę uruchomionych usług?",
+            "type": "checkbox",
+            "answers": {
+                "Get-Service | Where-Object {$_.name -eq \"running\"}": true,
+                "Get-Service | Where-Object {$_.name -eq \"SysMain\"}": false,
+                "Get-Service | Where-Object {$_.name -eq \"stopped\"}": false,
+                "Get-Process | Where-Object {$_.name -eq \"running\"}": false
+            }
+        },
+        {
+            "question": "Aliasami polecenia Set-Location w Windows Powershell są:",
+            "type": "checkbox",
+            "answers": {
+                "sl": true,
+                "cd": true,
+                "chdir": true,
+                "setloc": false
+            }
+        },
+        {
+            "question": "$a = 5 If ($a -eq 5) {”Piątka ”} elseif ($a -lt 6) {”mniejsza od szóstki”} If ($a -gt 3) {”większa od trójki”} Po wykonaniu tego kodu w oknie Windows Powershell:",
+            "type": "checkbox",
+            "answers": {
+                "Zostanie wypisany tekst „Piątka mniejsza od szóstki”": false,
+                "Zostanie wypisany tekst „Piątka mniejsza od szóstki większa od trójki”": false,
+                "Zostanie wypisany tekst „Piątka większa od trójki”": true,
+                "Zostanie wypisany komunikat o błędzie w kodzie programu": false
+            }
+        },
+        {
+            "question": "Które z wymienionych opisów dotyczy PowerShella:",
+            "type": "checkbox",
+            "answers": {
+                "ułatwia zadania administracyjne": true,
+                "jest zgodny linuksową powłoką shell": false,
+                "może być wykorzystywany tylko przez administratorów": false,
+                "może być wykorzystywany przez wszystkich użytkowników": true
+            }
+        },
+        {
+            "question": "Wskaż prawdziwe zdania. Zdania dotyczą polityki uruchamiania skryptów w konsoli PowerShell.",
+            "type": "checkbox",
+            "answers": {
+                "Polityka Unrestricted umożliwia uruchamianie niepodpisanych skryptów.": true,
+                "Polityka Restricted umożliwia uruchomienie tylko tych skryptów, które pochodzą z lokalnego komputera.": false,
+                "Polityka AllSigned jest polityką domyślną.": false,
+                "Polityka AllSigned umożliwia uruchamianie skryptów które zostały podpisane przez zaufanego wydawcę lub pochodzą z komputera lokalnego.": true
+            }
+        },
+        {
+            "question": "Wskaż prawdziwe zdania. Zdania dotyczą uruchamiania skryptów w konsoli PowerShell.",
+            "type": "checkbox",
+            "answers": {
+                "W konsoli PowerShell nie jest możliwe uruchomienie skryptu bez podania jego pełnej ścieżki.": true,
+                "W konsoli PowerShell jest możliwe uruchomienie skryptu bez podania jego pełnej ścieżki, jednak wymaga to ustawienia odpowiedniej polityki uruchamiania skryptów.": false,
+                "W konsoli PowerShell jest możliwe uruchomienie jakiegokolwiek skryptu bez podania jego pełnej ścieżki pod warunkiem, że bieżącą ścieżką będzie folder zawierający skrypt oraz polityka uruchamiania skryptów jest ustawiona na Unrestricted.": false,
+                "W konsoli PowerShell jest możliwe uruchomienie skryptu bez podawania jego pełnej ścieżki w przypadku gdy skrypt ten pochodzi z komputera lokalnego.": false
+            }
+        },
+        {
+            "question": "Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Jest zintegrowany z .NET Framework": true,
+                "Dostępny jest dla systemu Windows 2000": false,
+                "Jest interpreterem poleceń": true,
+                "Zwraca w wyniku każdego polecenia zmienną typu string": false
+            }
+        },
+        {
+            "question": "Polecenie: \"get-childitem C:\\Kolokwium\\Main\\* -include *.kol -recurse | remove-item\" w Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem \"kol\" z folderu \"C:\\Kolokwium\\Main\" i jego podfolderów": true,
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem \"kol\" z folderu nadrzędnego do \"C:\\Kolokwium\\Main\", tzn. \"C:\\Kolokwium\"": false,
+                "Znajduje i usuwa wszystkie pliki z rozszerzeniem \"kol\" wyłącznie z folderu \"C:\\Kolokwium\\Main\"": false,
+                "Żadna z odpowiedzi nie jest prawidłowa": false
+            }
+        },
+        {
+            "question": "Wskaż poprawne zdania dotyczące zmiennych w Windows PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Wszystkie zmienne są obiektami .NET.": true,
+                "Zmienne muszą mieć nadany typ.": false,
+                "Wartość do zmiennej przypisuje operator „:=”": false,
+                "Zmienne mogą mieć zakres widoczności.": true
+            }
+        },
+        {
+            "question": "Które z poniższych skryptów PowerShella wydrukują listę nazw wszystkich plików o rozszerzeniu .txt w aktualnie wybranym katalogu?",
+            "type": "checkbox",
+            "answers": {
+                "get-childitem | where-object {$_.extension -eq \".txt\"} | format-table name": true,
+                "get-childitem | format-table name | where-object {$_.extension -eq \".txt\"}": false,
+                "foreach($a in get-childitem) {  if($a.extension -eq \".txt\") {  $a.name } }": true,
+                "get-childitem | foreach {if($_.extension -eq \".txt\"){$_.name}}": true
+            }
+        },
+        {
+            "question": "Zamiennikiem poleceo dir i ls w PowerShell jest polecenie:",
+            "type": "checkbox",
+            "answers": {
+                "Get-ChildItem": true,
+                "Get-Content": false,
+                "Tee-Object": false,
+                "Set-Variable": false
+            }
+        },
+        {
+            "question": "Co charakteryzuje PowerShell:",
+            "type": "checkbox",
+            "answers": {
+                "Nie rozróżnia wielkości liter w komendach": true,
+                "Każdą linię w pliku .ps należy zakończyć średnikiem": false,
+                "Zmienne oznacza się znakiem dolara '$'": true,
+                "Istnieje różnica między pojedynczym a podwójnym cudzysłowem": true
+            }
+        },
+        {
+            "question": "Które zdania o PowerShel są FAŁSZYWE:",
+            "type": "checkbox",
+            "answers": {
+                "jest zintegrowany z .NET Framework": false,
+                "GetChildItem zwraca wszystkie obiekty jakie zawierają dzieci bieżącej lokalizacji": true,
+                "Zmienne są obiektami": false,
+                "Do zmiennych odwołujemy się znakiem \\%": true
+            }
+        },
+        {
+            "question": "Instrukcja w PowerShel która zatrzymuje (ang.kill) procesy zaczynające się na literę Y to:",
+            "type": "checkbox",
+            "answers": {
+                "get-process Y* | stop-process": true,
+                "get-process Y* | kill-proces": false,
+                "ps Y* | stop-process": true,
+                "ps Y* | kill-process": true
+            }
+        },
+        {
+            "question": "Użytkownik korzysta z Powershella w środowisku Windows i znajduje się w lokalizacji C:\\MyScripts> po wywołaniu komendy ls, okazało się, że w tym folderze znajduje się plik script.ps1. Użytkownik zamierzając go uruchomić, zmienił aktualna politykę wykonywania skryptów z Restricted na RemoteSigned. Które z poniższych komend uruchomią w/w skrypt?",
+            "type": "checkbox",
+            "answers": {
+                "run script.ps1": false,
+                "script.ps1": false,
+                "C:\\MyScripts\\script.ps1": true,
+                ".\\script.ps1": true
+            }
+        },
+        {
+            "question": "Co się stanie po wywołaniu komendy: get-process pow* | stop-process",
+            "type": "checkbox",
+            "answers": {
+                "Zostaną zatrzymane wszystkie procesy, których nazwa zaczyna się od ciągu znaków \"pow\"": true,
+                "Powershell zostanie wyłączony": true,
+                "Zostaną zatrzymane wszystkie procesy, których nazwa zawiera ciąg znaków \"pow\"": false,
+                "Nic się nie stanie": false
+            }
+        },
+        {
+            "question": "Wskaż poprawne polecenia PowerShell usuwające z bieżącego katalogu pliki większe niż 2kB:",
+            "type": "checkbox",
+            "answers": {
+                "Get-Childitem | Where-Object { $_.length -gt 2kB } | Remove-Item": true,
+                "Get-Childitem | Where-Object ( $_.length > 2kB ) | Remove-Item": false,
+                "Get-Childitem | Remove-Item | Where ($length > 2kB)": false,
+                "ls | where-object { $_.length -gt 2kB } | rm": true
+            }
+        },
+        {
+            "question": "Po wykonaniu w konsoli PowerShell polecenia Get-ExecutionPolicy otrzymano rezultat \"Restricted\". Oznacza to, że użytkownik:",
+            "type": "checkbox",
+            "answers": {
+                "Nie może uruchamiać żadnych skryptów, a jedynie osobne komendy": true,
+                "Może uruchamiać niepodpisane skrypty pochodzące z lokalnego komputera": false,
+                "Może uruchamiać podpisane skrypty pobrane z Internetu": false,
+                "Może uruchamiać niepodpisane skrypty pobrane z Internetu": false
+            }
+        },
+        {
+            "question": "W PowerShell polecenie Get-Process:",
+            "type": "checkbox",
+            "answers": {
+                "Wylistuje wszystkie aktualnie uruchomione procesy": true,
+                "Zmieni priorytet procesu": false,
+                "Zmieni właściciela procesu na aktualnie zalogowanego użytkownika": false,
+                "Przekierowuje wynik działania procesu (standardowe wyjście) do pliku": false
+            }
+        },
+        {
+            "question": "W PowerShell polityka bezpieczeostwa RemoteSigned zezwala na:",
+            "type": "checkbox",
+            "answers": {
+                "Wykonywanie dowolnych skryptów.": false,
+                "Uruchamianie skryptów podpisanych przez zaufanego wydawcę.": true,
+                "Uruchamianie niepodpisanych skryptów, które powstały na lokalnym komputerze.": true,
+                "Korzystanie jedynie z pojedynczych komend, bez możliwości uruchamiania skryptów.": false
+            }
+        },
+        {
+            "question": "Prawidłowa postać pętli for w PowerShell to:",
+            "type": "checkbox",
+            "answers": {
+                "for (i = 1, i -le 10, i++) { }": false,
+                "for (i = 1; i -le 10; i++) { }": false,
+                "for ($i = 1; $i <= 10; i++) { }": false,
+                "for ($i = 1; $i -le 10; $i++) { }": true
+            }
+        },
+        {
+            "question": "Jaki jest rezultat polecenia interpretera PowerShell: get-childitem C:\\Work\\-recurse | get-acl | where { $_.Owner -match \"Maniek\"}",
+            "type": "checkbox",
+            "answers": {
+                "Wypisze wszystkie pliki, których właścicielem jest Maniek z folderu C:\\Work oraz podfolderów": true,
+                "Wypisze tylko pliki z folderu C:\\Work, których właścicielem jest Maniek.": false,
+                "Wypisze wszystkie pliki z dysku C:, których właścicielem jest Maniek.": false,
+                "Wypisze pliki, które nie należą do użytkownika Maniek, z folderu C:\\Work": false
+            }
+        },
+        {
+            "question": "Co otrzymamy po wykonaniu następującej komendy w interpreterze PowerShell: PS C:\\> Get-ChildItem | where { !$_.PslsContainer  } | Select-Object name",
+            "type": "checkbox",
+            "answers": {
+                "Tylko nazwy folderów jakie znajdują się w lokalizacji C:\\ ": false,
+                "Tylko nazwy folderów i podfolderów jakie znajdują się w lokalizacji C:\\ ": false,
+                "Tylko nazwy plików jakie znajdują się w lokalizacji C:\\ ": true,
+                "Dokładny opis folderów, czyli m.in. nazwy i uprawnienia jakie znajdują się w lokalizacji C:\\ ": false
+            }
+        }
+    ]
+}

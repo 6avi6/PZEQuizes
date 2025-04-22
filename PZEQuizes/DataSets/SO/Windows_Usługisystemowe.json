@@ -1,0 +1,75 @@
+﻿{
+    "questions": [
+        {
+            "question": "Zaznacz wszystkie poprawne odpowiedzi dotyczące usług w systemie operacyjnym Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Services.exe jest rodzicem dla procesów svchost.exe": true,
+                "Wiele usług startowanych jest w postaci osobnych wątków procesu svchost.exe": true,
+                "Standardowo svchost.exe pracuje w kontekście jednego z kont wbudowanych systemu Windows": true,
+                "LocalService, NetworkService oraz System to konta wbudowane wykorzystywane do zarządzania poziomem uprawnień usług systemowych": true,
+                "Wyłączenie niektórych usług może skończyć się uszkodzeniem systemu": true,
+                "Usługi to w praktyce, w większości biblioteki dll, ładowane przez Menedżera usług": true,
+                "Standardowo usługi przyporządkowane są (w zakresie uprawnień) do wbudowanych kont systemowych": true,
+                "Do zarządzania usługami można posłużyć się programem msconfig": true,
+                "Pomimo, że administrator może wystartować każdą usługę (po przeprowadzeniu odpowiednich kroków), może nie być w stanie jej później zatrzymać (chyba, że poprzez wyłączenie systemu)": true,
+                "Usługi nie posiadają GUI": true,
+                "Do zarządzania usługami można posłużyć się Menedżerem Zadań Windows, programem SC oraz odpowiednią konsolą MMC": true,
+                "Nie wszystkie usługi można zatrzymać lub wyłączyć przy użyciu standardowych narzędzi": true,
+                "Usługi mogą wykorzystywać (w zakresie uprawnień) konta systemowe dodane przez użytkownika": true,
+                "Każdą usługę można wystartować przy użyciu standardowych narzędzi do zarządzania usługami": true,
+                "Administrator ma uprawnienia do zatrzymywania dowolnych usług": false,
+                "Każdą usługę można wyłączyć przy użyciu standardowych narzędzi do zarządzania usługami": false,
+                "msconfig wyświetla listę wszystkich usług zainstalowanych w systemie": false,
+                "Usługi posiadają GUI, widoczne jako ikona w obszarze powiadomień": false,
+                "Usługi nie są separowane od użytkowników w tym znaczeniu, że użytkownik ma bezpośredni dostęp do GUI tworzonych przez usługi": false,
+                "Narzędzia Task Manager, SC oraz MMC posiadają taką samą funkcjonalność w zakresie zarządzania usługami": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące uruchamiania się usług w systemie Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Usługa, której typ uruchamiania został skonfigurowany na wyłączony po ponownym uruchomieniu systemu operacyjnego nie może być w innym stanie, niż wyłączona": true,
+                "Wyróżniamy cztery typy uruchomienia usługi: Wyłączony, Automatyczny, Automatyczny z opóźnieniem oraz Ręczny": true,
+                "Usługa będąca skonfigurowana jako uruchamiana ręcznie zostanie włączona nawet w przypadku, gdy jest jedną z zależności usługi uruchamianej automatycznie": true,
+                "LocalService, NetworkDervice oraz System to konta wbudowane wykorzystywane do zarządzania poziomem uprawnień usług systemowych.": true,
+                "Usługa będąca skonfigurowana jako wyłączona zostanie włączona nawet w przypadku, gdy jest jedną z zależności usługi uruchamianej automatycznie": false,
+                "Wszystkie narzędzia dostępne dla użytkownika moją ten sam zakres możliwości.": false,
+                "Istnieje możliwość ‘zabijania’ _pojedynczych_ usług w systemie, wymagane jest jednak posiadanie uprawnień Administratora.": false
+            }
+        },
+        {
+            "question": "Do zarządzania usługami w systemie Windows 7 służy:",
+            "type": "checkbox",
+            "answers": {
+                "Narzędzie SC": true,
+                "Narzędzie msconfig": true,
+                "Microsoft Management Console": true,
+                "Menedżer zadań": true,
+                "Wbudowany w system program dostępny z wiersza polecenia.": true,
+                "Narzędzie csrss": false
+            }
+        },
+        {
+            "question": "Zaznacz, które z czynności wykonywane są przez skrypt configure:",
+            "type": "checkbox",
+            "answers": {
+                "Sprawdzenie, czy w systemie są wszystkie składniki potrzebne do instalacji oprogramowania": true,
+                "Wygenerowanie pliku config.status": true,
+                "Instaluje program, kopiując skompilowane składniki aplikacji w odpowiednie miejsca w systemie plików": false,
+                "Uruchamienie kompilacji plików źródłowych": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące pracy procesów w tle:",
+            "type": "checkbox",
+            "answers": {
+                "Aby przywrócić proces działający w tle na ekran konsoli można użyć polecenia: fg numer": true,
+                "Aby wylistować procesy działające w tle można użyć polecenia jobs": true,
+                "Aby uruchomić proces działający w tle należy na końcu polecenia wstawić znak &": true,
+                "Aby przywrócić proces działający w tle na ekran konsoli można użyć polecenia: top numer": false
+            }
+        }
+    ]
+}

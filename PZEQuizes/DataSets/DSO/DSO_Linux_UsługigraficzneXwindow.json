@@ -1,0 +1,314 @@
+﻿{
+    "questions": [
+        {
+            "question": "Wskaż wszystkie poprawne stwierdzenia odnoszące się do X Window System",
+            "type": "checkbox",
+            "answers": {
+                "Został on zaprojektowany w architekturze klient-serwer": true,
+                "Jest to zbiór funkcji i protokołów wyświetlających informacje graficzne na ekranie": true,
+                "Odpowiada za wygląd okien wyświetlanych w systemie": false,
+                "Pozwala na zdalną pracę na odległym komputerze, wykorzystując komputer lokalny jako serwer X": true
+            }
+        },
+        {
+            "question": "Które z podanych komponentów NIE wchodzi w skład X Window System",
+            "type": "checkbox",
+            "answers": {
+                "Serwer Apache": true,
+                "Menadżer okien": false,
+                "Baza danych": true,
+                "X serwer": false
+            }
+        },
+        {
+            "question": "Czym różnią się xdm/gdm/lightdm i startx?",
+            "type": "checkbox",
+            "answers": {
+                "Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna Xdm ponownie pokazuje ekran logowania": true,
+                "Xdm/Gdm/lightdm uruchamia ekran logowania": true,
+                "Startx uruchamia ekran logowania": false,
+                "Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna startx ponownie pokazuje ekran logowania": false
+            }
+        },
+        {
+            "question": "Polecenie Xorg -configure",
+            "type": "checkbox",
+            "answers": {
+                "Jest narzędziem graficznym": false,
+                "Pracuje w trybie tekstowym": true,
+                "Służy do konfiguracji X-serwera": true,
+                "Modyfikuje/Generuje domyślny plik Xorg.conf": true
+            }
+        },
+        {
+            "question": "Wpis do /etc/X11/xorg.conf:  Section \"Device\" \n Identifier \"Videocard0\" \n Driver \"nvidia\" \n Endsection",
+            "type": "checkbox",
+            "answers": {
+                "wykorzysta sterownik nvidia do obsługi pierwszej karty graficznej": true,
+                "jest niepoprawnym wpisem": false,
+                "utworzy nową wirtualną kartę graficzną": false,
+                "nic nie zmieni, bo plik konfiguracyjny Xorg znajduje się w innej lokalizacji": false
+            }
+        },
+        {
+            "question": "Manager okien w systemie Linux",
+            "type": "checkbox",
+            "answers": {
+                "Jest X-Serwerem": false,
+                "zarządza pamięcią X-serwera": false,
+                "Jest odpowiedzialny za wygląd i funkcjonalność pulpitu": true,
+                "Jest odpowiedzialny za wygląd okien": true
+            }
+        },
+        {
+            "question": "Wartości domyślne używane przez standardowe aplikacje Systemu X mogą zostać zmienione. Służą do tego pliki w katalogu:",
+            "type": "checkbox",
+            "answers": {
+                "~app-defaults/˜": false,
+                "/etc/X11/app-defaults/": true,
+                "~defaults-app-values/": false,
+                "/etc/X11/default-app-values": false
+            }
+        },
+        {
+            "question": "Dostępne są 2 komputery, serwer - saturn, oraz klient - jupiter. Po wykonaniu komend na komputerze saturn: \n $ xhost +jupiter \n na komputerze jupiter: \n $ export DISPLAY=saturn:0 \n $ xeyes \n Efektem będzie:",
+            "type": "checkbox",
+            "answers": {
+                "Wynik programu \"xeyes\" widziany będzie na obu komputerach": false,
+                "Wynik programu \"xeyes\" widziany będzie tylko na komputerze saturn": true,
+                "Program \"xeyes\" wykonany zostanie na komputerze jupiter": true,
+                "Program \"xeyes\" wykonany zostanie na komputerze saturn": false
+            }
+        },
+        {
+            "question": "Menadżerem okien jest:",
+            "type": "checkbox",
+            "answers": {
+                "gdm": false,
+                "lightdm": false,
+                "KDE": true,
+                "Gnome": true
+            }
+        },
+        {
+            "question": "X11 (X Window System) to:",
+            "type": "checkbox",
+            "answers": {
+                "Graficzny system komputerowy": true,
+                "Manager okien": false,
+                "Aplikacja pozwalająca na zalogowanie się do systemu": false,
+                "żadna z powyższych": false
+            }
+        },
+        {
+            "question": "System X",
+            "type": "checkbox",
+            "answers": {
+                "jest zaprojektowany w architekturze klient-serwer": true,
+                "odpowiada za obsługę okien": false,
+                "odpowiada za obsługę urządzeń wejścia": true,
+                "odpowiada za zamykanie/otwieranie programów": false
+            }
+        },
+        {
+            "question": "X Window Server",
+            "type": "checkbox",
+            "answers": {
+                "...zajmuje się obsługą urządzeń wejściowych (myszki, klawiatury, tabletu).": true,
+                "...dostarcza rozbudowany interfejs użytkownika.": false,
+                "...zajmuje się obsługą okien, dostarcza wbudowane mechanizmy do ich przesuwania, zmiany rozmiaru, zamykania i uruchamiania programów itd.": false,
+                "...udostępnia interfejs graficzny i pozwala rysować nieskomplikowane elementy na ekranie.": true
+            }
+        },
+        {
+            "question": "Zaznacz implementacje X Window System",
+            "type": "checkbox",
+            "answers": {
+                "XFree86": true,
+                "Gnome": false,
+                "KDE": false,
+                "X.Org": true
+            }
+        },
+        {
+            "question": "Dodatkowe skrypty startowe Systemu X Window mogą być zdefiniowane w",
+            "type": "checkbox",
+            "answers": {
+                "~.xinitrc": true,
+                "/etc/X11/xinit/xinitrc": true,
+                "/etc/xorgrc": false,
+                "~.xorgrc": false
+            }
+        },
+        {
+            "question": "Podaj polececenie potrzebne o uruchomienia Xwindow",
+            "type": "checkbox",
+            "answers": {
+                "startx": true,
+                "/etc/init.d/gdm start": false,
+                "/etc/X11/xorg start": false,
+                "setx start": false
+            }
+        },
+        {
+            "question": "Domyślne skróty klawiszowe dla serwera X, to:",
+            "type": "checkbox",
+            "answers": {
+                "Alt+[Ctrl]+[FX], gdzie X={1,2...7 - przełączanie się między konsolami tekstowymi. Zazwyczaj [Alt] + [F7] pozwala na przełączenie z trybu tekstowego  w tryb graficzny.": true,
+                "Alt + [Ctrl] + [F12] - otwiera tekstowy menadżer konfiguracji serwera X.": false,
+                "Alt + [Esc] - restart serwera X": false,
+                "Ctrl + [Alt] + [Backspace] - wyłączenie serwera X.": true
+            }
+        },
+        {
+            "question": "W jaki sposób można uruchomić powłokę graficzną w systemie Linux?",
+            "type": "checkbox",
+            "answers": {
+                "Skorzystać z menadżera wyświetlania, np. xdm": true,
+                "Uruchomić aplikację startową dostarczaną wraz ze środowiskiem graficznym, np startxfce4": true,
+                "Może być skonfigurowany do uruchomienia na odpowiednim poziomie uruchomieniowym": true,
+                "Skorzystać ze skryptu startowego startx/xinit": true
+            }
+        },
+        {
+            "question": "Plik /etc/X11/Xorg.conf pozwala na zmianę:",
+            "type": "checkbox",
+            "answers": {
+                "Ustawień myszy i klawiatury.": true,
+                "Modelu używanej karty graficznej i jej parametrów.": true,
+                "Rozdzielczości ekranu oraz częstotliwości odświeżania.": true,
+                "Zakres odświeżania pionowego dla używanego monitora.": true
+            }
+        },
+        {
+            "question": "Uruchomienie w konsoli któregoś z menadżerów ekranu (ang. Display Manager, np gdm, xdm, lightdm) przez użytkownika root, przy założeniu, że X nie jest uruchomiony, spowoduje:",
+            "type": "checkbox",
+            "answers": {
+                "nie można uruchomić menadżera ekranu z konsoli": false,
+                "uruchomienie sesji X użytkownika, który uruchamiał polecenie": false,
+                "zakończenie sesji użytkownika root, w której wykonał polecenie": false,
+                "wyświetlenie ekranu logowania": true
+            }
+        },
+        {
+            "question": "W skład X-Window wchodzi:",
+            "type": "checkbox",
+            "answers": {
+                "Menadżer Okien": true,
+                "X-Writer": false,
+                "X-Serwer": true,
+                "X-klient": true
+            }
+        },
+        {
+            "question": "Zaznacz zdania prawidzwe na temat podsystemu graficznego X Windows:",
+            "type": "checkbox",
+            "answers": {
+                "Jego implementacją jest np. Gnome lub KDE.": false,
+                "Jego implementacją jest X.org oraz XFree86": true,
+                "Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+1": false,
+                "Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+F1": true
+            }
+        },
+        {
+            "question": "Plik /etx/X11/xorg.conf",
+            "type": "checkbox",
+            "answers": {
+                "(Nie wiadomo co jest tu napisane, zdaniem starszych roczników fałsz)": false,
+                "Zawiera ustawienia menadżera okien, takie jak np. ułożenie ikon na pulpicie, kolory, style obramowania okien itp.": false,
+                "Zawiera konfigurację urządzeń wejścia/wyjścia podłączonych do komputera": true,
+                "Jest plikiem wykonywalnym": false
+            }
+        },
+        {
+            "question": "Wskaż poprawne zdania dotyczące pliku konfiguracyjnego Xorg.conf",
+            "type": "checkbox",
+            "answers": {
+                "W pliku Xorg.conf może znaleźć się tylko jedna sekcja Device": false,
+                "Rozdzielczość monitora definiuje się po słowie Modes": true,
+                "W jednej sekcji Display może zdefiniować maksymalnie jedną rozdzielczość monitora.": false,
+                "W jednej sekcji Display może zdefiniować maksymalnie jedną głębię kolorów monitora.": true
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe stwierdzenia:",
+            "type": "checkbox",
+            "answers": {
+                "xinit wywołuje xterm": true,
+                "xterm wywołuje xinit": false,
+                "startx wywołuje xinit": true,
+                "xinit wywołuje xstart": false
+            }
+        },
+        {
+            "question": "Plik konfiguracyjny X-Serwera (w systemie X.org)",
+            "type": "checkbox",
+            "answers": {
+                "nie jest wymagany (x-serwer wykona wtedy konfigurację dynamiczną)": true,
+                "musi zawierać sekcje Device, Monitor, Screen, Keyboard, Mouse": false,
+                "musi zawierać przynajmniej sekcję Device": false,
+                "musi zawierać skecje Device, Monitor, Screen oraz Display": false
+            }
+        },
+        {
+            "question": "W pliku /etx/X1/xorg.conf mamy możliwość skonfigurowania:",
+            "type": "checkbox",
+            "answers": {
+                "rozdzielczości, z jaką startuje system graficzny": true,
+                "myszy": true,
+                "drukarek, które są dostępne w systemie": false,
+                "sterownika grafiki, z którego skorzystać ma system": true
+            }
+        },
+        {
+            "question": "X Window System:",
+            "type": "checkbox",
+            "answers": {
+                "zawiera mechanizmy obsługi klawiatury i myszy": true,
+                "dostarcza graficzny interfejs użytkownika (okna, przyciski itd.)": false,
+                "Jest rozbudowanym serwerem VNC": false,
+                "zawiera protokoły sieciowe umożliwiające wykonywanie programów X w jednym komputerze i wyświetlanie rezultatu ich pracy na drugim": true
+            }
+        },
+        {
+            "question": "Które z podanych zdań prawidłowo opisują architekturę X Widnow System?",
+            "type": "checkbox",
+            "answers": {
+                "Serwer X jest lokalny i działa na komputerze użytkownika.": true,
+                "Klienci zawsze działają lokalnie, natomiast serwer X może działać na innej maszynie.": false,
+                "Klienci mogą działać na różnych maszynach.": true,
+                "Zarówno serwer X, jak i klienci muszą działać lokalnie, na komputerze użytkownika.": false
+            }
+        },
+        {
+            "question": "Zaznacz zdania prawdziwe dotyczące systemu Linux",
+            "type": "checkbox",
+            "answers": {
+                "Środowisko graficzne X jest uruchamiane zawsze przy starcie systemu, niezależnie od konfiguracji.": false,
+                "W czasie pracy w sieci z wykorzystaniem Xwindow: X-Serwer jest uruchomiony na lokalnym komputerze, z którego odbywa się sterowanie, natomiast X-Klient na serwerze zdalnym, gdzie odbywa się przetwarzanie danych.": true,
+                "Xwindow pozwala pracować jedynie w trybie z jednym użytkownikiem.": false,
+                "Przejścia między konsolami tekstowymi odbywa się przy pomocy klawiszów [Alt]+[Ctrl]+[F1] do [F6]": true
+            }
+        },
+        {
+            "question": "Co jest dodatkowym elementem systemu X Window",
+            "type": "checkbox",
+            "answers": {
+                "Serwer czcionek": true,
+                "Zarządca okien (window manager)": true,
+                "Serwer plików tekstowych": false,
+                "Zarządca sieci (network-manager)": false
+            }
+        },
+        {
+            "question": "Jakie sekcje może zawierać plik Xorg.conf",
+            "type": "checkbox",
+            "answers": {
+                "WindowManager": false,
+                "Device": true,
+                "Screen": true,
+                "Monitor": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "questions": [
+      {
+        "question": "Czy 2+2=4?",
+        "type": "checkbox",
+        "answers": {
+            "Tak": true,
+            "Nie": false
+        }
+    },
+      {
+        "question": "Czy 68 to liczba parzysta?",
+        "type": "truefalse",
+        "answers": {
+          "Tak 68 jest podzielna przez dwa": true
+        }
+      },
+      {
+        "question": "Czy jest 6 kontynentów?",
+        "type": "truefalse",
+        "answers": {
+          "Nie, jest 7": false
+        }
+      },
+      {
+        "question": "Które z poniższych zwierząt to ssaki?",
+        "type": "checkbox",
+        "answers": {
+          "Lew": true,
+          "Krokodyl": false,
+          "Delfin": true,
+          "Wąż": false
+        }
+      },
+      {
+        "question": "Które z poniższych liczb są liczbami pierwszymi?",
+        "type": "checkbox",
+        "answers": {
+          "2": true,
+          "4": false,
+          "5": true,
+          "8": false,
+          "6": false,
+          "7": true
+        }
+      },
+      {
+        "question": "Stolica Francji to?",
+        "type": "radio",
+        "answers": {
+          "Paryż": true,
+          "Madryt": false,
+          "Londyn": false,
+          "Berlin": false
+        }
+      },
+      {
+        "question": "Które z poniższych są językami programowania?",
+        "type": "checkbox",
+        "answers": {
+          "Python": true,
+          "HTML": false,
+          "C#": true,
+          "CSS": false
+        }
+      }
+    ]
+  }
+  

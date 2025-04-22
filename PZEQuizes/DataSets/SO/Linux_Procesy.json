@@ -1,0 +1,127 @@
+﻿{
+    "questions": [
+        {
+            "question": "W systemie Ubuntu/Debian plik /etc/rc.local:",
+            "type": "checkbox",
+            "answers": {
+                "Jest skryptem uruchamianym podczas startu systemu ": true,
+                "Jest uruchamiany przez demona Upstart init ": true,
+                "Jest skompilowanym plikiem binarnym uruchamianym podczas startu systemu ": false,
+                "Jest uruchamiany jako pierwszy ze wszystkich skryptów podczas startu systemu ": false
+            }
+        },
+        {
+            "question": "W systemie Linux polecenie kill: ",
+            "type": "checkbox",
+            "answers": {
+                "Służy do wysyłania sygnałów do określonego procesu": true,
+                "Wysyła sygnał do procesu": true,
+                "Wywołanie polecenia z PIDem procesu spowoduje wysłanie sygnału TERM do procesu": true,
+                "Może być wywołane tylko z uprawnieniami administratora (poprzedzone słowem „sudo”)": false,
+                "Powoduje zamknięcie systemu": false,
+                "Służy jedynie do zabijania wyznaczonych procesów": false,
+                "Wylogowuje wszystkich użytkowników danego komputera": false,
+                "Wywołanie polecenia z jakimkolwiek przełącznikiem spowoduje zamknięcie wskazanego procesu": false,
+                "Zabija wszystkich użytkowników danego komputera": false
+            }
+        },
+        {
+            "question": "Wskaż wszystkie poprawne odpowiedzi dotyczące poleceń kill oraz killall:",
+            "type": "checkbox",
+            "answers": {
+                "Polecenie kill jako parametr przyjmuje PID procesu, a killall nazwę programu/programów": true,
+                "Używając obu poleceń można poddać ich działaniom kilka procesów na raz": true,
+                "Za pomocą polecenia kill można wydawać różne sygnały do procesów": true,
+                "Polecenie kill „zabija” wskazany proces, a killall wysyła sygnał Terminate do wszystkich procesów o podanej nazwie": false
+            }
+        },
+        {
+            "question": "Zaznacz prawidłowe odpowiedzi dotyczące procesu init w systemie Linux:",
+            "type": "checkbox",
+            "answers": {
+                "Identyfikator PID tego procesu jest zawsze równy 1": true,
+                "Jest to proces nadrzędny dla wszystkich procesów działających w systemie.": true,
+                "Jest to proces rodzic wszystkich procesów": true,
+                "Identyfikator PID tego procesu jest zawsze równy -1": false,
+                "Identyfikator PID tego procesu jest zawsze równy 0": false,
+                "Jest to proces, który działa jedynie w momencie uruchamiania systemu": false,
+                "Jest to proces, który działa jedynie w momencie uruchamiania usług systemowych": false,
+                "Nie ma takiego procesu w systemie Linux": false,
+                "Proces ten jest zabijany po zakończeniu uruchamiania systemu.": false,
+                "Proces ten jest zatrzymywany po zakończeniu uruchamiania systemu.": false
+            }
+        },
+        {
+            "question": "W systemie Linux wykonywanie procesu można zatrzymać (ale nie zakończyć) poprzez",
+            "type": "checkbox",
+            "answers": {
+                "Wciśnięcie kombinacji klawiszy Ctrl+Z w terminalu, podczas gdy proces działa w trybie interaktywnym": true,
+                "Wykonanie polecenia „kill –s STOP”": true,
+                "Wciśnięcie kombinacji klawiszy Ctrl+C w terminalu, podczas gdy proces działa w trybie interaktywnym": false,
+                "Wykonanie polecenia „signal –s STOP”": false
+            }
+        },
+        {
+            "question": "W systemie Ubuntu/Debian został utworzony skrypt „licznik.sh” z uprawnieniami do wykonywania. Następnie w konsoli zostało wywołane następujące polecenie:  ./licznik.sh &  ",
+            "type": "checkbox",
+            "answers": {
+                "Skrypt zostanie uruchomiony w tle i będzie figurował na liście zadań (jobs) jako pracujący (running": true,
+                "W konsoli będzie można wydawać kolejne polecenia ": true,
+                "Skrypt zostanie uruchomiony w tle i będzie figurował na liście zadań (jobs) jako wstrzymany (stopped)  ": false,
+                "Wykonanie polecenia nie powiedzie się": false
+            }
+        },
+        {
+            "question": "Użytkownik zalogował się do systemu Debian, uruchomił konsolę tekstową i z konsoli uruchomił skrypt licznik.sh w następujący sposób  ./licznik.sh &",
+            "type": "checkbox",
+            "answers": {
+                "Proces pracuje w tle": true,
+                "Proces zostanie zakończony w momencie wylogowania się użytkownika": true,
+                "Proces zostanie zakończony w momencie zamknięcia konsoli tekstowej": true,
+                "Wysłanie sygnału SIGSTOP spowoduje zatrzymanie procesu": true,
+                "Jeżeli użytkownik zamknie konsolę i wyloguje się, to proces będzie działał do momentu zamknięcia systemu": false,
+                "Jeżeli użytkownik zamknie konsolę, to proces będzie działał do momentu zamknięcia systemu": false,
+                "Proces zostanie zakończony w momencie naciśnięcia kombinacji klawiszy Ctrl+Z": false,
+                "Wysłanie sygnału SIGTERM spowoduje zatrzymanie procesu": false
+            }
+        },
+        {
+            "question": "Użytkownik zalogował się do systemu Debian, uruchomił konsolę tekstową i z konsoli uruchomił skrypt licznik.sh w następujący sposób  screen ./licznik.sh ",
+            "type": "checkbox",
+            "answers": {
+                "Jeżeli użytkownik wyloguje się z systemu bez zamykania konsoli, to proces będzie działał do momentu zamknięcia systemu ": true,
+                "Jeżeli użytkownik zamknie konsolę i wyloguje się z systemu, to proces będzie działał do momentu zamknięcia systemu ": true,
+                "Proces zostanie zakończony w momencie wylogowania się użytkownika": false,
+                "Proces zostanie zakończony w momencie zamknięcia konsoli tekstowej": false
+            }
+        },
+        {
+            "question": "Użytkownik zalogował się do systemu Debian, uruchomił konsolę tekstową i z konsoli uruchomił skrypt licznik.sh w następujący sposób  ./licznik.sh  ",
+            "type": "checkbox",
+            "answers": {
+                "Po wysłaniu do tego procesu sygnału SIGCONT proces wznowi działanie, jeżeli wcześniej był zatrzymany": true,
+                "Po wysłaniu do tego procesu sygnału SIGSTOP proces się zatrzyma": true,
+                "Po wysłaniu do tego procesu sygnału SIGTERM proces się zakończy": true,
+                "Po wysłaniu do tego procesu sygnału SIGCONT proces uruchomi wewnętrzny licznik komend": false,
+                "Po wysłaniu do tego procesu sygnału SIGSTOP proces się zakończy": false,
+                "Po wysłaniu do tego procesu sygnału SIGTERM nic się nie stanie": false,
+                "Po wysłaniu do tego procesu sygnału SIGTERM proces się zatrzyma": false,
+                "Po wysłaniu do tego procesu sygnału SIGTERM proces uruchomi terminal": false,
+                "Proces nie będzie reagował na żadne sygnały do niego wysyłane": false,
+                "Proces zakończy się tylko jeżeli otrzyma sygnał SIGKILL": false
+            }
+        },
+        {
+            "question": "Użytkownik zalogował się do systemu Debian, uruchomił konsolę tekstową i z konsoli uruchomił skrypt licznik.sh w następujący sposób  ./licznik.sh &  Co sprawi wywołanie polecenia fg 1? ",
+            "type": "checkbox",
+            "answers": {
+                "Proces otrzyma sygnał CONT": true,
+                "Proces zostanie przywrócony do pierwszego planu": true,
+                "Proces otrzyma sygnał STOP": false,
+                "Proces zakończy się": false,
+                "Proces zatrzyma się": false,
+                "Proces zostanie przeniesiony do tła": false
+            }
+        }
+    ]
+}

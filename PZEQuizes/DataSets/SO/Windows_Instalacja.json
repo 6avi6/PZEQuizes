@@ -1,0 +1,88 @@
+﻿{
+    "questions": [
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące instalacji systemu Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Plik odpowiedzi może zostać wykorzystany do konfiguracji instalowanego systemu": true,
+                "Plik odpowiedzi może zostać wykorzystany do przeprowadzenia tzw. Instalacji nienadzorowanej": true,
+                "Plik odpowiedzi zawarty jest w pliku install.wim": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące instalacji systemu Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "W celu przeprowadzenia instalacji konieczne jest wcześniejsze utworzenie pliku odpowiedzi": false,
+                "Instalacja przeprowadzana jest z obrazu systemu operacyjnego zawartego w pliku .wim": true,
+                "Obraz instalacyjny może zawierać kilka edycji systemu operacyjnego": true,
+                "Instalacja może zostać zainicjalizowana jedynie ze specjalnej platformy instalacyjnej Windows PE": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące instalacji systemu Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Instalacja nienadzorowana polega na zdalnym uruchomieniu instalacji na wybranym komputerze": false,
+                "Instalacja nienadzorowana polega na przeprowadzeniu instalacji z wykorzystaniem pliku odpowiedzi dostarczającego kreatorowi informacji potrzebnych do przeprowadzenia instalacji": true,
+                "Plik odpowiedzi może zostać wykorzystany do konfiguracji instalowanego systemu": true
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące instalacji systemu Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "Typowa instalacja systemu nie wymaga interakcji z użytkownikiem": false,
+                "Instalacja przeprowadzana jest z obrazu systemu operacyjnego zawartego w pliku .wim": false,
+                "W celu przeprowadzenia instalacji konieczne jest wcześniejsze utworzenie pliku odpowiedzi": false,
+                "Obraz instalacyjny może zawierać kilka edycji systemu operacyjnego": true
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące narzędzia Deployment Image Servicing and Management (DISM):",
+            "type": "checkbox",
+            "answers": {
+                "DISM pozwala na przeglądanie listy pakietów obrazu instalacyjnego ale nie na ich usuwanie": false,
+                "DISM pozwala na modyfikację obrazu instalacyjnego": true,
+                "DISM służy do stworzenia pliku odpowiedzi": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące narzędzia Deployment Image Servicing and Management (DISM) w systemie Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "DISM pozwala na dołączenie pliku odpowiedzi do obrazu instalacyjnego": true,
+                "DISM pozwala na dodanie nowych sterowników do obrazu instalacyjnego": true,
+                "DISM jest graficznych narzędziem pozwalającym na zaplanowanie procesu instalacji": false
+            }
+        },
+        {
+            "question": "Które z poniższych zadań można wykonać za pomocą narzędzia Deployment Image Servicing and Management (DISM)?",
+            "type": "checkbox",
+            "answers": {
+                "Wygenerować nowy plik odpowiedzi": false,
+                "Dodać sterownik urządzenia do obrazu instalacyjnego": true,
+                "Zapisać klucz produktu w obrazie instalacyjnym": true,
+                "Zmienić strefę czasową dla obrazu instalacyjnego": true
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące narzędzia Deployment Image Servicing and Management (DISM):",
+            "type": "checkbox",
+            "answers": {
+                "Obraz systemu na którym ma działać DISM powinien zostać podmontowany (by można było wykonać wszystkie możliwe polecenia)": true,
+                "DISM jest narzędziem tekstowym": true,
+                "DISM pozwala na przeglądanie listy pakietów obrazu instalacyjnego ale nie na ich usuwanie": false
+            }
+        },
+        {
+            "question": "Proszę wskazać poprawne odpowiedzi na poniższe pytania dotyczące narzędzia Deployment Image Servicing and Management (DISM) w systemie Windows 7:",
+            "type": "checkbox",
+            "answers": {
+                "DISM umożliwia dodanie do obrazu instalacyjnego klucza produktu": true,
+                "DISM pozwala na dołączenie pliku odpowiedzi do obrazu instalacyjnego": true,
+                "DISM jest narzędziem tekstowym": true
+            }
+        }
+    ]
+}
